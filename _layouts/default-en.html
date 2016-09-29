@@ -2,30 +2,11 @@
 <html lang='en'>
   {% include head-en.html %}
   <body>
-
-    <header id="home-section" class="header">
-      <div class="header__content">
-        <a href="" class="header__logo" title="Startup DEV"></a>
-        <a class="btn-toggle js-toggle-menu" href="#" title="Menu">
-          <span>Menu</span>
-        </a>
-        <nav class="header-navigation js-navbar" role="navigation">
-          <ul id="js-navigation-menu">
-            <li class="header-navigation__item"><a title="ProtoApp" href="#protoapp" class="hash">ProtoApp</a></li>
-            <li class="header-navigation__item"><a title="MVP Expresso" href="#mvp" class="hash">Express MVP</a></li>
-            <li class="header-navigation__item"><a title="Results" href="#result" class="hash">Results</a></li>
-            <li class="header-navigation__item"><a title="PT" href="/">PT</a></li>
-            <li class="header-navigation__item"><a title="Hire Us" class="header-navigation__item--btn" href="#modal" id="cta-hire-topbar">Hire Us</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
+    {% include header-en.html %}
     <section>
       {{ content }}
     </section>
     {% include footer-en.html %}
     {% include head/javascripts.html %}
   </body>
-
 </html>

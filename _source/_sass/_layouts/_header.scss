@@ -9,14 +9,6 @@
   width: 100%;
   position: fixed;
   z-index: 900;
-
-  &::before {
-    @include position(absolute, 0 null null 0);
-    @include size(100% rem(5));
-    background: url('/build/img/2016/ruller.png') repeat-x $supernova;
-    content: '';
-  }
-
   &__content {
     @include outer-container();
   }
@@ -67,7 +59,7 @@
   &__item {
     display: inline-block;
     font-family: $heading-font-family;
-    font-size: rem(16);
+    font-size: rem(14);
     padding: 0 rem(20);
 
     @include media($screen-small) {

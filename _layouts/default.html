@@ -4,23 +4,7 @@
   <body>
     <!-- Google Tag Manager -->
     <!-- End Google Tag Manager -->
-    <header id="home-section" class="header">
-      <div class="header__content">
-        <a href="" class="header__logo" title="Startup DEV"></a>
-        <a class="btn-toggle js-toggle-menu" href="#" title="Menu Principal">
-          <span>Menu</span>
-        </a>
-        <nav class="header-navigation js-navbar" role="navigation">
-          <ul id="js-navigation-menu">
-            <li class="header-navigation__item"><a title="ProtoApp" href="#protoapp" class="hash">ProtoApp</a></li>
-            <li class="header-navigation__item"><a title="MVP Expresso" href="#mvp" class="hash">MVP Expresso</a></li>
-            <li class="header-navigation__item"><a title="Resultado" href="#resultado" class="hash">Resultado</a></li>
-            <li class="header-navigation__item"><a title="EN" href="/en">EN</a></li>
-            <li class="header-navigation__item"><a class="header-navigation__item--btn" title="Contrate" href="#modal" id="cta-hire-topbar">Contrate</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    {% include header.html %}
     <section>
       {{ content }}
     </section>
