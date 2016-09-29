@@ -1,0 +1,61 @@
+
+<svg viewBox="0 0 180 131" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <rect id="a" y="8.565" width="178.144" height="121.617" rx="8"/>
+    <mask id="d" x="0" y="0" width="178.144" height="121.617" fill="#fff">
+      <use xlink:href="#a"/>
+    </mask>
+    <rect id="b" x="17.129" width="11.134" height="22.268" rx="8"/>
+    <mask id="e" x="0" y="0" width="11.134" height="22.268" fill="#fff">
+      <use xlink:href="#b"/>
+    </mask>
+    <rect id="c" x="149.88" width="11.134" height="22.268" rx="8"/>
+    <mask id="f" x="0" y="0" width="11.134" height="22.268" fill="#fff">
+      <use xlink:href="#c"/>
+    </mask>
+  </defs>
+  <g transform="translate(.905)" stroke="#373232" fill="none" fill-rule="evenodd">
+    <use mask="url(#d)" stroke-width="4" xlink:href="#a"/>
+    <use mask="url(#e)" stroke-width="4" fill="#272424" xlink:href="#b"/>
+    <use mask="url(#f)" stroke-width="4" fill="#272424" xlink:href="#c"/>
+    <path d="M.92 27.407h177.293" stroke-width="2"/>
+    <circle cx="47.105" cy="50.531" r="4.282"/>
+    <circle cx="68.517" cy="50.531" r="4.282"/>
+    <circle cx="89.928" cy="50.531" r="4.282"/>
+    <ellipse cx="111.34" cy="50.531" rx="4.282" ry="4.282"/>
+    <ellipse cx="132.751" cy="50.531" rx="4.282" ry="4.282"/>
+    <circle cx="47.105" cy="67.531" r="4.282"/>
+    <circle cx="68.517" cy="67.531" r="4.282"/>
+    <circle cx="89.928" cy="67.531" r="4.282"/>
+    <ellipse cx="111.34" cy="67.531" rx="4.282" ry="4.282"/>
+    <ellipse cx="132.751" cy="67.531" rx="4.282" ry="4.282"/>
+    <circle cx="25.694" cy="50.531" r="2.569"/>
+    <ellipse cx="47.105" cy="50.531" rx="2.569" ry="2.569"/>
+    <ellipse cx="68.517" cy="50.531" rx="2.569" ry="2.569"/>
+    <ellipse cx="89.928" cy="50.531" rx="2.569" ry="2.569"/>
+    <circle cx="111.34" cy="50.531" r="2.569"/>
+    <ellipse cx="132.751" cy="50.531" rx="2.569" ry="2.569"/>
+    <ellipse cx="154.163" cy="50.531" rx="2.569" ry="2.569"/>
+    <ellipse cx="25.694" cy="67.66" rx="2.569" ry="2.569"/>
+    <ellipse cx="47.105" cy="67.66" rx="2.569" ry="2.569"/>
+    <ellipse cx="68.517" cy="67.66" rx="2.569" ry="2.569"/>
+    <ellipse cx="89.928" cy="67.66" rx="2.569" ry="2.569"/>
+    <ellipse cx="111.34" cy="67.66" rx="2.569" ry="2.569"/>
+    <ellipse cx="132.751" cy="67.66" rx="2.569" ry="2.569"/>
+    <ellipse cx="154.163" cy="67.66" rx="2.569" ry="2.569"/>
+    <circle cx="25.694" cy="84.789" r="2.569"/>
+    <ellipse cx="47.105" cy="84.789" rx="2.569" ry="2.569"/>
+    <ellipse cx="68.517" cy="84.789" rx="2.569" ry="2.569"/>
+    <ellipse cx="89.928" cy="84.789" rx="2.569" ry="2.569"/>
+    <circle cx="111.34" cy="84.789" r="2.569"/>
+    <ellipse cx="132.751" cy="84.789" rx="2.569" ry="2.569"/>
+    <ellipse cx="154.163" cy="84.789" rx="2.569" ry="2.569"/>
+    <circle cx="25.694" cy="101.919" r="2.569"/>
+    <ellipse cx="47.105" cy="101.919" rx="2.569" ry="2.569"/>
+    <ellipse cx="68.517" cy="101.919" rx="2.569" ry="2.569"/>
+    <ellipse cx="89.928" cy="101.919" rx="2.569" ry="2.569"/>
+    <circle cx="111.34" cy="101.919" r="2.569"/>
+    <ellipse cx="132.751" cy="101.919" rx="2.569" ry="2.569"/>
+    <ellipse cx="154.163" cy="101.919" rx="2.569" ry="2.569"/>
+  </g>
+</svg>

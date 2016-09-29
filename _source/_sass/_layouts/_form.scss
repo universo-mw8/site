@@ -1,0 +1,133 @@
+// *************************************
+//
+//   Form - Modal
+//
+// *************************************
+.remodal {
+  @include media($screen-small) {
+   padding: $small-spacing;
+  }
+}
+
+.btn-modal-close {
+  @include position(absolute, 20px 20px null null);
+  @include size(24px);
+  background: url('../build/img/modal-close.png') no-repeat top center;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.stdev-form {
+  @include span-columns( 12);
+
+  //labels
+  label.error {
+    @include position(absolute, 0 null null 0);
+    color: #D0021B;
+    font-family: $heading-font-family;
+    font-size: 14px;
+    min-height: 10px;
+    text-align: left;
+    width: 100%;
+    @include media($screen-small) {
+      font-size: 12px;
+    }
+  }
+
+  //submit
+  input.submit {
+    background: url('/build/img/arrow-submit.svg') no-repeat center 40px $nightrider;
+    padding: rem(13) rem(46) rem(23);
+    border: 0;
+    outline: none;
+    float: right;
+  }
+
+  //inputs & textarea
+  input.field,
+  textarea {
+    @include box-sizing(border-box);
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid #373232;
+    box-shadow: none !important;
+    margin-bottom: 0;
+    min-height: 55px;
+    padding: rem(15) rem(10);
+
+    &:hover {
+      border: 1px solid #373232;
+    }
+
+    &:focus {
+      background: rgba(255,181,50,0.10);
+      border-radius: 4px;
+      border: 2px solid #FFB533;
+    }
+
+    // valid
+    &.valid {
+      background: url('../build/img/valid-input.png') no-repeat center right 20px;
+    }
+  }
+
+  // errors
+  input.error {
+    background: url('../build/img/invalid-input.png') no-repeat center right 20px;
+    border: 1px solid #D0021B;
+  }
+
+  textarea.error {
+    border: 1px solid #D0021B;
+  }
+
+  &__heading {
+    @include fill-parent;
+    display: block;
+    float: left;
+    font-family: $heading-font-family;
+    margin-bottom: rem(20);
+    text-align: center;
+    width: 100%;
+  }
+
+  &__title {
+    color: $supernova;
+    font-size: rem(46);
+    font-weight: 900;
+    margin-bottom: rem(30);
+    @include media($screen-small) {
+     font-size: rem(30);
+     margin-bottom: rem(10);
+     margin-top: 60px;
+    }
+  }
+
+  &__subtitle {
+    color: #444141;
+    font-size: rem(18);
+  }
+
+  &__group {
+    @include span-columns(12);
+  }
+
+  &__item {
+    margin-bottom: 5px;
+    padding-top: 18px;
+    position: relative;
+  }
+
+  &__column {
+    @include span-columns(6 of 12);
+    @include media($screen-small) {
+      @include span-columns(12);
+    }
+  }
+
+  .hide {
+    display: none;
+  }
+
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang='en'>
+  {% include rumble/head.html %}
+  <article>
+    <header>
+      <div id="masthead">
+        {% include rumble/menu_en.html %}
+        {% include rumble/language_selector.html %}
+      </div>
+
+      <div id="logo"><a href="/rumble" title="Startup DEV RUMBLE">Startup DEV RUMBLE</a></div>
+
+      <div id="info">
+        <a href="http://helabs.wufoo.com/forms/startup-dev-rumble/" id="join-badge-en">
+          Make your subscription
+        </a>
+        <div id="when">
+          Starts at saturday 00:00
+        </div>
+        <div id="preamble">
+          Build your team and<span>launch an app in 48h</span>
+        </div>
+      </div>
+    </header>
+    <div id="container">
+      {{ content }}
+    </div>
+
+    <section id="advices">
+      <div id="dates">
+        <h1>Save the dates</h1>
+        <p>
+          <strong>Registration starts at:</strong> July 23rd 2012
+        </p>
+        <p>
+          <strong>You'll code at:</strong> Sep 1st-2nd 2012
+        </p>
+        <p>
+          <strong>Voting:</strong> Sep 3rd-4th 2012
+        </p>
+        <p>
+        <strong>Result:</strong> Sep 5th 2012
+        </p>
+      </div>
+      <div id="remember">
+        <h1>It's worth to remember...</h1>
+        <ul>
+          <li>Your team can work from anywhere.</li>
+          <li>You can use any language or web framework.</li>
+          <li>You can only develop during the competition period.</li>
+          <li>Teams with applications developed prior to the event will be disqualified.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="banner">
+      <h1>Join the Startup DEV team</h1>
+      <p>The projects will also be evaluated by <a href="http://startupdev.com.br/" title="Startup DEV" target="_blank">Startup DEV</a> team. If we like the way your team work you and your friends may be called to work with us.</p>
+    </section>
+    <section role="complementary">
+      <div id="section-content">
+        <nav class="column" id="infrastructure">
+          <h1>Infrastructure partners</h1>
+          <ul>
+            <li><a href="http://webbynode.com/" rel="external"><img src="/build/img/rumble/infrastructure/webbynode.png" alt="Webbynode" /></a></li>
+            <li><a href="http://codeplane.com" rel="external"><img src="/build/img/rumble/support/codeplane.png" alt="Codeplane"></a></li>
+          </ul>
+        </nav>
+        <nav class="column" id="organization">
+          <h1>Organization</h1>
+          <ul>
+            <li><a href="http://rioinfo.com.br/" rel="external"><img src="/build/img/rumble/organization/rioinfo.png" alt="Rio Info" /></a></li>
+            <li><a href="http://helabs.com.br/" rel="external"><img src="/build/img/rumble/organization/helabs.png" alt="HE:labs"></a></li>
+          </ul>
+        </nav>
+        <nav id="support">
+          <h1>Partners</h1>
+          <table>
+            <tbody>
+              <tr>
+                <td><a href="http://welcometothedjango.com.br/" rel="external"><img src="/build/img/rumble/support/welcome-to-the-django.png" alt="Welcome To The Django" /></a></td>
+                <td><a href="http://heroku.com" rel="external"><img src="/build/img/rumble/support/heroku.png" alt="Heroku"></a></td>
+                <td><a href="http://assando-sites.com.br/" rel="external"><img src="/build/img/rumble/support/assando-sites.png" alt="Assando Sites"></a></td>
+                <td><a href="http://workshop.bootstrappers.com.br" rel="external"><img src="/build/img/rumble/support/bootstrappers.png" alt="Bootstrappers"></a></td>
+                <td><a href="http://codeschool.com" rel="external"><img src="/build/img/rumble/support/code-school.png" alt="Code School"></a></td>
+              </tr>
+              <tr>
+                <td><a href="http://devinrio.com.br" rel="external"><img src="/build/img/rumble/support/devinrio.png" alt="Dev in Rio"></a></td>
+                <td><a href="http://howtocode.com.br/" rel="external"><img src="/build/img/rumble/support/howtocode.png" alt="HOWTO"></a></td>
+                <td><a href="http://www.videolog.tv/" rel="external"><img src="/build/img/rumble/support/videolog.gif" alt="Videlog"></a></ltd>
+                <td><a href="http://www.upx.com.br/" rel="external"><img src="/build/img/rumble/support/upx.png" alt="UPX"></a></td>
+                <td><a href="http://www.casadocodigo.com.br/" rel="external"><img src="/build/img/rumble/support/casa-codigo.png" alt="Casa do Código"></a></td>
+              </tr>
+              <tr>
+                <td><a href="http://estoujogando.com.br/" rel="external"><img src="/build/img/rumble/support/estou-jogando.png" alt="Estou Jogando"></a></td>
+                <td><a href="http://papayaventures.com/" rel="external"><img src="/build/img/rumble/support/papaya.png" alt="Papaya Ventures"></a></td>
+              </tr>
+            </tbody>
+          </table>
+        </nav>
+      </div>
+    </section>
+    {% include footer.html %}
+  </article>
+</html>

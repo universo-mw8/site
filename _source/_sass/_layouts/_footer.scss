@@ -1,0 +1,106 @@
+// *************************************
+//
+//   Footer
+//
+// *************************************
+
+.footer {
+  @include span-columns(12);
+  background: $nightrider;
+
+  &__content {
+    @include outer-container();
+    @include media($screen-small) {
+      @include pad($base-spacing);
+      text-align: center;
+    }
+  }
+}
+
+.footer-one {
+  @include fill-parent;
+  @include pad(rem(50) 0);
+
+  &__heading {
+    @include span-columns(8 of 12);
+    font-family: $base-font-family;
+    @include media($screen-small) {
+      @include span-columns(12);
+      text-align: center;
+    }
+  }
+
+  &__title {
+    color: $supernova;
+    font-size: rem(36);
+    font-weight: 400;
+
+    @include media($screen-small) {
+      font-size: rem(25);
+    }
+
+  }
+
+  &__subtitle {
+    color: $white;
+    font-size: rem(18);
+
+    @include media($screen-small) {
+      font-size: rem(16);
+      font-weight: 200;
+      margin-bottom: rem(20);
+      display: inline-block;
+    }
+
+  }
+
+  .btn {
+    float: right;
+    @include media($screen-small) {
+      float: none;
+      text-align: center;
+    }
+  }
+}
+
+.footer-two {
+  @include fill-parent;
+  @include size(100% 60px);
+  background: $nero;
+  font-family: $base-font-family;
+  font-size: rem(12);
+  padding: $small-spacing*2 0;
+  text-align: center;
+
+  @include media($screen-small) {
+    @include size(100% auto);
+    padding: $small-spacing;
+  }
+
+  &__copyright {
+    @include span-columns(8 of 12);
+    text-align: right;
+    @include media($screen-small) {
+      @include span-columns(12);
+      padding: $small-spacing;
+    }
+  }
+
+}
+
+.footer-social {
+  @include span-columns(4 of 12);
+  text-align: left;
+  @include media($screen-small) {
+    @include span-columns(12);
+  }
+
+  &__icon {
+    display: inline-block;
+    padding-right: 20px;
+
+    &:last-child {
+      padding: 0;
+    }
+  }
+}

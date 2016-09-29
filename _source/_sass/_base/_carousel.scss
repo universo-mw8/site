@@ -1,0 +1,179 @@
+
+//============== Themes ==============//
+
+$theme-colors: dark $dark-color $light-color, light $light-color $dark-color;
+
+.steps {
+
+    @include media($screen-tiny) {
+      margin-bottom: 3em;
+    }
+
+    @each $theme, $color, $color-inverse in $theme-colors {
+      &.#{$theme} {
+        border: 2px solid #{$color};
+        color: #{$color};
+        ul li {
+
+          &::after {
+            background: url("../build/img/2016/arrow-#{$theme}.svg");
+          }
+
+          a {
+            @if $theme == light {
+              background: $background-color;
+            } @else {
+              background: $whisper;
+            }
+
+            border: 2px solid #{$color};
+            box-shadow: 0 0 0 0px transparent;
+            color: #{$color};
+          }
+
+          a:hover {
+            background: #{$color-inverse};
+            box-shadow: 0 0 0 3px #{$color-inverse};
+          }
+        }
+        .steps__description a {
+          @if $theme == light {
+            border-bottom: 1px solid #{$color-inverse};
+            color: #{$color-inverse};
+          } @else {
+            border-bottom: 1px solid $background-color;
+            color: $background-color;
+          }
+
+          &:hover {
+            background: #{$color-inverse};
+            color: #{$color};
+            border-bottom: 1px solid transparent;
+          }
+        }
+      }
+    }
+  }
+
+//============== Structure ==============//
+
+.wrapper {
+  text-align: center;
+  padding: 2em;
+  @include media($screen-tiny) {  padding: 0em; }
+}
+.steps {
+  margin: 0 auto;
+  height: 20em;
+  list-style: none;
+  width: 20em;
+  z-index: 0;
+  position: relative;
+  color: #fff;
+  border: 2px solid white;
+  border-radius: 50%;
+  @include media($screen-tiny) { width: 15em; height: 15em; }
+  &__icon {
+    padding-top: 2.5em;
+    width: 42%;
+    @include media($screen-tiny) { display: none; }
+  }
+  &__description {
+    padding: 0em 3em;
+    position: absolute;
+    bottom: 2.5em;
+    font-size: 0.9em;
+    @include media($screen-tiny) {  bottom: 3em; }
+    span {
+      font-weight: bold;
+      padding-right: 0.3em;
+    }
+    a {
+      @include transitions(all, 0.5s);
+      text-decoration: none;
+      display: inline-block;
+      padding: 0.2em 0.5em;
+      margin-top: 0.6em;
+      font-size: 0.9em;
+    }
+  }
+}
+
+#steps-menu {
+   ul {
+    li {
+    @include transitions(all, 1.2s);
+    border-left: 140px solid transparent;
+    border-top: 1px solid transparent;
+    font-size: 0.65em;
+    left: 50%;
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    transform-origin: 0 0;
+    @include media($screen-tiny) {  border-left: 100px solid transparent; }
+
+      &:after{
+        content: " ";
+        width: 0.7em;
+        height: 0.4em;
+        margin-left: -8px;
+        margin-top: -75px;
+        position: absolute;
+        font-size: 3.5em;
+        background-size: 100%;
+        background-color: transparent;
+        transform: rotate(-29deg);
+        background-repeat: no-repeat;
+        @include media($screen-tiny) {
+          margin-left: -2px;
+          margin-top: -50px;
+        }
+      }
+      a {
+        @include transitions(all, 0.5s);
+        text-decoration: none;
+        position: absolute;
+        border-radius: 50%;
+        text-align: center;
+        height: 2em;
+        width: 2em;
+        font-size: 1.8em;
+        line-height: 1.8;
+      }
+    }
+  }
+}
+
+$angle-list: step-1 -202, step-2 -144, step-3 -82, step-4 -22, step-5 38, step-6 96;
+
+@each $step, $angle in $angle-list {
+  .#{$step} {
+    @for $i from 1 through 6 {
+      $new-angle: (60*$i)-$angle;
+      ul li:nth-of-type(#{$i}) {
+        transform: rotate(#{$new-angle}deg);
+        a {
+          transform: rotate(#{-$new-angle}deg);
+        }
+      }
+    }
+  }
+}
+
+#step-1 {
+ display: block;
+}
+
+
+.step-content {
+  display: none;
+}
+
+.is-active {
+  a {
+    color: #fff !important;
+    font-size: 2em !important;
+    background: $dark-color !important;
+  }
+}

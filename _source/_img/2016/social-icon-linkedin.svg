@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>linkedin</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD" sketch:type="MSArtboardGroup" transform="translate(-304.000000, -4502.000000)" fill="#FFFFFF">
+            <g id="footer" sketch:type="MSLayerGroup" transform="translate(0.000000, 4340.000000)">
+                <g id="social-nav" transform="translate(245.000000, 162.000000)" sketch:type="MSShapeGroup">
+                    <path d="M80.2682899,16.0292482 C80.2682899,13.7892406 78.5268175,12.009151 76.5876976,12.009151 C75.106046,12.009151 73.7961418,12.009151 72.9259036,13.8842101 C72.7652415,14.2303809 72.5792615,15.2383776 72.5792615,15.7369216 L72.5792615,25.4177531 L67.8719563,25.4177527 L67.8719561,13.1213749 L67.8719561,7.05627789 L72.7601025,7.05627789 L73.0012231,9.44823237 L73.1067449,9.44823237 C73.8125002,8.31165217 75.4164601,7.05627789 78.3102427,7.05627789 C81.8377774,7.05627789 85,9.84841822 85,14.9664695 L85,25.4177531 L80.2682899,25.4177531 L80.2682899,16.0292482 L80.2682899,16.0292482 Z M61.5338509,4.87413584 C59.9937887,4.87413584 59,3.78441067 59,2.43791442 C59,1.05868691 60.0259557,0 61.5970561,0 C63.1681565,0 64.1309069,1.05812258 64.1630738,2.43791442 C64.1636382,3.78441067 63.1687208,4.87413584 61.5338509,4.87413584 L61.5338509,4.87413584 L61.5338509,4.87413584 Z M59.5670592,25.4177531 L59.5670591,7.05627812 L63.7003277,7.0562783 L63.7003278,25.4177533 L59.5670592,25.4177531 L59.5670592,25.4177531 Z" id="linkedin"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

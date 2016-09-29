@@ -1,0 +1,13 @@
+@mixin vertical-align($position: relative) {
+  @include transform(translateY(-50%));
+  position: $position;
+  top: 50%;
+}
+
+@mixin transitions($what: all, $length: 0.3s, $easing: ease-in-out) {
+    -moz-transition:    $what $length $easing;
+    -o-transition:      $what $length $easing;
+    -webkit-transition: $what $length $easing;
+    -ms-transition:     $what $length $easing;
+    transition:         $what $length $easing;
+}

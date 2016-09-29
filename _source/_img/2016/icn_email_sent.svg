@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="180px" height="114px" viewBox="0 0 180 114" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>icn_email_sent</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-9" transform="translate(-210.000000, -122.000000)">
+            <g id="icn_email_sent" transform="translate(211.000000, 121.000000)">
+                <path d="M0.808534204,97.7017822 L64.0019546,69.5468749 L59.3491226,60.6176758 L0.808534204,97.7017822 Z" id="Path-475" fill="#FFB618"></path>
+                <path d="M21.9192371,104.854727 L70.0537128,81.7319336 L67.1376972,76.6840821 L21.9192371,104.854727 Z" id="Path-476" fill="#FFB618"></path>
+                <path d="M40.2524712,113.101562 L76.3657219,95.4716798 L74.3279285,91.6254507 L40.2524712,113.101562 Z" id="Path-477" fill="#FFB618"></path>
+                <path d="M57.2643121,24.8167456 C57.2643121,24.8167456 97.512557,61.9035695 108.480433,61.9035695 C119.448309,61.9035695 160.559042,24.8167456 160.559042,24.8167456" id="Path-469" stroke="#373232" stroke-width="2" transform="translate(108.911677, 43.360158) rotate(-26.000000) translate(-108.911677, -43.360158) "></path>
+                <path d="M72.4101436,96.9162692 L111.258484,66.8412027" id="Path-470" stroke="#373232" stroke-width="2" transform="translate(92.046574, 81.854757) rotate(-26.000000) translate(-92.046574, -81.854757) "></path>
+                <path d="M129.864165,38.5633063 L170.211459,68.7026708" id="Path-471" stroke="#373232" stroke-width="2" transform="translate(150.037812, 53.632989) rotate(-26.000000) translate(-150.037812, -53.632989) "></path>
+                <rect id="Rectangle-5" stroke="#373232" stroke-width="2" transform="translate(114.884146, 54.012019) rotate(-26.000000) translate(-114.884146, -54.012019) " x="60.804878" y="21.1153846" width="108.158537" height="65.7932692" rx="6"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

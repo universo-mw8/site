@@ -1,0 +1,41 @@
+title: Universo MW8
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://example.com" # the base hostname & protocol for your site
+twitter_username: universo-mw8
+facebook_page: universo-mw8
+instagram_page: universo-mw8
+github_username:  universo-mw8
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+exclude: [
+  'package.json',
+  '_source',
+  'node_modules',
+  '.sass-cache',
+  'README',
+  'Gemfile',
+  'Gemfile.lock',
+  'config.rb',
+  'vendor',
+  'gulpfile.babel.js'
+]

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang='pt'>
+  {% include head.html %}
+  <body>
+    <section id='wrapper'>
+      <header id="home-section">
+        <h1>Startup DEV</h1>
+      </header>
+      {% include menu.html %}
+      <section>
+        {{ content }}
+      </section>
+    </section>
+    {% include footer.html %}
+    {% include head/javascripts.html %}
+  </body>
+</html>

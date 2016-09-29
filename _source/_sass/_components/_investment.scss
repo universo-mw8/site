@@ -1,0 +1,236 @@
+.investment {
+  color: $nero;
+  text-align: center;
+
+
+  &__center {
+    @include span-columns(8 of 12);
+    @include omega();
+
+    @include media($screen-small) {
+      @include span-columns(6 of 12);
+      @include omega();
+    }
+  }
+
+  &__spacer {
+    padding-top: rem(90);
+
+    &--small {
+      padding-top: rem(40);
+    }
+  }
+
+  &__button-wrapper {
+    @include span-columns(2 of 12);
+
+    @include media($screen-small) {
+      @include span-columns(12 of 12);
+      @include omega();
+    }
+  }
+
+  &__title-wrapper {
+    @include span-columns(2 of 12);
+    margin-top: rem(80);
+    position: relative;
+    padding-right: 30px;
+
+    @include media($screen-small) {
+      @include span-columns(6 of 12);
+      margin-top: rem(43);
+    }
+
+    @include media($screen-tiny) {
+      padding-right: rem(5);
+    }
+  }
+
+  &__title {
+    color: $nero;
+    float: right;
+    font-size: rem(30);
+    font-weight: bold;
+    margin-right: rem(20);
+
+    @include media($screen-medium-up) {
+      float: left;
+    }
+
+    span {
+      font-size: rem(12);
+      float: left;
+    }
+  }
+
+  &__arrow {
+    right: -5px;
+    position: absolute;
+    float: right;
+    margin-top: rem(7);
+    margin-left: rem(7);
+    margin-top: rem(10);
+    @include media($screen-medium-up) {
+      right: -27px;
+    }
+
+    @include media($screen-tiny) {
+      width: rem(25);
+    }
+  }
+
+  &__inner {
+    @include span-columns(12);
+    padding-bottom: 30px;
+
+    @include media($screen-small) {
+      @include span-columns(6);
+      @include shift(3);
+    }
+
+    @include media($screen-tiny) {
+      @include span-columns(12 of 12);
+      margin-bottom: rem(50);
+      margin-top: rem(50);
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &--divider {
+      border-bottom: 1px solid $supernova;
+    }
+  }
+
+  &__heading {
+    font: 700 rem(46) $heading-font-family;
+    margin: 0;
+
+    @include media($screen-small) {
+      font-size: rem(32);
+      padding: 0;
+    }
+  }
+
+  &__subheading {
+    font-size: rem(14);
+    font-weight: 600;
+    margin: 0;
+
+    @include media($screen-small) {
+      font-size: rem(18);
+      font-weight: normal;
+      margin-top: rem(10);
+    }
+
+    &--large {
+      font-size: rem(32);
+      font-weight: 400;
+      margin-bottom: rem(10);
+
+      @include media($screen-small) {
+        font-size: rem(24);
+        margin: rem(10) 0 0;
+      }
+    }
+  }
+
+  &__text {
+    color: $white;
+    font-size: rem(28);
+    margin: auto;
+    max-width: rem(800);
+    padding: 0 rem(20);
+
+    @include media($screen-small) {
+      font-size: 16px;
+      padding: 10px 0 0;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+  }
+
+  &__items {
+    display: flex;
+    margin-top: 60px;
+
+    @include media($screen-small) {
+      flex: 0 0 100%;
+      padding: 0;
+      margin-top: 0;
+    }
+  }
+
+  &__item {
+    color: $nero;
+    flex: 0 0 33.3333%;
+    padding: 0 20px;
+    position: relative;
+
+    @include media($screen-small) {
+      flex: 0 0 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    &--small { flex: 0 0 24.3333%; }
+
+
+
+    &::after {
+      color: $nero;
+      content: attr(data-suffix);
+      font: 700 46px $heading-font-family;
+      position: absolute;
+      right: -10px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      @include media($screen-small) {
+        font-size: 20px;
+        right: -8px;
+        top: 60px;
+        transform: translateX(-50%);
+      }
+    }
+
+    &:first-child::after {
+      right: -25px;
+
+      @include media($screen-small) {
+        right: -15px;
+      }
+    }
+
+    &:not(:last-child) {
+
+      @include media($screen-small) {
+        display: none;
+      }
+    }
+
+    &:last-child::after {
+      display: none;
+    }
+  }
+
+  &__icon {
+    height: 60px;
+    margin-bottom: 10px;
+
+    @include media($screen-small) {
+      @include size(75px auto);
+    }
+  }
+
+  &__box {
+    border: 2px solid $nero;
+    border-radius: 4px;
+    color: $nero;
+    font-size: 22px;
+    margin: 5px auto 0;
+    max-width: 120px;
+    padding: 5px;
+  }
+}

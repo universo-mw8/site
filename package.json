@@ -1,0 +1,44 @@
+{
+  "name": "universoMW8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.babel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/universo-mw8/site.git"
+  },
+  "author": "Universo MW8",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/universo-mw8/site/issues"
+  },
+  "homepage": "https://github.com/universo-mw8/site#readme",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "eslint": "^2.10.0",
+    "browser-sync": "^2.16.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-group-css-media-queries": "^1.1.0",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rollup": "^1.8.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^1.5.3"
+  },
+  "dependencies": {
+    "babel-register": "^6.16.3"
+  }
+}

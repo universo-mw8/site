@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="87px" height="9px" viewBox="0 0 87 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>link arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Form" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="form_commercial_proposal_v01c+errors" sketch:type="MSArtboardGroup" transform="translate(-960.000000, -719.000000)" stroke-linecap="square" stroke="#FFFFFF">
+            <g id="button" sketch:type="MSLayerGroup" transform="translate(927.000000, 679.000000)">
+                <g id="link-arrow" transform="translate(34.000000, 40.000000)" sketch:type="MSShapeGroup">
+                    <path d="M0.206557751,4.5 L83.8450089,4.5" id="Line"></path>
+                    <path d="M80.9649162,0.964916229 L84.5453606,4.54536057" id="Line"></path>
+                    <path d="M80.9649162,4.96491623 L84.5453606,8.54536057" id="Line" transform="translate(82.500000, 6.500000) scale(1, -1) translate(-82.500000, -6.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

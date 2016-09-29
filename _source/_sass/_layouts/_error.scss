@@ -1,0 +1,61 @@
+.main-error {
+  background: url('/build/img/2016/bg_404.jpg') no-repeat center center $nightrider;
+  background-position: 7%;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+
+  &__content {
+    max-width: 960px;
+    padding-top: 35vh;
+    text-align: left;
+    margin: 0 auto;
+    padding-left: 20px;
+
+    @include media($screen-small) {
+      @include span-columns(12);
+
+    }
+
+  }
+
+  &__h1 {
+    color: $orangey-yellow;
+    font-family: $heading-font-family;
+    font-size: rem(64);
+    font-weight: 900;
+    margin-bottom: rem(5);
+
+    @include media($screen-small) {
+      font-size: rem(54);
+    }
+
+  }
+
+  &__h2 {
+    color: $white;
+    font-family: $heading-font-family;
+    font-size: rem(40);
+    font-weight: 200;
+    max-width: 550px;
+
+    @include media($screen-small) {
+      font-size: 28px;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+  }
+
+  &__subtitle {
+    color: $greyish;
+    font-size: rem(30);
+    letter-spacing: .2px;
+
+    @include media($screen-small) {
+      font-size: rem(24);
+    }
+
+  }
+}

@@ -1,0 +1,75 @@
+// *************************************
+//
+//   Buttons
+//
+// *************************************
+
+.btn {
+  @include transition(all .3s);
+  @include user-select(none);
+  background: transparent;
+  border-radius: 4px;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: 22px;
+  padding: 10px 35px 15px;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-weight: 400;
+
+  &:hover,
+  &:focus {
+    background-color: shade($action-color, 20%);
+    color: $white;
+  }
+
+  &::after {
+    background: url('/build/img/2016/arrow.svg') no-repeat top right;
+    content: '';
+    display: block;
+    height: 9px;
+    position: static;
+    width: 100%;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: .5;
+
+    &:hover {
+      background-color: $action-color;
+    }
+  }
+
+  // types of buttons
+
+  // Use: class="btn btn--primary"
+  &--primary {
+    background: $nightrider;
+    &:hover,
+    &:focus {
+      background-color: shade($nightrider, 30%);
+      color: $white;
+    }
+  }
+
+  // Use: class="btn btn--secondary"
+  &--secondary {
+    background: $supernova;
+    &:hover,
+    &:focus {
+      background-color: shade($supernova, 20%);
+      color: $white;
+    }
+  }
+
+
+}
+
+
+
