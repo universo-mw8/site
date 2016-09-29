@@ -89,7 +89,7 @@ body {
   }
 }
 
-.protoapp {
+.service {
   @include span-columns(12);
   background: $supernova;
   min-height: rem(690);
