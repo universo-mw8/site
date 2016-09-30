@@ -97,7 +97,7 @@
 
   &__icon {
     display: inline-block;
-    padding-right: 20px;
+    padding-right: rem(20px);
 
     &:last-child {
       padding: 0;
