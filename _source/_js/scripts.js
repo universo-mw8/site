@@ -83,9 +83,9 @@ $(document).ready(function(){
 
 $(window).scroll(function () {
     if ($(window).scrollTop() > 100) {
-        $('.header').css("background", "rgba(55,50,50,0.8)");
+        $('.header').css("background", "rgba(7,15,21,0.9)");
     }
     else{
-        $('.header').css("background", "rgba(0,0,0,0.0)");
+        $('.header').css("background", "rgba(7,15,21,0.3)");
     }
 });

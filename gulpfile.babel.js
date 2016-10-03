@@ -13,7 +13,6 @@ const concat = require('gulp-concat');
 const browserSync = require('browser-sync');
 const cp = require('child_process');
 const sourcemaps  = require('gulp-sourcemaps');
-const jade = require('gulp-jade');
 const ghPages = require('gulp-gh-pages');
 const path = require('path');
 // const rollupConfig = require('./rollup.config');
@@ -26,15 +25,13 @@ const srcPaths = {
   js: '_source/_js/**/*.js',
   css: '_source/_sass/**/*.scss',
   mainSass: '_source/_sass/main.scss',
-  jade: '_source/templates/**/!(_)*.jade',
-  img: '_source/img/**/*'
+  img: '_source/_img/**/*'
 };
 
 const buildPaths = {
   build: 'build/**/*',
   js: 'build/js/',
   css: 'build/css/',
-  jade: 'build/',
   img: 'build/img/'
 };
 
@@ -79,13 +76,6 @@ gulp.task('js', () => {
   .pipe(gulp.dest(buildPaths.js));
 });
 
-gulp.task('jade', () => {
-  gulp.src(srcPaths.jade)
-  .pipe(plumber)
-  .pipe(jade())
-  .pipe(gulp.dest(buildPaths.jade));
-});
-
 gulp.task('images', () => {
   gulp.src(srcPaths.img)
   .pipe(plumber())
@@ -109,7 +99,7 @@ gulp.task('deploy', () => {
   .pipe(ghPages());
 });
 
-gulp.task('build', ['badge', 'js', 'json',  'sass']);
+gulp.task('build', ['js', 'css']);
 
-gulp.task('default', ['css', 'js', 'watch', 'browser-sync']);
-gulp.task('deploy', ['css', 'js', 'pages']);
+gulp.task('default', ['css', 'js', 'images', 'watch', 'browser-sync']);
+gulp.task('deploy', ['css', 'js', 'images', 'pages']);

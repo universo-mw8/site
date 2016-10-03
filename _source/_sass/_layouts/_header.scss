@@ -3,10 +3,11 @@
 //   Header
 //
 // *************************************
-
 .header {
   @include transition(.5s);
   width: 100%;
+  height:100px;
+  line-height:100px;
   position: fixed;
   z-index: 900;
   &__content {
@@ -14,11 +15,11 @@
   }
 
   &__logo {
-    @include size(rem(140) rem(34));
-    background: url('/build/img/2016/startupdev-logo.svg') no-repeat top center;
+    @include size(rem(168) rem(54));
+    background: url('/build/img/2016/logo.png') no-repeat top center;
     display: block;
     float: left;
-    margin-top: 20px;
+    margin-top: rem(23);
     @include media($screen-small) {
       margin-left: 10px;
     }
@@ -28,7 +29,7 @@
 // Navigation
 .header-navigation {
   float: right;
-  margin-top: rem(25);
+  // margin-top: rem(25);
 
   @include media($screen-small) {
     @include transition(.3s);
