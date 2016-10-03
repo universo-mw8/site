@@ -1,1 +1,0 @@
-$(function(){var n=$("#note"),e=new Date(2012,8,3),t=!0;new Date>e&&(e=(new Date).getTime()+864e6,t=!1),$("#countdown").countdown({timestamp:e,callback:function(e,t,a,o){var c="";c+=e+" day"+(1==e?"":"s")+", ",c+=t+" hour"+(1==t?"":"s")+", ",c+=a+" minute"+(1==a?"":"s")+" and ",c+=o+" second"+(1==o?"":"s")+" <br />",c+="",n.html(c)}})});
