@@ -47,7 +47,7 @@
   //inputs & textarea
   input.field,
   textarea {
-    @include box-sizing(border-box);
+    // @include box-sizing(border-box);
     background: transparent;
     border-radius: 4px;
     border: 1px solid #373232;
