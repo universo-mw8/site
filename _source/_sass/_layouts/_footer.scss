@@ -4,20 +4,20 @@
 //
 // *************************************
 
+
 .footer {
   @include span-columns(12);
   background: $nightrider;
 
   &__content {
-    @include outer-container();
+    // @include outer-container();
+    @include span-columns(12);
     @include media($screen-small) {
       @include pad($base-spacing);
       text-align: center;
     }
   }
-}
 
-.footer-one {
   @include fill-parent;
   @include pad(rem(50) 0);
 
@@ -32,72 +32,67 @@
 
   &__title {
     color: $supernova;
-    font-size: rem(36);
+    font-size: rem(18);
     font-weight: 400;
-
     @include media($screen-small) {
       font-size: rem(25);
     }
-
-  }
-
-  &__subtitle {
-    color: $white;
-    font-size: rem(18);
-
-    @include media($screen-small) {
-      font-size: rem(16);
-      font-weight: 200;
-      margin-bottom: rem(20);
-      display: inline-block;
-    }
-
-  }
-
-  .btn {
-    float: right;
-    @include media($screen-small) {
-      float: none;
-      text-align: center;
-    }
-  }
-}
-
-.footer-two {
-  @include fill-parent;
-  @include size(100% 60px);
-  background: $nero;
-  font-family: $base-font-family;
-  font-size: rem(12);
-  padding: $small-spacing*2 0;
-  text-align: center;
-
-  @include media($screen-small) {
-    @include size(100% auto);
-    padding: $small-spacing;
   }
 
   &__copyright {
     @include span-columns(8 of 12);
-    text-align: right;
+    text-align: left;
+    margin-left: rem(160px);
     @include media($screen-small) {
       @include span-columns(12);
       padding: $small-spacing;
     }
   }
 
+  &__image {
+    width: rem(96px);
+    margin-left: rem(160px);
+  }
+}
+
+
+.footer-universo {
+  @include span-columns(4 of 12);
+}
+
+.footer-andress {
+  @include span-columns(4 of 12);
+
+  &__salvador {
+    @include span-columns(2 of 4);
+  }
+
+  &__saopaulo {
+    @include span-columns(2 of 4);
+  }
+
+  @include media($screen-small) {
+    @include span-columns(12);
+  }
 }
 
 .footer-social {
   @include span-columns(4 of 12);
-  text-align: left;
+  float: right;
+  text-align: right;
+  ul {
+    position: relative;
+    margin-right: rem(160px);
+    top: rem(45px);
+  }
   @include media($screen-small) {
     @include span-columns(12);
   }
 
   &__icon {
     display: inline-block;
-    padding-right: rem(20px);
+    padding-right: rem(10px);
+    color: $supernova;
 
     &:last-child {
       padding: 0;
