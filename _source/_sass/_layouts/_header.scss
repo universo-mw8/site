@@ -3,25 +3,30 @@
 //   Header
 //
 // *************************************
+
+$fg-column: 60px;             // Column Width
+$fg-gutter: 25px;             // Gutter Width
+$fg-max-columns: 12;          // Total Columns For Main Container
+
 .header {
   @include transition(.5s);
   width: 100%;
-  height:100px;
-  line-height:100px;
   position: fixed;
   z-index: 900;
   &__content {
-    @include outer-container();
+    width: flex-grid(12);        // returns (315px / 1020px) = 30.882353%;
   }
 
   &__logo {
-    @include size(rem(168) rem(54));
+    @include size(rem(168) rem(44));
     background: url('/build/img/2016/logo.png') no-repeat top center;
+    background-size:contain;
     display: block;
     float: left;
-    margin-top: rem(23);
+    margin-top: rem(28);
+    margin-left: flex-gutter(); // returns (25px / 1020px) = 2.45098%;
     @include media($screen-small) {
-      margin-left: 10px;
+      margin: rem(12);
     }
   }
 }
@@ -29,7 +34,8 @@
 // Navigation
 .header-navigation {
   float: right;
-  // margin-top: rem(25);
+  margin-right: flex-gutter(); // returns (25px / 1020px) = 2.45098%;
+  margin-top: rem(37.5);
 
   @include media($screen-small) {
     @include transition(.3s);
@@ -130,7 +136,7 @@
 .btn-toggle {
   @include vertical-align();
   cursor: pointer;
-  margin-top: 8px;
+  // margin-top: 8px;
   position: absolute;
   right: rem(20);
   text-decoration: none;
