@@ -4,6 +4,14 @@
 //
 // *************************************
 
+@mixin mask($radius: 0 0 50% 50%, $border: 70px, $shadow: 200) {
+    border-radius:$radius;
+    border: $border solid #28ead7;
+    border-top: 0;
+    box-shadow: 0 rem($shadow) 0 0 #ffffff;
+}
+
+
 body,
 html {
   margin: 0;
@@ -48,12 +56,9 @@ body {
         position: absolute;
         bottom: 0;
         left: 50%;
+        @include mask(0 0 50% 50%, 70px, 280);
         @include size(120vw 120vh);
         margin-left: calc(60% - 120vw);
-        border-radius: 0 0 50% 50%;
-        border: 70px solid #28ead7;
-        border-top: 0;
-        box-shadow: 0 rem(280) 0 0 #ffffff;
       }
 
       &--banner{
@@ -66,23 +71,20 @@ body {
         background-blend-mode: multiply
       }
 
-      @include media($screen-medium) {
+      @include media($screen-small) {
         &:before{
-          height: 50vh;
-          border-radius: 0 0 50% 50%;
-          border: 50px solid #28ead7;
-          border-top:0;
+          height: 30vh;
+          @include mask(0 0 50% 50%, 30px, 200);
         }
       }
 
-      @include media($screen-small) {
+      @include media($screen-medium) {
         &:before{
           height: 50vh;
-          border-radius: 0 0 50% 50%;
-          border: 30px solid #28ead7;
-          border-top: 0;
+          @include mask(0 0 50% 50%, 50px, 200);
         }
       }
+
 
   }
 
