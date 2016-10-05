@@ -49,6 +49,7 @@ body {
   &__mask {
       overflow: hidden;
       position: absolute;
+      bottom:0;
       @include size(100% 100%);
 
       &:before{
@@ -56,9 +57,9 @@ body {
         position: absolute;
         bottom: 0;
         left: 50%;
-        @include mask(0 0 50% 50%, 70px, 280);
-        @include size(120vw 120vh);
-        margin-left: calc(60% - 120vw);
+        @include mask(0 0 50% 50%, 50px, 280);
+        @include size(140vw 140vh);
+        margin-left: calc(70% - 140vw);
       }
 
       &--banner{
@@ -73,15 +74,15 @@ body {
 
       @include media($screen-small) {
         &:before{
-          height: 30vh;
-          @include mask(0 0 50% 50%, 30px, 200);
+          height: 40%;
+          @include mask(0 0 50% 50%, 40px, 130);
         }
       }
 
       @include media($screen-medium) {
         &:before{
-          height: 50vh;
-          @include mask(0 0 50% 50%, 50px, 200);
+          height: 50%;
+          @include mask(0 0 50% 50%, 50px, 150);
         }
       }
 
@@ -115,9 +116,9 @@ body {
     margin-bottom: rem(10);
 
     @include media($screen-small) {
-      font-size: rem(38);
+      font-size: rem(40);
       margin-top: rem(140);
-      padding:0 rem(10);
+      padding:0 rem(20);
     }
 
   }
@@ -129,9 +130,9 @@ body {
     font-weight: 400;
     line-height: rem(40);
     font-weight: 200;
-    padding:0 rem(10);
+    padding:0 rem(20);
     @include media($screen-small) {
-      font-size: 16px;
+      font-size: rem(22);
       line-height: rem(30);
     }
 
