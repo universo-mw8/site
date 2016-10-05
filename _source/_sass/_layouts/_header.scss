@@ -24,9 +24,13 @@ $fg-max-columns: 12;          // Total Columns For Main Container
     display: block;
     float: left;
     margin-top: rem(28);
+    margin-bottom: rem(28);
     margin-left: flex-gutter(); // returns (25px / 1020px) = 2.45098%;
     @include media($screen-small) {
+      @include size(rem(43) rem(54));
       margin: rem(12);
+      background-size: initial;
+      background-position: 0 0;
     }
   }
 }
@@ -41,7 +45,7 @@ $fg-max-columns: 12;          // Total Columns For Main Container
     @include transition(.3s);
     -webkit-transform: none;
     background-color: $supernova;
-    border-top: 68px solid $dark-color;
+    border-top: 78px solid $dark-color;
     height: 0;
     left: -15px;
     margin: 0;

@@ -4,6 +4,14 @@
 //
 // *************************************
 
+@mixin mask($radius: 0 0 50% 50%, $border: 70px, $shadow: 200) {
+    border-radius:$radius;
+    border: $border solid #28ead7;
+    border-top: 0;
+    box-shadow: 0 rem($shadow) 0 0 #ffffff;
+}
+
+
 body,
 html {
   margin: 0;
@@ -11,110 +19,15 @@ html {
 }
 
 body {
-  background: $base-background-color;
+  background: $white;
 }
 
-.main-banner {
-  background: url('/build/img/2016/cover.png') no-repeat center center $nightrider;
-  background-size: cover;
-  min-height: 100vh;
-  width: 100%;
 
-  @include media($screen-small) {
-    background-image: url('/build/img/2016/cover.png'), url('/build/img/2016/ellipse_1.png');
-    background-size: cover;
-  }
-
-  &__tablet {
-    @include span-columns(4 of 12);
-    float: right;
-    display: none;
-
-    img {
-      max-width: 390px;
-      padding-top: 180px;
-      width: 100%;
-      float: right;
-    }
-
-    @include media($screen-small) {
-      display: none;
-    }
-  }
-
-  &__content {
-    max-width: 700px;
-    min-height: 100vh;
-    text-align: center;
-    margin: 0 auto;
-    padding-top: rem(70);
-    @include align-items(center);
-    @include display(flex);
-    @include flex-direction(column);
-    @include justify-content(space-around);
-
-    @include media($screen-small) {
-
-    }
-
-  }
-
-  &__h1 {
-    color: $supernova;
-    font-family: $heading-font-family;
-    font-size: rem(48);
-    font-weight: 900;
-    text-transform:uppercase;
-    margin-top: rem(100);
-    margin-bottom: rem(10);
-
-    @include media($screen-small) {
-      font-size: rem(38);
-      margin-top: rem(140);
-      padding:0 rem(10);
-    }
-
-  }
-
-  &__h2 {
-    color: $white;
-    font-family: $base-font-family;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: rem(40);
-    font-weight: 200;
-    padding:0 rem(10);
-    @include media($screen-small) {
-      font-size: 16px;
-      line-height: rem(30);
-    }
-
-    strong {
-      font-weight: 600;
-    }
-  }
-
-  &__scroll-page{
-    width: rem(45);
-    height: rem(45);
-    margin-top: rem(50);
-    background: url('/build/img/2016/arrow-scroll-down.png');
-    display: inline-flex;
-    @include border-top-radius(50%);
-    @include border-right-radius(50%);
-    @include border-bottom-radius(50%);
-    @include border-left-radius(50%);
-
-    @include media($screen-small) {
-
-    }
-
-  }
-}
+@import "_main-banner";
 
 .service {
   @include span-columns(12);
-  background: $supernova;
+  background: $white;
   min-height: rem(690);
 
   &__content {

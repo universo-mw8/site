@@ -1,0 +1,149 @@
+@mixin mask($radius: 0 0 50% 50%, $border: 70px, $shadow: 200) {
+    border-radius:$radius;
+    border: $border solid #28ead7;
+    border-top: 0;
+    box-shadow: 0 rem($shadow) 0 0 #ffffff;
+}
+
+
+.main-banner {
+  min-height: 100vh;
+  width: 100%;
+
+  @include media($screen-small) {
+  }
+
+  &__tablet {
+    @include span-columns(4 of 12);
+    float: right;
+    display: none;
+
+    img {
+      max-width: 390px;
+      padding-top: 180px;
+      width: 100%;
+      float: right;
+    }
+
+    @include media($screen-small) {
+      display: none;
+    }
+  }
+
+  &__mask {
+      overflow: hidden;
+      position: absolute;
+      bottom:0;
+      @include size(100% 100%);
+
+      &:before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        @include mask(0 0 50% 50%, 50px, 280);
+        @include size(140vw 140vh);
+        margin-left: calc(70% - 140vw);
+      }
+
+      &--banner{
+        overflow: hidden;
+        @include size(120vw 120vh);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #4d6f85;
+        background-blend-mode: multiply
+      }
+
+      @include media($screen-small) {
+        &:before{
+          height: 40%;
+          @include mask(0 0 50% 50%, 40px, 130);
+        }
+      }
+
+      @include media($screen-medium) {
+        &:before{
+          height: 50%;
+          @include mask(0 0 50% 50%, 50px, 150);
+        }
+      }
+
+
+  }
+
+  &__content {
+    position:relative;
+    max-width: 700px;
+    min-height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: rem(70);
+    @include align-items(center);
+    @include display(flex);
+    @include flex-direction(column);
+    @include justify-content(space-around);
+
+    @include media($screen-small) {
+
+    }
+  }
+
+  &__h1 {
+    color: $supernova;
+    font-family: $heading-font-family;
+    font-size: rem(58);
+    font-weight: 900;
+    text-transform:uppercase;
+    margin-top: rem(150);
+    margin-bottom: rem(10);
+
+    @include media($screen-small) {
+      font-size: rem(40);
+      margin-top: rem(140);
+      padding:0 rem(20);
+    }
+
+  }
+
+  &__h2 {
+    color: $white;
+    font-family: $base-font-family;
+    font-size: rem(28);
+    font-weight: 400;
+    line-height: rem(40);
+    font-weight: 200;
+    padding:0 rem(20);
+    @include media($screen-small) {
+      font-size: rem(22);
+      line-height: rem(30);
+    }
+
+    strong {
+      font-weight: 600;
+    }
+  }
+
+  &__scroll-page{
+    width: rem(45);
+    height: rem(45);
+    margin-bottom: rem(230);
+    background: url('/build/img/2016/arrow-scroll-down.png');
+    display: inline-flex;
+    @include border-top-radius(50%);
+    @include border-right-radius(50%);
+    @include border-bottom-radius(50%);
+    @include border-left-radius(50%);
+
+    @include media($screen-medium) {
+      margin-bottom: rem(180);
+    }
+
+    @include media($screen-small) {
+      margin-bottom: rem(130);
+    }
+
+  }
+
+}
