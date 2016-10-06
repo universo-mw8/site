@@ -4,14 +4,6 @@
 //
 // *************************************
 
-@mixin mask($radius: 0 0 50% 50%, $border: 70px, $shadow: 200) {
-    border-radius:$radius;
-    border: $border solid #28ead7;
-    border-top: 0;
-    box-shadow: 0 rem($shadow) 0 0 #ffffff;
-}
-
-
 body,
 html {
   margin: 0;
@@ -22,62 +14,8 @@ body {
   background: $white;
 }
 
-
 @import "_main-banner";
-
-.service {
-  @include span-columns(12);
-  background: $white;
-  min-height: rem(690);
-
-  &__content {
-    @include outer-container();
-    padding-top: rem(144);
-    text-align: center;
-    @include media($screen-small) {
-      @include pad($base-spacing);
-    }
-  }
-
-  &__col {
-    @include span-columns(6 of 12);
-    @include media($screen-small) {
-      @include span-columns(12);
-      img {
-        max-width: 80%;
-        margin: 0 auto;
-      }
-    }
-
-    &--pic {
-      @include media($screen-small) {
-        margin-bottom: 45px;
-      }
-    }
-  }
-
-  &__title {
-    color: $nightrider;
-    font-size: rem(46);
-    font-weight: 900;
-  }
-
-  &__description {
-    color: $white;
-    font-family: $base-font-family;
-    font-size: rem(20);
-    font-weight: 200;
-    @include media($screen-small) {
-      font-size: rem(18);
-    }
-  }
-
-  .btn {
-    margin-top: rem(50);
-  }
-
-}
-
+@import "_services";
 
 .mvp {
   @include span-columns(12);

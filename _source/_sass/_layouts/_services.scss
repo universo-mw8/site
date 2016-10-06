@@ -1,0 +1,132 @@
+.service {
+  @include span-columns(12);
+  background: $white;
+  min-height: rem(500);
+
+  &__content {
+    @include outer-container();
+    padding-top: rem(20);
+    text-align: center;
+    @include media($screen-small) {
+      @include pad($base-spacing);
+      padding-bottom:0;
+    }
+  }
+
+  &__title {
+    // color: $nightrider;
+    color:#4d6f85;
+    font-size: rem(54);
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: rem(10);
+  }
+
+  &__description {
+    color:#4d6f85;
+    font-family: $base-font-family;
+    font-size: rem(20);
+    font-weight: 200;
+    @include media($screen-small) {
+      font-size: rem(18);
+    }
+  }
+
+  &__processes{
+    
+    @include outer-container();
+    @include align-items(center);
+    @include display(flex);
+    @include flex-direction(row);
+    @include justify-content(center);
+    text-align: center;
+    @include pad($base-spacing);
+    padding-top:0;
+
+    @include media($screen-tiny) {
+      @include align-items(center);
+      @include display(flex);
+      @include flex-direction(column);
+      @include justify-content(center);
+    }
+
+    &--item{
+      display: inline-block;
+      padding:0 rem(40) 0 0;
+      position: relative;
+     
+      @include media($screen-tiny) {
+        padding:0 0 rem(40) 0;
+        @include flex-direction(column);
+      }
+
+      &:after{
+        content: "";
+        width: 12px;
+        height: 21px;
+        position: absolute;
+        top: 29.5%;
+        right: 15px;
+        background-image: url(/build/img/2016/arrow-next.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        @include media($screen-tiny) {
+          bottom: 0;
+          top: 83%;
+          right: 44%;
+          transform: rotate(-270deg);
+        }
+
+      }
+
+      &:last-child{
+        padding: 0;
+        &:after{
+          display: none;
+        }
+      }
+    }
+
+    &--icon{
+      @include size(120px 120px);
+      display: block;
+      color: #20b5ac;
+      border:5px solid #20b5ac;
+      border-radius:50%;
+      background-repeat: no-repeat;
+      background-position: center center; 
+    }
+
+    &--icon__ok{
+      background-image: url('/build/img/2016/service-icon-ok.png');
+    }
+
+    &--icon__search{
+      background-image: url('/build/img/2016/service-icon-search.png');
+    }
+
+    &--icon__setting{
+      background-image: url('/build/img/2016/service-icon-setting.png');
+    }
+    
+    &--icon__write{
+      background-image: url('/build/img/2016/service-icon-write.png');
+    }
+
+    &--text{
+      color:#4d6f85;
+      font-size: 16px;
+      font-weight: 900;
+      margin: 0;
+      margin-top: rem(20);
+      
+      @include media($screen-tiny) {
+        margin-top: rem(10);
+      }
+
+    }
+
+  }
+
+}
