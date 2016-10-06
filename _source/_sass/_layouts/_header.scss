@@ -44,8 +44,8 @@ $fg-max-columns: 12;          // Total Columns For Main Container
   @include media($screen-small) {
     @include transition(.3s);
     -webkit-transform: none;
-    background-color: $supernova;
-    border-top: 78px solid $dark-color;
+    background-color: #28ead7;
+    border-top: 78px solid #4c6f85;
     height: 0;
     left: -15px;
     margin: 0;
@@ -56,7 +56,6 @@ $fg-max-columns: 12;          // Total Columns For Main Container
     transform: none;
     z-index: -1;
     &--is-open {
-      border-top: 68px solid $dark-color;
       position: fixed;
       height: 100%;
       margin-top: 0;
@@ -111,30 +110,10 @@ $fg-max-columns: 12;          // Total Columns For Main Container
   }
 }
 
-// Item button on Navigation
-.header-navigation__item--btn {
-  border-radius: 4px;
-  border: 1px solid $white;
-  padding: 6px 17px;
-
-  &::after {
-    background: url('/build/img/2016/arrow-btn.svg') no-repeat top center;
-    content: '';
-    display: block;
-    height: 9px;
-    position: static;
-    width: 63px;
-    @include media($screen-small) {
-      background: url('/build/img/2016/arrow-btn.svg') no-repeat top center;
-      width: 100%;
-    }
-  }
-}
-
 .btn-toggle:hover {
   &::after,
   &::before {
-      background: $supernova;
+      background: $white;
   }
 }
 .btn-toggle {
@@ -146,7 +125,7 @@ $fg-max-columns: 12;          // Total Columns For Main Container
   text-decoration: none;
 
   &:hover{
-    background: $supernova;
+    background: $white;
   }
 
   // toggle icon hidden on large screens
