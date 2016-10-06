@@ -1,0 +1,76 @@
+.methodology {
+  @include span-columns(12);
+  background: url('/build/img/2016/background-meto.jpg') no-repeat top center $nightrider;
+  background-size: cover;
+  min-height: rem(690);
+
+  &__content {
+    @include outer-container();
+    padding-top: rem(120);
+    text-align: center;
+
+    @include media($screen-small) {
+      @include pad(rem(90) $base-spacing);
+    }
+  }
+
+  &__result {
+    border-bottom: 5px solid $supernova;
+    color: $white;
+    font-size: rem(14);
+    text-transform: uppercase;
+  }
+
+  &__title {
+    color: $supernova;
+    font-size: rem(46);
+    font-weight: 900;
+    margin-top: rem(20);
+  }
+
+  &__description {
+    font-family: $base-font-family;
+    font-size: rem(32);
+    font-weight: 200;
+
+    @include media($screen-small) {
+      font-size: rem(18);
+    }
+  }
+
+  &__play {
+    display: block;
+    margin: 0 auto;
+    width: rem(150);
+
+    .icon {
+      @include size(140px);
+      background: url('/build/img/2016/play-video.svg') no-repeat top center;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .text {
+      display: inline-block;
+      font-size: rem(22);
+      margin-top: rem(10);
+
+      &::after {
+        background: url('/build/img/2016/arrow.svg') no-repeat top right;
+        content: '';
+        display: block;
+        height: 9px;
+        position: static;
+        width: 100%;
+      }
+    }
+
+  }
+
+  &__play:hover {
+    .text {
+      color: $supernova;
+    }
+  }
+
+}
