@@ -1,11 +1,16 @@
 .service {
   @include span-columns(12);
+  @include pad(6.8rem 0) ;
   background: $white;
   min-height: rem(500);
   
 
   @include media($screen-small) {
-    @include pad(3rem 0) ;
+    @include pad(rem(120) 0) ;
+  }
+
+  @include media($screen-tiny) {
+    @include pad(rem(50) 0) ;
   }
 
   &__content {
