@@ -1,5 +1,28 @@
 $(document).ready(function(){
 
+
+  var owl = $('#owl2row-plugin');
+  owl.owlCarousel({
+    loop: true,
+      margin: 10,
+      nav: true,
+      owl2row: true, // enable plugin
+      owl2rowTarget: 'item',    // class for items in carousel div
+      owl2rowContainer: 'owl2row-item', // class for items container
+      owl2rowDirection: 'utd', // ltr : directions
+      responsive: {
+      0: {
+        items: 2
+      },
+      600: {
+              items: 3
+          },
+          1000: {
+              items: 5
+          }
+    }
+  });
+
   var ptPage = $('html[lang=pt]');
   // Slider of testimonials
   //---------------------------------------------------------------
