@@ -1,0 +1,61 @@
+.showreel {
+  @include span-columns(12);
+  background-color: $showreel;
+  background-size: cover;
+  height: rem(420px);
+
+  &__content {
+    @include outer-container();
+    padding-top: rem(60);
+    text-align: center;
+
+    @include media($screen-small) {
+      @include pad(rem(90) $base-spacing);
+    }
+  }
+
+  &__result {
+    border-bottom: 5px solid $supernova;
+    color: $white;
+    font-size: rem(14);
+    text-transform: uppercase;
+  }
+
+  &__title {
+    color: $white;
+    text-transform: uppercase;
+    font-size: rem(32);
+    font-weight: 900;
+    margin-top: rem(20);
+    line-height: 0;
+  }
+
+  &__description {
+    font-family: $base-font-family;
+    font-size: rem(18);
+    font-weight: 400;
+
+    @include media($screen-small) {
+      font-size: rem(18);
+    }
+  }
+
+  &__play {
+    display: block;
+    margin: 0 auto;
+    margin-top: rem(40px);
+    width: rem(150);
+    .icon {
+      @include size(45px);
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__play:hover {
+    .text {
+      color: $supernova;
+    }
+  }
+
+}
