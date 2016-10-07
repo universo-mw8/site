@@ -5,20 +5,8 @@ layout: default
 {% include main-banner.html %}
 
 {% include services.html %}
+
 {% include showreel.html %}
 
-<section class="projects">
-  <div class="projects__content">
-    <h2 class="projects__title">Portfólio</h2>
-    <p class="projects__description">Lorem ipsum dolor sit amet.</p>
-  </div>
+{% include portfolio.html %}
 
-  <div class="projects__grid">
-  {% for project in site.data.projects %}
-    <a class="projects__item" href="#" target="_blank" title="Projeto {{ project.name }}">
-      <img src="{{ project.image }}" alt="{{ project.name }}" />
-      <span class="projects__name">{{ project.name }}</span>
-    </a>
-  {% endfor %}
-  </div>
-</section>

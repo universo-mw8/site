@@ -1,0 +1,168 @@
+
+.portfolio {
+  @include span-columns(12);
+  background: $supernova;
+  // min-height: rem(690);
+  @include pad(rem(100) 0);
+  clear: both;
+
+  &__content {
+    @include outer-container();
+    // padding-top: rem(50);
+    text-align: center;
+  }
+
+  &__result {
+    border-bottom: 5px solid $white;
+    color: $white;
+    font-size: rem(14);
+    text-transform: uppercase;
+  }
+
+  &__title {
+    color: $white;
+    font-size: rem(56);
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  &__description {
+    font-family: $base-font-family;
+    font-size: rem(26);
+    font-weight: 200;
+  }
+
+
+  &__filter{
+    @include outer-container(960px);
+    padding: rem(40) 0;
+    text-align: center;
+
+    &__item{
+      display: inline-block;
+      padding: 0 rem(40);
+      font-size: rem(24);
+      font-weight: 400;
+      text-transform: uppercase;
+      color: $white;
+
+      a{
+        position: relative;
+        &:hover{
+          color: $white;
+        }
+      }
+
+      
+
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 3px;
+        background:#4d6f85;
+        opacity: 0;
+        @include transition(all .5s ease-in-out);
+        @include transform(translateY(60px));
+      }
+
+      &:hover:after, , &--is-active:after{
+        // background: rgba($black, 0.0) none repeat scroll 0 0;
+        opacity: 1;
+        @include transform(translateY(-20px));
+      }
+
+    }
+
+    &__cat{
+    }
+    
+  }
+
+
+  
+
+  &__grid {
+    // background: black none repeat scroll 0 0;
+    // float: left;
+    // margin: 0 auto;
+    // max-width: 100%;
+    // max-width: rem(1400);
+    @include outer-container(960px);
+    // display: flex;
+    @include align-items(center);
+    @include display(flex);
+    @include flex-direction(row);
+    @include justify-content(space-around);
+    flex-flow: row wrap;
+  }
+
+  &__item {
+    display: inline-block;
+    flex-grow: 1;
+    background: $whisper;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    height: rem(200);
+    display: inline-flex;
+    width: calc(100% * (1/3));
+
+    &::after {
+      // background: rgba($black, 0.4) none repeat scroll 0 0;
+      // content: "";
+      // display: block;
+      // height: rem(600);
+      // left: 0;
+      // position: absolute;
+      // width: 100%;
+      // transition: all .2s;
+    }
+    &:hover:after {
+      // background: rgba($black, 0.0) none repeat scroll 0 0;
+    }
+    &:nth-child(even){
+      background:$white;
+    }
+
+    @include media($screen-medium) {
+      // width: 20%;
+    }
+
+    @include media($screen-small) {
+      // width: 50%;
+    }
+
+    img {
+      @include filter(grayscale(100%));
+      @include size(100% auto);
+      float: left;
+      transition: all .5s;
+    }
+
+    &:hover {
+      img {
+        @include filter(grayscale(0));
+        opacity: 1;
+      }
+
+      .portfolio__name{
+        height: auto;
+      }
+
+    }
+  }
+
+  &__name {
+    //padding: 5px;
+    @include position(absolute, null null 0 0);
+    @include size(100% 0);
+    @include transition(all .2s);
+    background: $nightrider;
+    color: $white;
+    font-family: $base-font-family;
+    font-size: rem(14);
+    text-align: center;
+  }
+}
