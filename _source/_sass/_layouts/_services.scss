@@ -2,14 +2,18 @@
   @include span-columns(12);
   background: $white;
   min-height: rem(500);
+  
+
+  @include media($screen-small) {
+    @include pad(3rem 0) ;
+  }
 
   &__content {
     @include outer-container();
-    padding-top: rem(20);
+    // padding-top: rem(20);
     text-align: center;
     @include media($screen-small) {
-      @include pad($base-spacing);
-      padding-bottom:0;
+      @include pad(0 $base-spacing);
     }
   }
 
@@ -39,25 +43,25 @@
     @include display(flex);
     @include flex-direction(row);
     @include justify-content(center);
+    @include pad(0 $base-spacing);
     text-align: center;
-    @include pad($base-spacing);
-    padding-top:0;
 
     @include media($screen-tiny) {
-      @include align-items(center);
-      @include display(flex);
       @include flex-direction(column);
-      @include justify-content(center);
     }
+   
 
     &--item{
       display: inline-block;
       padding:0 rem(40) 0 0;
       position: relative;
      
+      @include media($screen-small) {
+        padding:0 rem(30) 0 0;
+      }
+
       @include media($screen-tiny) {
         padding:0 0 rem(40) 0;
-        @include flex-direction(column);
       }
 
       &:after{
@@ -70,6 +74,10 @@
         background-image: url(/build/img/2016/arrow-next.png);
         background-position: center center;
         background-repeat: no-repeat;
+
+        @include media($screen-small) {
+          right: 10px;
+        }
 
         @include media($screen-tiny) {
           bottom: 0;
@@ -96,6 +104,13 @@
       border-radius:50%;
       background-repeat: no-repeat;
       background-position: center center; 
+     
+      @include media($screen-small) {
+        @include size(90px 90px);
+      }
+      @include media($screen-tiny) {
+        @include size(120px 120px);
+      }
     }
 
     &--icon__ok{
@@ -122,7 +137,7 @@
       margin-top: rem(20);
       
       @include media($screen-tiny) {
-        margin-top: rem(10);
+        margin-top: rem(12);
       }
 
     }
