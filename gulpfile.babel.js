@@ -25,14 +25,16 @@ const srcPaths = {
   js: '_source/_js/**/*.js',
   css: '_source/_sass/**/*.scss',
   mainSass: '_source/_sass/main.scss',
-  img: '_source/_img/**/*'
+  img: '_source/_img/**/*',
+  assets: '_source/_assets/**/*',
 };
 
 const buildPaths = {
   build: 'build/**/*',
   js: 'build/js/',
   css: 'build/css/',
-  img: 'build/img/'
+  img: 'build/img/',
+  assets: 'build/assets/'
 };
 
 gulp.task('jekyll-build', (done) => {
@@ -87,6 +89,11 @@ gulp.task('images', () => {
   .pipe(gulp.dest(buildPaths.img));
 });
 
+gulp.task('assets', () => {
+  gulp.src(srcPaths.assets)
+  .pipe(gulp.dest(buildPaths.assets));
+});
+
 gulp.task('watch', () => {
   gulp.watch(srcPaths.css, ['css']);
   gulp.watch(srcPaths.js, ['js']);
@@ -99,7 +106,7 @@ gulp.task('deploy', () => {
   .pipe(ghPages());
 });
 
-gulp.task('build', ['js', 'css']);
+gulp.task('build', ['js', 'css', 'assets']);
 
-gulp.task('default', ['css', 'js', 'images', 'watch', 'browser-sync']);
-gulp.task('deploy', ['css', 'js', 'images', 'pages']);
+gulp.task('default', ['css', 'js', 'images', 'assets', 'watch', 'browser-sync']);
+gulp.task('deploy', ['css', 'js', 'images', 'assets', 'pages']);
