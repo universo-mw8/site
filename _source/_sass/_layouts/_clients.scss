@@ -1,0 +1,143 @@
+
+.clients {
+  @include span-columns(12);
+  background: $supernova;
+  // min-height: rem(690);
+  @include pad(rem(100) 0);
+  clear: both;
+
+  &__content {
+    @include outer-container();
+    // padding-top: rem(50);
+    text-align: center;
+  }
+
+  &__result {
+    border-bottom: 5px solid $white;
+    color: $white;
+    font-size: rem(14);
+    text-transform: uppercase;
+  }
+
+  &__title {
+    color: $white;
+    font-size: rem(62);
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  &__description {
+    font-family: $base-font-family;
+    font-size: rem(26);
+    font-weight: 200;
+    margin-bottom: rem(80);
+  }
+
+  &__grid {
+    @include outer-container(960px);
+  }
+
+
+  &__item {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    height: rem(100);
+    width:100%;
+    margin:rem(20) 0;
+
+    @include media($screen-medium) {
+      // width: 20%;
+    }
+
+    @include media($screen-small) {
+      // width: 50%;
+    }
+
+    img {
+      @include filter(grayscale(100%));
+      @include size(100% auto);
+      float: left;
+      transition: all .5s;
+    }
+
+    &:hover {
+      img {
+        @include filter(grayscale(0));
+        opacity: 1;
+      }
+
+      .clients__name{
+        height: auto;
+      }
+
+    }
+  }
+
+  .owl-carousel .owl-item {
+    float: left;
+
+    &:nth-child(odd){
+      .clients__item{
+        &:nth-child(odd){
+          background:url('https://git-scm.com/images/logos/downloads/Git-Logo-White.png') no-repeat center center;
+          background-size: contain;
+        }
+        &:nth-child(even){
+          background:url('https://www.w3.org/html/logo/downloads/HTML5_1Color_White.png') no-repeat center center;
+          background-size: contain;
+        }
+      }
+    }
+
+    &:nth-child(even){
+      .clients__item{
+        &:nth-child(odd){
+          background:url('https://www.w3.org/html/logo/downloads/HTML5_1Color_White.png') no-repeat center center;
+          background-size: contain;
+        }
+        &:nth-child(even){
+          background:url('https://git-scm.com/images/logos/downloads/Git-Logo-White.png') no-repeat center center;
+          background-size: contain;
+        }
+      }
+    }
+  }
+  
+  .owl-carousel .owl-stage-outer{
+    position: relative;
+    z-index: 99;
+  }
+
+  .owl-nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .owl-next, .owl-prev {
+    position: absolute;
+    top: 0;
+    width: 21px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+     /* Hide the text. */
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: 3;
+  }
+  .owl-prev {
+    left: -50px;
+    background-image:url('/build/img/2016/arrow-port-prev.png');
+  }
+  .owl-next {
+    right: -50px;
+    background-image:url('/build/img/2016/arrow-port-next.png');
+  }
+
+
+}
