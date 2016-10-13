@@ -1,14 +1,3 @@
-@mixin mask($radius: 0 0 50% 50%, $border: 70px, $shadow: 200) {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  border-radius:$radius;
-  border: $border solid #20b5ac;
-  border-top: 0;
-  box-shadow: 0 rem($shadow) 0 0 #ffffff;
-}
-
 
 .main-banner {
   min-height: 100vh;
@@ -41,7 +30,7 @@
       @include size(100% 100%);
 
       &:before{
-        @include mask(0 0 50% 50%, 65px, 280);
+        @include mask(0 0 50% 50%, 65px, 280, $supernova, $white);
         bottom:10px;
         @include size(250vw 475vh);
         margin-left: calc(125vw - 250vw);
@@ -57,7 +46,7 @@
         background-blend-mode: multiply;
 
          &:after{
-          @include mask(0 0 50% 50%, 80px, 0);
+          @include mask(0 0 50% 50%, 80px, 0, $supernova, $white);
           @include size(150vw 220vh);
           margin-left: calc(75vw - 150vw);
         }
@@ -81,14 +70,14 @@
       @include media($screen-small) {
         &:before{
           height: 180%;
-          @include mask(0 0 50% 50%, 40px, 130);
+          @include mask(0 0 50% 50%, 40px, 130, $supernova, $white);
         }
       }
 
       @include media($screen-medium) {
         &:before{
           height: 120%;
-          @include mask(0 0 50% 50%, 50px, 150);
+          @include mask(0 0 50% 50%, 50px, 150, $supernova, $white);
         }
       }
 

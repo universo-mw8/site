@@ -11,3 +11,14 @@
     -ms-transition:     $what $length $easing;
     transition:         $what $length $easing;
 }
+
+@mixin mask($radius: 0 0 50% 50%, $border: 70px, $shadow: 200, $border-color: #000, $shadow-color: #000) {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  border-radius:$radius;
+  border: $border solid $border-color;
+  border-top: 0;
+  box-shadow: 0 rem($shadow) 0 0 $shadow-color;
+}

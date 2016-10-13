@@ -1,3 +1,47 @@
 .about {
-  
+  @include span-columns(12);
+  background: $white;
+  @include pad(rem(100) 0);
+  clear: both;
+
+  &__content {
+    @include outer-container();
+    text-align: center;
+  }
+
+  &__title {
+    color: $supernova;
+    font-size: rem(56);
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  &__mask {
+    overflow: hidden;
+    position: relative;
+
+    &:before{
+      @include mask(50% 50% 0 0, 65px, 280);
+      bottom:10px;
+      @include size(250vw 475vh);
+      margin-left: calc(125vw - 250vw);
+    }
+
+    &--banner{
+      overflow: hidden;
+      @include size(120vw 120vh);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-color: #4d6f85;
+      background-blend-mode: multiply;
+
+       &:after{
+        @include mask(50% 50% 0 0, 0, 80px);
+        @include size(150vw 220vh);
+        margin-left: calc(75vw - 150vw);
+      }
+    }
+  }
 }
