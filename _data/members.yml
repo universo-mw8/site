@@ -1,8 +1,96 @@
-- name: Caio Alcantara
-  image: /images/members/caio.png
+- name: Lipeta
+  image: build/img/members/lipeta.jpg
 
 - name: Mateus Mohamed
-  image: /images/members/mohamed.png
+  image: build/img/members/mohamed.jpg
 
-- name: Waldo Souza
-  image: /images/members/waldo.png
+- name: Caio Lucas
+  image: build/img/members/caio.jpg
+
+- name: Julia Avena
+  image: build/img/members/julia.jpg
+
+- name: Julia Avena
+  image: build/img/members/julia.jpg
+
+- name: Caio Lucas
+  image: build/img/members/caio.jpg
+
+- name: Mateus Mohamed
+  image: build/img/members/mohamed.jpg
+
+- name: Lipeta
+  image: build/img/members/lipeta.jpg
+
+- name: Mohamed
+  image: build/img/members/mohamed.jpg
+
+- name: Caio
+  image: build/img/members/caio.jpg
+
+- name: Lipeta
+  image: build/img/members/lipeta.jpg
+
+- name: Julia Avena
+  image: build/img/members/julia.jpg
+
+- name: Caio
+  image: build/img/members/caio.jpg
+
+- name: Julia
+  image: build/img/members/julia.jpg
+
+- name: Lipeta
+  image: build/img/members/lipeta.jpg
+
+- name: Mohamed
+  image: build/img/members/mohamed.jpg
+
+- name: Lipeta
+  image: build/img/members/lipeta.jpg
+
+- name: Mateus Mohamed
+  image: build/img/members/mohamed.jpg
+
+- name: Caio Lucas
+  image: build/img/members/caio.jpg
+
+- name: Julia Avena
+  image: build/img/members/julia.jpg
+
+- name: Julia Avena
+  image: build/img/members/julia.jpg
+
+- name: Caio Lucas
+  image: build/img/members/caio.jpg
+
+- name: Mateus Mohamed
+  image: build/img/members/mohamed.jpg
+
+- name: Lipeta
+  image: build/img/members/lipeta.jpg
+
+- name: Mohamed
+  image: build/img/members/mohamed.jpg
+
+- name: Caio
+  image: build/img/members/caio.jpg
+
+- name: Lipeta
+  image: build/img/members/lipeta.jpg
+
+- name: Julia Avena
+  image: build/img/members/julia.jpg
+
+- name: Caio
+  image: build/img/members/caio.jpg
+
+- name: Julia
+  image: build/img/members/julia.jpg
+
+- name: Lipeta
+  image: build/img/members/lipeta.jpg
+
+- name: Mohamed
+  image: build/img/members/mohamed.jpg
+  
