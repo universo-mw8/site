@@ -56,6 +56,11 @@
       }
     }
 
+    &__team {
+      margin-top: rem(190);
+      @include media($screen-small) {}
+    }
+
   &-banner {
     overflow: hidden;
     position: relative;
