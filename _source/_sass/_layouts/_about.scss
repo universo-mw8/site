@@ -134,4 +134,8 @@
       @include size(92px);
     }
   }
+
+  &:hover {
+    transition: ease-out 1s;
+  }
 }
