@@ -10,12 +10,13 @@ $fg-max-columns: 12;          // Total Columns For Main Container
 
 .header {
   @include transition(.5s);
-  width: 100%;
+  width: 100vw;
   position: fixed;
   z-index: 900;
   // background: rgba(77, 111, 133, 0.298039);
   &__content {
-    width: flex-grid(12);        // returns (315px / 1020px) = 30.882353%;
+    width: 100vw;
+    // width: flex-grid(12);        // returns (315px / 1020px) = 30.882353%;
   }
 
   &__logo {

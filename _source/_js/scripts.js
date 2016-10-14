@@ -85,10 +85,10 @@ $(document).ready(function () {
 
 
   $(window).scroll(function () {
-    if ($(window).scrollTop() > 100) {
-      $('.header').css("background", "rgba(77,111,133,0.9)");
+    if ($(window).scrollTop() > 300 ){
+      $('.header').css("background", "rgba(77,111,133,0.4)");
     } else {
-      $('.header').css("background", "rgba(77,111,133,0.3)");
+      $('.header').css("background", "transparent");
     }
   });
 
