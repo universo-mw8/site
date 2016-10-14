@@ -153,124 +153,6 @@ $(document).ready(function () {
   //       minlength: jQuery.validator.format("Este campo deve conter, no mínimo, {0} caracteres"),
   //     }
 
-  //   },
-
-  //   // submit form
-  //   submitHandler: function (form) {
-  //     form.submit();
-  //   }
-
-
-  // });
-
-  // // Form Wufoo validated with jquery - EN
-  // //---------------------------------------------------------------
-  // $(".js-register-form-en").validate({
-
-  //   //debug: true,
-
-  //   // Define as regras
-  //   rules: {
-
-  //     Field43: {
-  //       //name
-  //       required: true,
-  //       minlength: 2
-  //     },
-
-  //     Field44: {
-  //       // sobrenome
-  //       required: true,
-  //       minlength: 2
-  //     },
-
-  //     Field41: {
-  //       // projeto e empresa
-  //       required: true,
-  //       minlength: 2
-  //     },
-
-  //     Field3: {
-  //       // email
-  //       required: true,
-  //       email: true
-  //     },
-
-  //     Field16: {
-  //       // telefone
-  //       //number: true,
-  //       required: true
-  //     },
-
-  //     Field52: {
-  //       // skype
-  //       required: false,
-  //       minlength: 2
-  //     },
-
-  //     Field48: {
-  //       // descriçao do projeto
-  //       required: true,
-  //       minlength: 2
-  //     }
-
-  //   },
-
-  //   // Define as mensagens de erro para cada regra
-  //   messages: {
-
-  //     maxlength: jQuery.validator.format("Please enter no more than {0} characters."),
-  //     minlength: jQuery.validator.format("Please enter at least {0} caracteres"),
-
-  //     Field43: {
-  //       //name
-  //       required: "Please fill out this field with your name"
-  //     },
-
-  //     Field44: {
-  //       // sobrenome
-  //       required: "Please fill out this field with your last name"
-  //     },
-
-  //     Field41: {
-  //       // projeto e empresa
-  //       required: "Please fill out with your project's name or company"
-  //     },
-
-  //     Field3: {
-  //       // email
-  //       required: "Please fill out this field with your email address"
-  //     },
-
-  //     Field16: {
-  //       // telefone
-  //       required: "Please fill out this field with your phone number"
-  //     },
-
-  //     Field52: {
-  //       // skype
-  //       required: "Please fill out this field with your username"
-  //     },
-
-  //     Field48: {
-  //       // descriçao do projeto
-  //       required: "Please, describe your project for us."
-  //     }
-
-  //   },
-
-  //   // submit form
-  //   submitHandler: function (form) {
-  //     form.submit();
-  //   }
-
-
-  // });
-
-  // jQuery.extend(jQuery.validator.messages, {
-
-  // });
-
   // Hamburger mobile menu
   //---------------------------------------------------------------
   var $btnMenu = $('.js-toggle-menu');
@@ -290,13 +172,13 @@ $(document).ready(function () {
 
   // Hash links
   //---------------------------------------------------------------
-  $('a.hash').click(function (event) {
-    event.preventDefault();
-    if (history.pushState) {
-      history.pushState(null, null, $(this).attr('href'));
-    }
-    return false;
-  });
+  // $('a.hash').click(function (event) {
+  //   event.preventDefault();
+  //   if (history.pushState) {
+  //     history.pushState(null, null, $(this).attr('href'));
+  //   }
+  //   return false;
+  // });
 
 
 });
