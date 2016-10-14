@@ -13,6 +13,7 @@ $fg-max-columns: 12;          // Total Columns For Main Container
   width: 100%;
   position: fixed;
   z-index: 900;
+  // background: rgba(77, 111, 133, 0.298039);
   &__content {
     width: flex-grid(12);        // returns (315px / 1020px) = 30.882353%;
   }

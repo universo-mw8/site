@@ -26,6 +26,7 @@ const srcPaths = {
   css: '_source/_sass/**/*.scss',
   mainSass: '_source/_sass/main.scss',
   img: '_source/_img/**/*',
+  videos: '_source/_videos/**/*',
   assets: '_source/_assets/**/*',
 };
 
@@ -34,6 +35,7 @@ const buildPaths = {
   js: 'build/js/',
   css: 'build/css/',
   img: 'build/img/',
+  videos: 'build/videos/',
   assets: 'build/assets/'
 };
 
@@ -94,6 +96,11 @@ gulp.task('assets', () => {
   .pipe(gulp.dest(buildPaths.assets));
 });
 
+gulp.task('videos', () => {
+  gulp.src(srcPaths.videos)
+  .pipe(gulp.dest(buildPaths.videos));
+});
+
 gulp.task('watch', () => {
   gulp.watch(srcPaths.css, ['css']);
   gulp.watch(srcPaths.js, ['js']);
@@ -106,7 +113,7 @@ gulp.task('deploy', () => {
   .pipe(ghPages());
 });
 
-gulp.task('build', ['js', 'css', 'assets']);
+gulp.task('build', ['js', 'css', 'assets', 'videos']);
 
-gulp.task('default', ['css', 'js', 'images', 'assets', 'watch', 'browser-sync']);
+gulp.task('default', ['css', 'js', 'images', 'assets', 'videos', 'watch', 'browser-sync']);
 gulp.task('deploy', ['css', 'js', 'images', 'assets', 'pages']);

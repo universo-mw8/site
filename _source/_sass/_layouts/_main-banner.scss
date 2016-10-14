@@ -23,6 +23,18 @@
     }
   }
 
+   &__video{
+      &:before{
+        content:'';
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+        background: rgba(77,111,133,0.5);
+      }
+    }
+
   &__mask {
       overflow: hidden;
       position: absolute;
@@ -30,15 +42,16 @@
       @include size(100% 100%);
 
       &:before{
-        @include mask(0 0 50% 50%, 65px, 280, $supernova, $white);
-        bottom:10px;
-        @include size(250vw 475vh);
-        margin-left: calc(125vw - 250vw);
+        @include mask(0 0 50% 50%, 45px, 280, $supernova, $white);
+        @include size(350vw 820vh);
+        margin-left: -175vw;
+        z-index: 1;
       }
 
-      &--banner{
+      &__content{
+
         overflow: hidden;
-        @include size(120vw 120vh);
+        @include size(100vw 100vh);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -46,9 +59,10 @@
         background-blend-mode: multiply;
 
          &:after{
-          @include mask(0 0 50% 50%, 80px, 0, $supernova, $white);
-          @include size(150vw 220vh);
-          margin-left: calc(75vw - 150vw);
+          @include mask(0 0 50% 50%, 110px, 0, $supernova, $white);
+          @include size(200vw 420vh);
+          bottom: -60px;
+          margin-left: -100vw;
         }
 
         @include media($screen-small) {
@@ -63,6 +77,10 @@
             content:'';
             display: none;
           }
+        }
+
+        &--is-video{
+          height: auto;
         }
 
       }
@@ -81,6 +99,8 @@
         }
       }
 
+
+     
 
   }
 
@@ -143,6 +163,8 @@
     margin-bottom: rem(230);
     background: url('/build/img/2016/arrow-scroll-down.png');
     display: inline-flex;
+    position: relative;
+    z-index: 2;
     @include border-top-radius(50%);
     @include border-right-radius(50%);
     @include border-bottom-radius(50%);
