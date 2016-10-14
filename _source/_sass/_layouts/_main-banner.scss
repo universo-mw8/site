@@ -7,23 +7,20 @@
   }
 
   &__tablet {
-    @include span-columns(4 of 12);
-    float: right;
+    @include size(100vw 100vh);
     display: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 
-    img {
-      max-width: 390px;
-      padding-top: 180px;
-      width: 100%;
-      float: right;
+    @include media($screen-medium) {
+      display: block;
     }
 
-    @include media($screen-small) {
-      display: none;
-    }
   }
 
    &__video{
+
       &:before{
         content:'';
         position:absolute;
@@ -42,22 +39,33 @@
       @include size(100% 100%);
 
       &:before{
-        @include mask(0 0 50% 50%, 45px, 280, $supernova, $white);
+        @include mask(0 0 50% 50%, 45px, 300, $supernova, $white);
         @include size(350vw 820vh);
         margin-left: -175vw;
         z-index: 1;
+      }
+
+      @include media($screen-small) {
+        &:before{
+          @include mask(0 0 50% 50%, 50px, 220, $supernova, $white);
+          bottom: 0;
+          width: 500vw;
+          margin-left: -250vw;
+        }
+      }
+
+      @include media($screen-medium) {
+        &:before{
+          @include mask(0 0 50% 50%, 50px, 220, $supernova, $white);
+          bottom: 20px;
+        }
       }
 
       &__content{
 
         overflow: hidden;
         @include size(100vw 100vh);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-color: #4d6f85;
-        background-blend-mode: multiply;
-
+        
          &:after{
           @include mask(0 0 50% 50%, 110px, 0, $supernova, $white);
           @include size(200vw 420vh);
@@ -67,40 +75,50 @@
 
         @include media($screen-small) {
           &:after{
-            content:'';
-            display: none;
+            @include mask(0 0 50% 50%, 130px, 0, $supernova, $white);
+            @include size(380vw 820vh);
+            bottom: -80px;
+            margin-left: -190vw;
           }
         }
 
         @include media($screen-medium) {
           &:after{
-            content:'';
-            display: none;
+            @include mask(0 0 50% 50%, 130px, 0, $supernova, $white);
+            @include size(200vw 340vh);
+            bottom: -60px;
+            margin-left: -100vw;
           }
         }
 
+        &--is-image{
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-color: #4d6f85;
+          background-blend-mode: multiply;
+        }
+
+
         &--is-video{
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          min-width: 100%;
+          min-height: 100%;
+          width: auto;
           height: auto;
+          z-index: -100;
+          transform: translateX(-50%) translateY(-50%);
+          background-size: cover;
+          transition: 1s opacity;
+
+          @include media($screen-medium) {
+            display: none;
+          }          
         }
 
       }
-
-      @include media($screen-small) {
-        &:before{
-          height: 180%;
-          @include mask(0 0 50% 50%, 40px, 130, $supernova, $white);
-        }
-      }
-
-      @include media($screen-medium) {
-        &:before{
-          height: 120%;
-          @include mask(0 0 50% 50%, 50px, 150, $supernova, $white);
-        }
-      }
-
-
-     
 
   }
 
