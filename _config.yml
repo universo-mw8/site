@@ -27,6 +27,14 @@ compress_html:
   endings: []
   profile: false
 
+# Links to include in menu navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+  - title: Empresa
+    url: /empresa
+
 exclude: [
   'package.json',
   '_source',
