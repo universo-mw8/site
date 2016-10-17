@@ -7,7 +7,8 @@
     <span class="about__subtitle">Lorem ipsum dolor sit amet.</span>
     <div class="about__team">
       {% for member in site.data.members %}
-        <img class="image__circle" src="{{ member.image }}" alt="{{ member.name }}">
+        <!-- <img class="image__circle" src="{{ member.image }}" alt="{{ member.name }}"> -->
+        <img class="image__circle" src="{{ member.image }}" data-gif="{{ member.gif }}" onmouseenter="this.src='{{ member.gif }}';" onmouseout="this.src='{{ member.image }}';" alt="{{ member.name }}">
       {% endfor %}
     </div>
   </div>

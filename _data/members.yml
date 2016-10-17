@@ -1,5 +1,6 @@
 - name: Lipeta
   image: build/img/members/lipeta.jpg
+  gif: build/img/members/uhum.gif
 
 - name: Mateus Mohamed
   image: build/img/members/mohamed.jpg
@@ -93,4 +94,3 @@
 
 - name: Mohamed
   image: build/img/members/mohamed.jpg
-  
