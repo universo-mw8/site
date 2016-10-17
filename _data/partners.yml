@@ -13,15 +13,15 @@
 -
   name: Expresso 2222
   url: "#"
-  image: /build/img/clientes/1_expresso_2222.jpg
+  image: /build/img/clientes/1_expresso_2222.png
 -
   name: GE 
   url: "#"
-  image: /build/img/clientes/1_ge.jpg
+  image: /build/img/clientes/1_ge.png
 -
   name: ProCorpo
   url: "#"
-  image: /build/img/clientes/1_pro_corpo.jpg
+  image: /build/img/clientes/1_procorpo.png
 -
   name: Arena Fonte Nova
   url: "#"
@@ -41,7 +41,7 @@
 -
   name: CLAB
   url: "#"
-  image: /build/img/clientes/clab.jpg
+  image: /build/img/clientes/clab.png
 -
   name: Continental
   url: "#"
@@ -49,7 +49,7 @@
 -
   name: Dentran BA
   url: "#"
-  image: /build/img/clientes/dentran_ba.png
+  image: /build/img/clientes/detran_ba.png
 -
   name: Estadão
   url: "#"
@@ -73,11 +73,11 @@
 -
   name: Magazine Luiza
   url: "#"
-  image: /build/img/clientes/magazine_luiza.jpg
+  image: /build/img/clientes/magazine_luiza.png
 -
   name: Mc Donalds
   url: "#"
-  image: /build/img/clientes/mcdonalds.jpg
+  image: /build/img/clientes/mcdonalds.png
 -
   name: Natura
   url: "#"
@@ -85,11 +85,11 @@
 -
   name: Odebrecht
   url: "#"
-  image: /build/img/clientes/odebrecht.jpg
+  image: /build/img/clientes/odebrecht.png
 -
   name: PDG
   url: "#"
-  image: /build/img/clientes/pdg.jpg
+  image: /build/img/clientes/pdg.png
 -
   name: Prefeitura de Aracaju
   url: "#"
@@ -97,15 +97,15 @@
 -
   name: Prefeitura de Salvador
   url: "#"
-  image: /build/img/clientes/prefeitura-de-salvador.jpg
+  image: /build/img/clientes/prefeitura-de-salvador.png
 -
   name: Prefeitura Nossa Senhora do Socorro
   url: "#"
-  image: /build/img/clientes/prefeitura_nossa_senhora_do_socorro.jpg
+  image: /build/img/clientes/prefeitura_nossa_senhora_do_socorro.png
 -
   name: Prefeitura São Cristovão
   url: "#"
-  image: /build/img/clientes/prefeitura_sao_cristovao.jpg
+  image: /build/img/clientes/prefeitura_sao_cristovao.png
 -
   name: Sesab
   url: "#"
@@ -113,4 +113,4 @@
 -
   name: Subway
   url: "#"
-  image: /build/img/clientes/subway.jpg
+  image: /build/img/clientes/subway.png

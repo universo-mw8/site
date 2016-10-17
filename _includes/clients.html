@@ -5,57 +5,27 @@
     </div>
 
     <div id="owl-carousel" class="owl-carousel clients__grid">
+        {% assign counter = 0 %}
+        {% for i in (1..7) %}
+            <div class="item">
+                <a class="clients__item" href="#" target="_blank" title="Projeto {{site.data.partners[counter].name}}">
+                    <div class="img" style="background-image:url('{{site.data.partners[counter].image}}')"></div>
+                </a>
+                 {% assign counter = counter | plus:1 %} 
+                <a class="clients__item" href="#" target="_blank" title="Projeto {{site.data.partners[counter].name}}">
+                    <div class="img" style="background-image:url('{{site.data.partners[counter].image}}')"></div>
+                </a>
+                 {% assign counter = counter | plus:1 %} 
+                <a class="clients__item" href="#" target="_blank" title="Projeto {{site.data.partners[counter].name}}">
+                    <div class="img" style="background-image:url('{{site.data.partners[counter].image}}')"></div>
+                </a>
+                 {% assign counter = counter | plus:1 %} 
+                <a class="clients__item" href="#" target="_blank" title="Projeto {{site.data.partners[counter].name}}">
+                    <div class="img" style="background-image:url('{{site.data.partners[counter].image}}')"></div>
+                </a>
+                 {% assign counter = counter | plus:1 %} 
+            </div>
+        {% endfor %}
 
-        <div class="item">
-            <a class="clients__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="clients__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="clients__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="clients__item" href="#" target="_blank" title="Projeto"></a>
-        </div>
-
-        <div class="item">
-            <a class="clients__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="clients__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="clients__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="clients__item" href="#" target="_blank" title="Projeto"></a>
-        </div>
-
-        <div class="item">
-            <a class="clients__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="clients__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="clients__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="clients__item" href="#" target="_blank" title="Projeto"></a>
-        </div>
-
-        <div class="item">
-            <a class="clients__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="clients__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="clients__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="clients__item" href="#" target="_blank" title="Projeto"></a>
-        </div>
-
-        <div class="item">
-            <a class="clients__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="clients__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="clients__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="clients__item" href="#" target="_blank" title="Projeto"></a>
-        </div>
-
-        <div class="item">
-            <a class="clients__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="clients__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="clients__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="clients__item" href="#" target="_blank" title="Projeto"></a>
-        </div>
-
-    </div>
-
+ </div>
 </section>
-
-
-<!--{% for project in site.data.clients %}
-<a class="clients__item" href="#" target="_blank" title="Projeto {{ project.name }}">
-    <img src="{{ project.image }}" alt="{{ project.name }}" />
-    <span class="clients__name">{{ project.name }}</span>
-</a>
-{% endfor %}-->
