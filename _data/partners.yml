@@ -1,8 +1,116 @@
-  -
-    name: Parceiro x
-    url: "#"
-    image: /images/partner/parceiro.png
-  -
-    name: Parceiro y
-    url: "#"
-    image: /images/partner/parceiro.png
+-
+  name: AMBEV
+  url: "#"
+  image: /build/img/clientes/1_ambev.png
+-
+  name: Samsung
+  url: "#"
+  image: /build/img/clientes/1_samsung.png
+-
+  name: Rei do Mate
+  url: "#"
+  image: /build/img/clientes/1_rei_do_mate.png
+-
+  name: Expresso 2222
+  url: "#"
+  image: /build/img/clientes/1_expresso_2222.jpg
+-
+  name: GE 
+  url: "#"
+  image: /build/img/clientes/1_ge.jpg
+-
+  name: ProCorpo
+  url: "#"
+  image: /build/img/clientes/1_pro_corpo.jpg
+-
+  name: Arena Fonte Nova
+  url: "#"
+  image: /build/img/clientes/arena_fonte_nova.png
+-
+  name: ABASE
+  url: "#"
+  image: /build/img/clientes/abase.png
+-
+  name: Beleza Natural
+  url: "#"
+  image: /build/img/clientes/beleza_natural.png
+-
+  name: Chilli Beans
+  url: "#"
+  image: /build/img/clientes/chilli_beans.png  
+-
+  name: CLAB
+  url: "#"
+  image: /build/img/clientes/clab.jpg
+-
+  name: Continental
+  url: "#"
+  image: /build/img/clientes/continental.png
+-
+  name: Dentran BA
+  url: "#"
+  image: /build/img/clientes/dentran_ba.png
+-
+  name: Estadão
+  url: "#"
+  image: /build/img/clientes/estadao.png  
+-
+  name: Instituto ACM
+  url: "#"
+  image: /build/img/clientes/iacm.png
+-
+  name: Lapa Interativa
+  url: "#"
+  image: /build/img/clientes/lapa_interativa.png
+-
+  name: Le Biscuit
+  url: "#"
+  image: /build/img/clientes/lebiscuit.png
+-
+  name: Lojas Guaibim
+  url: "#"
+  image: /build/img/clientes/lojas_guaibim.png
+-
+  name: Magazine Luiza
+  url: "#"
+  image: /build/img/clientes/magazine_luiza.jpg
+-
+  name: Mc Donalds
+  url: "#"
+  image: /build/img/clientes/mcdonalds.jpg
+-
+  name: Natura
+  url: "#"
+  image: /build/img/clientes/natura.png
+-
+  name: Odebrecht
+  url: "#"
+  image: /build/img/clientes/odebrecht.jpg
+-
+  name: PDG
+  url: "#"
+  image: /build/img/clientes/pdg.jpg
+-
+  name: Prefeitura de Aracaju
+  url: "#"
+  image: /build/img/clientes/prefeitura_de_aracaju.png
+-
+  name: Prefeitura de Salvador
+  url: "#"
+  image: /build/img/clientes/prefeitura-de-salvador.jpg
+-
+  name: Prefeitura Nossa Senhora do Socorro
+  url: "#"
+  image: /build/img/clientes/prefeitura_nossa_senhora_do_socorro.jpg
+-
+  name: Prefeitura São Cristovão
+  url: "#"
+  image: /build/img/clientes/prefeitura_sao_cristovao.jpg
+-
+  name: Sesab
+  url: "#"
+  image: /build/img/clientes/sesab.png  
+-
+  name: Subway
+  url: "#"
+  image: /build/img/clientes/subway.jpg

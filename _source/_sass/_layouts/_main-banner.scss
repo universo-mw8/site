@@ -124,6 +124,7 @@
 
   &__content {
     position:relative;
+    z-index: 900;
     max-width: 700px;
     min-height: 100vh;
     text-align: center;
@@ -142,8 +143,9 @@
   &__h1 {
     // color: $supernova;
     color: #28ead7;
-    font-family: $heading-font-family;
-    font-size: rem(58);
+    font-family: $panton-extrabold;
+    line-height: rem(90);
+    font-size: rem(88);
     font-weight: 900;
     text-transform:uppercase;
     margin-top: rem(150);
@@ -159,10 +161,10 @@
 
   &__h2 {
     color: $white;
-    font-family: $base-font-family;
+    font-family: $panton-regular;
     font-size: rem(28);
     font-weight: 400;
-    line-height: rem(40);
+    line-height: rem(30);
     font-weight: 200;
     padding:0 rem(20);
     @include media($screen-small) {
@@ -178,7 +180,7 @@
   &__scroll-page{
     width: rem(45);
     height: rem(45);
-    margin-bottom: rem(230);
+    margin-bottom: rem(100);
     background: url('/build/img/2016/arrow-scroll-down.png');
     display: inline-flex;
     position: relative;
