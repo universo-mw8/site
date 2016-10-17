@@ -35,6 +35,8 @@ links:
   - title: Empresa
     url: /empresa
 
+gems: [jekyll-admin]
+
 exclude: [
   'package.json',
   '_source',
