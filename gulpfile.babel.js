@@ -12,7 +12,7 @@ const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync');
 const cp = require('child_process');
-const sourcemaps  = require('gulp-sourcemaps');
+const sourcemaps = require('gulp-sourcemaps');
 const ghPages = require('gulp-gh-pages');
 const path = require('path');
 // const rollupConfig = require('./rollup.config');
@@ -28,6 +28,7 @@ const srcPaths = {
   img: '_source/_img/**/*',
   videos: '_source/_videos/**/*',
   assets: '_source/_assets/**/*',
+  fonts: '_source/_fonts/**/*'
 };
 
 const buildPaths = {
@@ -36,12 +37,15 @@ const buildPaths = {
   css: 'build/css/',
   img: 'build/img/',
   videos: 'build/videos/',
-  assets: 'build/assets/'
+  assets: 'build/assets/',
+  fonts: 'build/fonts/'
 };
 
 gulp.task('jekyll-build', (done) => {
   browserSync.notify(notification.jekyllBuild);
-  return cp.spawn('jekyll', ['build'], {stdio: 'inherit'}).on('close', done);
+  return cp.spawn('jekyll', ['build'], {
+    stdio: 'inherit'
+  }).on('close', done);
 });
 
 gulp.task('jekyll-rebuild', ['jekyll-build'], () => {
@@ -59,46 +63,53 @@ gulp.task('browser-sync', ['jekyll-build'], () => {
 
 gulp.task('css', () => {
   gulp.src(srcPaths.mainSass)
-  .pipe(plumber())
-  .pipe(sourcemaps.init())
-  .pipe(sass({
-    outputStyle: 'compressed'
-  }).on('error', sass.logError))
-  .pipe(gcmq())
-  .pipe(cssnano())
-  .pipe(sourcemaps.write('./'))
-  .pipe(gulp.dest('_site/build/css/'))
-  .pipe(browserSync.reload({stream:true}))
-  .pipe(gulp.dest(buildPaths.css));
+    .pipe(plumber())
+    .pipe(sourcemaps.init())
+    .pipe(sass({
+      outputStyle: 'compressed'
+    }).on('error', sass.logError))
+    .pipe(gcmq())
+    .pipe(cssnano())
+    .pipe(sourcemaps.write('./'))
+    .pipe(gulp.dest('_site/build/css/'))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
+    .pipe(gulp.dest(buildPaths.css));
 });
 
 gulp.task('js', () => {
   gulp.src(srcPaths.js)
-  .pipe(plumber())
-  // .pipe(rollup(rollupConfig))
-  .pipe(uglify())
-  .pipe(gulp.dest(buildPaths.js));
+    .pipe(plumber())
+    // .pipe(rollup(rollupConfig))
+    .pipe(uglify())
+    .pipe(gulp.dest(buildPaths.js));
 });
 
 gulp.task('images', () => {
   gulp.src(srcPaths.img)
-  .pipe(plumber())
-  .pipe(imagemin({
-    optimizationLevel: 3,
-    progressive: true,
-    interlaced: true
-  }))
-  .pipe(gulp.dest(buildPaths.img));
+    .pipe(plumber())
+    .pipe(imagemin({
+      optimizationLevel: 3,
+      progressive: true,
+      interlaced: true
+    }))
+    .pipe(gulp.dest(buildPaths.img));
 });
 
 gulp.task('assets', () => {
   gulp.src(srcPaths.assets)
-  .pipe(gulp.dest(buildPaths.assets));
+    .pipe(gulp.dest(buildPaths.assets));
 });
 
 gulp.task('videos', () => {
   gulp.src(srcPaths.videos)
-  .pipe(gulp.dest(buildPaths.videos));
+    .pipe(gulp.dest(buildPaths.videos));
+});
+
+gulp.task('fonts', () => {
+  gulp.src(srcPaths.fonts)
+    .pipe(gulp.dest(buildPaths.fonts));
 });
 
 gulp.task('watch', () => {
@@ -110,10 +121,10 @@ gulp.task('watch', () => {
 
 gulp.task('deploy', () => {
   gulp.src(['./_site/**/*', `!${buildPaths.build.map}`])
-  .pipe(ghPages());
+    .pipe(ghPages());
 });
 
-gulp.task('build', ['js', 'css', 'assets', 'videos']);
+gulp.task('build', ['js', 'css', 'assets', 'videos', 'fonts']);
 
-gulp.task('default', ['css', 'js', 'images', 'assets', 'videos', 'watch', 'browser-sync']);
-gulp.task('deploy', ['css', 'js', 'images', 'assets', 'pages']);
+gulp.task('default', ['css', 'js', 'images', 'assets', 'videos', 'fonts', 'watch', 'browser-sync']);
+gulp.task('deploy', ['css', 'js', 'images', 'assets', 'videos', 'fonts', 'pages']);
