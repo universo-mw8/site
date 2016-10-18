@@ -41,11 +41,13 @@
 
     &__subtitle {
       position: absolute;
-      top: rem(210px);
-      max-width: rem(250px);
-      color: $white;
+      top: 13.5rem;
+      max-width: 24rem;
+      font-size: 1.575rem;
+      font-weight: 300;
+      text-align: center;
+      color: $supernova;
       font-family: $heading-font-family;
-      font-size: rem(14);
       font-weight: 300;
       text-align: center;
 

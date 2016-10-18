@@ -1,5 +1,19 @@
 $(document).ready(function () {
 
+  var typewriter = $(".js-typewriter-element");
+  typewriter.typed({
+    strings: ["comunicação", "pizza", "tecnologia criativa",
+              "café", "música", "inovação", "hambúrguer", "desafios", "happy hour ;)"],
+    startDelay: 100,
+    typeSpeed: 100,
+    loop: true,
+    backSpeed: 30,
+    backDelay: 2000,
+    showCursor: true,
+    cursorChar: "_"
+  });
+
+
 
   var owl = $('.owl-carousel');
   owl.owlCarousel({
