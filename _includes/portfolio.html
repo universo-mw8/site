@@ -5,70 +5,72 @@
     </div>
 
     <ul class="portfolio__filter">
-        <li class="portfolio__filter__item portfolio__filter__item--is-active">
-            <a class="portfolio__filter__cat" href="">TODOS</a>
+        <li class="portfolio__filter__item">
+            <a class="filter filter-visible portfolio__filter__cat" data-filter="all" href="#0">TODOS</a>
         </li>
         <li class="portfolio__filter__item">
-            <a class="portfolio__filter__cat" href="">CONTEÚDO</a>
+            <a class="filter portfolio__filter__cat" data-filter=".content" href="#0">CONTEÚDO</a>
         </li>
         <li class="portfolio__filter__item">
-            <a class="portfolio__filter__cat" href="">TELAS</a>
+            <a class="filter portfolio__filter__cat" data-filter=".screen" href="#0">TELAS</a>
         </li>
         <li class="portfolio__filter__item">
-            <a class="portfolio__filter__cat" href="">EVENTOS</a>
+            <a class="filter portfolio__filter__cat" data-filter=".event" href="#0">EVENTOS</a>
         </li>
         <li class="portfolio__filter__item">
-            <a class="portfolio__filter__cat" href="">OUTROS</a>
+            <a class="filter portfolio__filter__cat" data-filter=".other" href="#0">OUTROS</a>
         </li>
     </ul>
 
-
-    <div id="owl-carousel" class="owl-carousel portfolio__grid">
-
-        <div class="item">
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-        </div>
-
-        <div class="item">
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-        </div>
-
-        <div class="item">
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-        </div>
-
-        <div class="item">
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-        </div>
-
-        <div class="item">
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-        </div>
-
-        <div class="item">
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-        </div>
-
+    <div class="portfolio__grid">
+    {% for project in site.data.projects %}
+        <a class="portfolio__item mix {{project.category}}" href="#" target="_blank" title="Projeto {{ project.name }}">
+            <!--<img src="{{ project.image }}" alt="{{ project.name }}" />-->
+            <span class="portfolio__name">{{ project.name }}</span>
+        </a>
+    {% endfor %}
     </div>
+
+    <!--<div id="owl-carousel" class="js-owl-carousel portfolio__grid">
+
+        <div class="item">
+            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
+            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
+            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
+        </div>
+
+        <div class="item">
+            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
+            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
+            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
+        </div>
+
+        <div class="item">
+            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
+            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
+            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
+        </div>
+
+        <div class="item">
+            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
+            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
+            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
+        </div>
+
+        <div class="item">
+            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
+            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
+            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
+        </div>
+
+        <div class="item">
+            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
+            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
+            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
+        </div>
+
+    </div>-->
 
 </section>
 
 
-<!--{% for project in site.data.portfolio %}
-<a class="portfolio__item" href="#" target="_blank" title="Projeto {{ project.name }}">
-    <img src="{{ project.image }}" alt="{{ project.name }}" />
-    <span class="portfolio__name">{{ project.name }}</span>
-</a>
-{% endfor %}-->

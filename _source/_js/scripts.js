@@ -83,13 +83,18 @@ $(document).ready(function () {
   //       btnGo: ["#projects-slider-navigation .1", "#projects-slider-navigation .2", "#projects-slider-navigation .3"]
   //   });
 
-
-  $(window).scroll(function () {
+  function colorHeader(){
     if ($(window).scrollTop() > 300 ){
-      $('.header').css("background", "rgba(77,111,133,0.4)");
+      $('.header').css("background", "rgba(77,111,133,0.6)");
     } else {
       $('.header').css("background", "transparent");
     }
+  }
+
+  colorHeader();
+
+  $(window).scroll(function () {
+    colorHeader();
   });
 
   $(function () {

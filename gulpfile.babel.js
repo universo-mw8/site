@@ -115,8 +115,8 @@ gulp.task('fonts', () => {
 gulp.task('watch', () => {
   gulp.watch(srcPaths.css, ['css']);
   gulp.watch(srcPaths.js, ['js']);
-  gulp.watch(srcPaths.img, ['images']);
-  gulp.watch(['*.html', '_includes/*.html', '_layouts/*.html', '_posts/*', '**/*.html'], ['jekyll-rebuild']);
+  // gulp.watch(srcPaths.img, ['images']);
+  gulp.watch(['*.html', '_includes/*.html', '_layouts/*.html', '_source/_js/**/*.js', '**/*.html'], ['jekyll-rebuild']);
 });
 
 gulp.task('deploy', () => {

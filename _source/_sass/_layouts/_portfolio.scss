@@ -55,7 +55,12 @@
         }
       }
 
-      &::after {
+    }
+
+
+    &__cat{
+
+        &::after {
         content: "";
         display: inline-block;
         width: 100%;
@@ -66,15 +71,12 @@
         @include transform(translateY(60px));
       }
 
-      &:hover:after, &--is-active:after{
+      &:hover:after, &.active:after{
         // background: rgba($black, 0.0) none repeat scroll 0 0;
         opacity: 1;
         @include transform(translateY(-10px));
       }
 
-    }
-
-    &__cat{
     }
     
   }
@@ -82,30 +84,36 @@
 
   &__grid {
     @include outer-container(960px);
+    min-height: rem(500)
   }
 
 
   &__item {
-    float: left;
     position: relative;
-    margin: 0;
+    @include span-columns(4);
     height: rem(200);
-    width:100%;
-    margin-bottom: -6px;
+    margin: 0;
+    display: none;
+    background: $white;
 
     // &::after {
-    //   background: rgba($black, 0.1) none repeat scroll 0 0;
+    //   background: rgba($black, 0.3) none repeat scroll 0 0;
     //   content: "";
     //   display: block;
-    //   height: rem(600);
+    //   height: 100%;
     //   left: 0;
+    //   top:0;
     //   position: absolute;
     //   width: 100%;
     //   transition: all .2s;
     // }
     // &:hover:after {
-    //   background: rgba($black, 0.0) none repeat scroll 0 0;
+    //   background: rgba($black, 0.1) none repeat scroll 0 0;
     // }
+
+    &:nth-child(even){
+      background: $whisper;
+    }
 
     @include media($screen-medium) {
       // width: 20%;
@@ -123,89 +131,30 @@
     }
 
     &:hover {
-      img {
-        @include filter(grayscale(0));
-        opacity: 1;
-      }
+      // img {
+      //   @include filter(grayscale(0));
+      //   opacity: 1;
+      // }
 
       .portfolio__name{
+        display: block;
         height: auto;
+        @include vertical-align();
+        @include transition(all .2s);
       }
 
     }
   }
 
   &__name {
-    //padding: 5px;
     @include position(absolute, null null 0 0);
-    @include size(100% 0);
+    @include size(100% 100%);
+    display: none;
     @include transition(all .2s);
-    background: $nightrider;
-    color: $white;
+    color: $supernova;
     font-family: $base-font-family;
     font-size: rem(14);
     text-align: center;
   }
-
-  .owl-carousel .owl-item {
-    float: left;
-
-    &:nth-child(odd){
-      .portfolio__item{
-        &:nth-child(odd){
-          background:$whisper;
-        }
-        &:nth-child(even){
-          background:$white;
-        }
-      }
-    }
-
-    &:nth-child(even){
-      .portfolio__item{
-        &:nth-child(odd){
-          background: $white;
-        }
-        &:nth-child(even){
-          background:$whisper;
-        }
-      }
-    }
-  }
-  
-  .owl-carousel .owl-stage-outer{
-    position: relative;
-    z-index: 99;
-  }
-
-  .owl-nav {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-  }
-  .owl-next, .owl-prev {
-    position: absolute;
-    top: 0;
-    width: 21px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-     /* Hide the text. */
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    z-index: 3;
-  }
-  .owl-prev {
-    left: -50px;
-    background-image:url('/build/img/2016/arrow-port-prev.png');
-  }
-  .owl-next {
-    right: -50px;
-    background-image:url('/build/img/2016/arrow-port-next.png');
-  }
-
 
 }

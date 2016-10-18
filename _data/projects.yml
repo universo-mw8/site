@@ -1,8 +1,24 @@
-  -
-    name: Projeto x
-    url: "#"
-    image: /images/portifolio/projeto.png
-  -
-    name: Projeto y
-    url: "#"
-    image: /images/portifolio/projeto.png
+-
+  name: Projeto X
+  url: "#"
+  image: /images/portifolio/projeto.png
+  description: Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss deixa as pessoas mais interessantiss. Viva Forevis aptent taciti sociosqu ad litora torquent Quem num gosta di mé, boa gente num é. Quem manda na minha terra sou Euzis!
+  category: content
+-
+  name: Projeto Y
+  url: "#"
+  image: /images/portifolio/projeto.png
+  description: Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss deixa as pessoas mais interessantiss. Viva Forevis aptent taciti sociosqu ad litora torquent Quem num gosta di mé, boa gente num é. Quem manda na minha terra sou Euzis!
+  category: event
+-
+  name: Projeto K
+  url: "#"
+  image: /images/portifolio/projeto.png
+  description: Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss deixa as pessoas mais interessantiss. Viva Forevis aptent taciti sociosqu ad litora torquent Quem num gosta di mé, boa gente num é. Quem manda na minha terra sou Euzis!
+  category: screen
+-
+  name: Projeto W
+  url: "#"
+  image: /images/portifolio/projeto.png
+  description: Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss deixa as pessoas mais interessantiss. Viva Forevis aptent taciti sociosqu ad litora torquent Quem num gosta di mé, boa gente num é. Quem manda na minha terra sou Euzis!
+  category: other

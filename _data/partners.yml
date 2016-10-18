@@ -1,116 +1,124 @@
 -
   name: AMBEV
   url: "#"
-  image: /build/img/clientes/1_ambev.png
+  image: /build/img/partners/1_ambev.png
 -
   name: Samsung
   url: "#"
-  image: /build/img/clientes/1_samsung.png
+  image: /build/img/partners/1_samsung.png
+-
+  name: Riachuelo
+  url: "#"
+  image: /build/img/partners/1_riachuelo.png
 -
   name: Rei do Mate
   url: "#"
-  image: /build/img/clientes/1_rei_do_mate.png
+  image: /build/img/partners/1_rei_do_mate.png
 -
   name: Expresso 2222
   url: "#"
-  image: /build/img/clientes/1_expresso_2222.png
--
+  image: /build/img/partners/1_expresso_2222.png
+- 
   name: GE 
   url: "#"
-  image: /build/img/clientes/1_ge.png
+  image: /build/img/partners/1_ge.png
+-
+  name: Usina Films
+  url: "#"
+  image: /build/img/partners/1_usina.png
 -
   name: ProCorpo
   url: "#"
-  image: /build/img/clientes/1_procorpo.png
+  image: /build/img/partners/1_procorpo.png  
 -
   name: Arena Fonte Nova
   url: "#"
-  image: /build/img/clientes/arena_fonte_nova.png
+  image: /build/img/partners/arena_fonte_nova.png
 -
   name: ABASE
   url: "#"
-  image: /build/img/clientes/abase.png
+  image: /build/img/partners/abase.png
 -
   name: Beleza Natural
   url: "#"
-  image: /build/img/clientes/beleza_natural.png
+  image: /build/img/partners/beleza_natural.png
 -
   name: Chilli Beans
   url: "#"
-  image: /build/img/clientes/chilli_beans.png  
+  image: /build/img/partners/chilli_beans.png  
 -
   name: CLAB
   url: "#"
-  image: /build/img/clientes/clab.png
+  image: /build/img/partners/clab.png
 -
   name: Continental
   url: "#"
-  image: /build/img/clientes/continental.png
+  image: /build/img/partners/continental.png
 -
   name: Dentran BA
   url: "#"
-  image: /build/img/clientes/detran_ba.png
+  image: /build/img/partners/detran_ba.png
 -
   name: Estadão
   url: "#"
-  image: /build/img/clientes/estadao.png  
+  image: /build/img/partners/estadao.png  
 -
   name: Instituto ACM
   url: "#"
-  image: /build/img/clientes/iacm.png
+  image: /build/img/partners/iacm.png
 -
   name: Lapa Interativa
   url: "#"
-  image: /build/img/clientes/lapa_interativa.png
+  image: /build/img/partners/lapa_interativa.png
 -
   name: Le Biscuit
   url: "#"
-  image: /build/img/clientes/lebiscuit.png
+  image: /build/img/partners/lebiscuit.png
 -
   name: Lojas Guaibim
   url: "#"
-  image: /build/img/clientes/lojas_guaibim.png
+  image: /build/img/partners/lojas_guaibim.png
 -
   name: Magazine Luiza
   url: "#"
-  image: /build/img/clientes/magazine_luiza.png
+  image: /build/img/partners/magazine_luiza.png
 -
   name: Mc Donalds
   url: "#"
-  image: /build/img/clientes/mcdonalds.png
+  image: /build/img/partners/mcdonalds.png
 -
   name: Natura
   url: "#"
-  image: /build/img/clientes/natura.png
+  image: /build/img/partners/natura.png
 -
   name: Odebrecht
   url: "#"
-  image: /build/img/clientes/odebrecht.png
+  image: /build/img/partners/odebrecht.png
 -
   name: PDG
   url: "#"
-  image: /build/img/clientes/pdg.png
+  image: /build/img/partners/pdg.png
 -
   name: Prefeitura de Aracaju
   url: "#"
-  image: /build/img/clientes/prefeitura_de_aracaju.png
+  image: /build/img/partners/prefeitura_de_aracaju.png
 -
   name: Prefeitura de Salvador
   url: "#"
-  image: /build/img/clientes/prefeitura-de-salvador.png
+  image: /build/img/partners/prefeitura-de-salvador.png
 -
   name: Prefeitura Nossa Senhora do Socorro
   url: "#"
-  image: /build/img/clientes/prefeitura_nossa_senhora_do_socorro.png
+  image: /build/img/partners/prefeitura_nossa_senhora_do_socorro.png
 -
   name: Prefeitura São Cristovão
   url: "#"
-  image: /build/img/clientes/prefeitura_sao_cristovao.png
+  image: /build/img/partners/prefeitura_sao_cristovao.png
 -
   name: Sesab
   url: "#"
-  image: /build/img/clientes/sesab.png  
+  image: /build/img/partners/sesab.png  
 -
   name: Subway
   url: "#"
-  image: /build/img/clientes/subway.png
+  image: /build/img/partners/subway.png

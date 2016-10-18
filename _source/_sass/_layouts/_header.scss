@@ -89,14 +89,14 @@ $fg-max-columns: 12;          // Total Columns For Main Container
       text-align: center;
     }
     &:last-child {
-      float: right;
-      margin-bottom: 0.5rem;
-      margin-top: -0.5rem;
-      @include media($screen-small) {
-        float: none;
-        width: 80%;
-        margin: 0 auto;
-      }
+      // float: right;
+      // margin-bottom: 0.5rem;
+      // margin-top: -0.5rem;
+      // @include media($screen-small) {
+        // float: none;
+        // width: 80%;
+        // margin: 0 auto;
+      // }
     }
 
     &:hover {

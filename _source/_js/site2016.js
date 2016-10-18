@@ -15,7 +15,7 @@ $(document).ready(function () {
 
 
 
-  var owl = $('.owl-carousel');
+  var owl = $('#js-partners-carousel');
   owl.owlCarousel({
     loop: true,
     margin: 0,
@@ -193,6 +193,49 @@ $(document).ready(function () {
   //   }
   //   return false;
   // });
+
+  $('.portfolio__grid').mixItUp();
+
+  // var portfolio = {
+
+  //   init : function(){
+  //     var self = this;
+  //     self.filters();
+
+  //   },
+
+  //   filters : function(){
+
+  //     var $filters = $('.js-portfolio-filter');
+  //     var $items = $('.portfolio__item');
+  //     var active = $('.filter-visible').data('filter');
+  //     // console.log($filters);
+  //     // console.log($items);
+  //     // console.log(active);
+
+  //     // $('.portfolio__item').hide();
+  //     // $('.portfolio__item').data('category', active).show();
+
+  //     $filters.on('click', function(event){
+  //       event.preventDefault();
+  //       $('.portfolio__item').hide();
+  //       var $this = $(this);
+  //       $($this).addClass('filter-visible');
+  //       var cat = $this.data('filter');
+  //       console.log(cat);
+  //       // var $items = $('.portfolio__item');
+  //       //var active = $filters.find('.filter-visible').data('filter');
+  //       // $items.hide();
+        
+  //       $('.portfolio__item').find('[data-category="'+cat+'"]').show();
+  //     });
+
+  //   }
+
+
+  // }
+
+  // portfolio.init();
 
 
 });
