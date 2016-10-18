@@ -4,93 +4,44 @@
 
 - name: Mateus Mohamed
   image: build/img/members/mohamed.jpg
+  gif: build/img/members/uhum.gif
 
 - name: Caio Lucas
   image: build/img/members/caio.jpg
+  gif: build/img/members/uhum.gif
 
 - name: Julia Avena
   image: build/img/members/julia.jpg
+  gif: build/img/members/uhum.gif
 
 - name: Julia Avena
   image: build/img/members/julia.jpg
+  gif: build/img/members/uhum.gif
 
 - name: Caio Lucas
   image: build/img/members/caio.jpg
+  gif: build/img/members/uhum.gif
+
+- name: Lipeta
+  image: build/img/members/lipeta.jpg
+  gif: build/img/members/uhum.gif
 
 - name: Mateus Mohamed
   image: build/img/members/mohamed.jpg
-
-- name: Lipeta
-  image: build/img/members/lipeta.jpg
-
-- name: Mohamed
-  image: build/img/members/mohamed.jpg
-
-- name: Caio
-  image: build/img/members/caio.jpg
-
-- name: Lipeta
-  image: build/img/members/lipeta.jpg
-
-- name: Julia Avena
-  image: build/img/members/julia.jpg
-
-- name: Caio
-  image: build/img/members/caio.jpg
-
-- name: Julia
-  image: build/img/members/julia.jpg
-
-- name: Lipeta
-  image: build/img/members/lipeta.jpg
-
-- name: Mohamed
-  image: build/img/members/mohamed.jpg
-
-- name: Lipeta
-  image: build/img/members/lipeta.jpg
-
-- name: Mateus Mohamed
-  image: build/img/members/mohamed.jpg
+  gif: build/img/members/uhum.gif
 
 - name: Caio Lucas
   image: build/img/members/caio.jpg
+  gif: build/img/members/uhum.gif
 
 - name: Julia Avena
   image: build/img/members/julia.jpg
+  gif: build/img/members/uhum.gif
 
 - name: Julia Avena
   image: build/img/members/julia.jpg
+  gif: build/img/members/uhum.gif
 
 - name: Caio Lucas
   image: build/img/members/caio.jpg
-
-- name: Mateus Mohamed
-  image: build/img/members/mohamed.jpg
-
-- name: Lipeta
-  image: build/img/members/lipeta.jpg
-
-- name: Mohamed
-  image: build/img/members/mohamed.jpg
-
-- name: Caio
-  image: build/img/members/caio.jpg
-
-- name: Lipeta
-  image: build/img/members/lipeta.jpg
-
-- name: Julia Avena
-  image: build/img/members/julia.jpg
-
-- name: Caio
-  image: build/img/members/caio.jpg
-
-- name: Julia
-  image: build/img/members/julia.jpg
-
-- name: Lipeta
-  image: build/img/members/lipeta.jpg
-
-- name: Mohamed
-  image: build/img/members/mohamed.jpg
+  gif: build/img/members/uhum.gif
