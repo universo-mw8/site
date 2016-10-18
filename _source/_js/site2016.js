@@ -194,7 +194,7 @@ $(document).ready(function () {
   //   return false;
   // });
 
-  $('.portfolio__grid').mixItUp();
+  // $('.portfolio__grid').mixItUp();
 
   // var portfolio = {
 

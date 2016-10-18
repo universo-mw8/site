@@ -92,9 +92,10 @@
     position: relative;
     @include span-columns(4);
     height: rem(200);
-    margin: 0;
-    display: none;
-    background: $white;
+    margin: 5px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
 
     // &::after {
     //   background: rgba($black, 0.3) none repeat scroll 0 0;
@@ -112,7 +113,7 @@
     // }
 
     &:nth-child(even){
-      background: $whisper;
+      // background-color: $whisper;
     }
 
     @include media($screen-medium) {

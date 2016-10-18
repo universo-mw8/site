@@ -1,10 +1,10 @@
 <section class="portfolio" id="portfolio">
     <div class="portfolio__content">
         <h2 class="portfolio__title">Portfólio</h2>
-        <p class="portfolio__description">Ah, não tem texto pra isso :(</p>
+        <p class="portfolio__description">Cases</p>
     </div>
 
-    <ul class="portfolio__filter">
+    <!--<ul class="portfolio__filter">
         <li class="portfolio__filter__item">
             <a class="filter filter-visible portfolio__filter__cat" data-filter="all" href="#0">TODOS</a>
         </li>
@@ -20,57 +20,15 @@
         <li class="portfolio__filter__item">
             <a class="filter portfolio__filter__cat" data-filter=".other" href="#0">OUTROS</a>
         </li>
-    </ul>
+    </ul>-->
 
     <div class="portfolio__grid">
     {% for project in site.data.projects %}
-        <a class="portfolio__item mix {{project.category}}" href="#" target="_blank" title="Projeto {{ project.name }}">
-            <!--<img src="{{ project.image }}" alt="{{ project.name }}" />-->
-            <span class="portfolio__name">{{ project.name }}</span>
+        <a class="portfolio__item mix {{project.category}}" href="#" target="_blank" title="Projeto {{ project.name }}" style="background-image:url('{{ project.image }}')">
+            <!--<span class="portfolio__name">{{ project.name }}</span>-->
         </a>
     {% endfor %}
     </div>
-
-    <!--<div id="owl-carousel" class="js-owl-carousel portfolio__grid">
-
-        <div class="item">
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-        </div>
-
-        <div class="item">
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-        </div>
-
-        <div class="item">
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-        </div>
-
-        <div class="item">
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-        </div>
-
-        <div class="item">
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-        </div>
-
-        <div class="item">
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-            <a class="portfolio__item" href="#" target="_blank" title="Projeto"></a>
-        </div>
-
-    </div>-->
-
 </section>
 
 
