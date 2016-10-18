@@ -1,5 +1,5 @@
 
-.clients {
+.partners {
   @include span-columns(12);
   background: $supernova;
   // min-height: rem(690);
@@ -72,7 +72,7 @@
         opacity: 1;
       }
 
-      .clients__name{
+      .partners__name{
         height: auto;
       }
 
@@ -83,7 +83,7 @@
   //   float: left;
 
   //   &:nth-child(odd){
-  //     .clients__item{
+  //     .partners__item{
   //       &:nth-child(odd){
   //         background-size: contain;
   //       }
@@ -94,7 +94,7 @@
   //   }
 
   //   &:nth-child(even){
-  //     .clients__item{
+  //     .partners__item{
   //       &:nth-child(odd){
   //         background-size: contain;
   //       }

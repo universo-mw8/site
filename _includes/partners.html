@@ -1,26 +1,26 @@
-<section class="clients" id="clients">
-    <div class="clients__content">
-        <h2 class="clients__title">Clientes</h2>
-        <p class="clients__description"></p>
+<section class="partners" id="partners">
+    <div class="partners__content">
+        <h2 class="partners__title">Parceiros</h2>
+        <p class="partners__description"></p>
     </div>
 
-    <div id="owl-carousel" class="owl-carousel clients__grid">
+    <div id="owl-carousel" class="owl-carousel partners__grid">
         {% assign counter = 0 %}
         {% for i in (1..7) %}
             <div class="item">
-                <a class="clients__item" href="#" target="_blank" title="Projeto {{site.data.partners[counter].name}}">
+                <a class="partners__item" href="#" target="_blank" title="{{site.data.partners[counter].name}}">
                     <div class="img" style="background-image:url('{{site.data.partners[counter].image}}')"></div>
                 </a>
                  {% assign counter = counter | plus:1 %} 
-                <a class="clients__item" href="#" target="_blank" title="Projeto {{site.data.partners[counter].name}}">
+                <a class="partners__item" href="#" target="_blank" title="{{site.data.partners[counter].name}}">
                     <div class="img" style="background-image:url('{{site.data.partners[counter].image}}')"></div>
                 </a>
                  {% assign counter = counter | plus:1 %} 
-                <a class="clients__item" href="#" target="_blank" title="Projeto {{site.data.partners[counter].name}}">
+                <a class="partners__item" href="#" target="_blank" title="{{site.data.partners[counter].name}}">
                     <div class="img" style="background-image:url('{{site.data.partners[counter].image}}')"></div>
                 </a>
                  {% assign counter = counter | plus:1 %} 
-                <a class="clients__item" href="#" target="_blank" title="Projeto {{site.data.partners[counter].name}}">
+                <a class="partners__item" href="#" target="_blank" title="{{site.data.partners[counter].name}}">
                     <div class="img" style="background-image:url('{{site.data.partners[counter].image}}')"></div>
                 </a>
                  {% assign counter = counter | plus:1 %} 
