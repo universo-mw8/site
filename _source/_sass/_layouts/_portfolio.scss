@@ -21,6 +21,7 @@
 
   &__title {
     color: $white;
+    font-family: $panton-extrabold;
     font-size: rem(62);
     font-weight: 900;
     text-transform: uppercase;
@@ -156,6 +157,91 @@
     font-family: $base-font-family;
     font-size: rem(14);
     text-align: center;
+  }
+
+
+
+  &__modal{
+    max-width: rem(650);
+    min-height: rem(600);
+    text-align: left;
+    padding: 0;
+
+    &__content{
+      @include pad(rem(20)); 
+    }
+
+    &__banner{
+      position: relative;
+      @include size(100% rem(200));
+      background-size:contain;
+      background-repeat: no-repeat;
+      background-color: $whisper;
+      background-position: 50%;
+    }
+
+    &__title{
+      font-family: $panton-extrabold;
+      font-size:rem(42);
+      margin-bottom: rem(5);
+    }
+
+    &__awards{
+      font-family: $panton-extrabold;
+      font-size:rem(28);
+      margin-bottom: rem(5);
+    }
+
+    &__description{
+      font-size:rem(16);
+      
+    }
+
+    &__links{
+
+      @include span-columns(12);
+
+      &__col{
+        @include span-columns(6 of 12);
+
+        h4{
+          font-family: $panton-extrabold;
+          font-size: rem(22);
+        }
+      }
+
+      &__list{
+
+      }
+
+      &__item{
+        display: inline-block;
+        @include size(50px 50px);
+        border-radius:50%;
+        background: $whisper;
+
+      }
+      
+      // &__item{
+      // }
+
+    }
+
+    &__badges{
+
+      @include position(absolute, null 20px 20px null);
+
+      &__item{
+
+        @include size(50px 50px);
+        border-radius: 50%;
+        background: red;
+        display: block;
+
+      }
+
+    }
+
   }
 
 }

@@ -72,7 +72,7 @@ $fg-max-columns: 12;          // Total Columns For Main Container
     display: inline-block;
     font-family: $heading-font-family;
     font-size: rem(14);
-    padding: 0 rem(20);
+    padding: 0 rem(10);
 
     @include media($screen-small) {
       display: block;
@@ -87,6 +87,7 @@ $fg-max-columns: 12;          // Total Columns For Main Container
       color: $white;
       display: block;
       text-align: center;
+      text-transform: uppercase;
     }
     &:last-child {
       // float: right;

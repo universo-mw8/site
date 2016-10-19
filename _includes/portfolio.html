@@ -1,34 +1,60 @@
 <section class="portfolio" id="portfolio">
     <div class="portfolio__content">
         <h2 class="portfolio__title">Portfólio</h2>
-        <p class="portfolio__description">Cases</p>
+        <p class="portfolio__description">Se divertiram com a gente</p>
     </div>
-
-    <!--<ul class="portfolio__filter">
-        <li class="portfolio__filter__item">
-            <a class="filter filter-visible portfolio__filter__cat" data-filter="all" href="#0">TODOS</a>
-        </li>
-        <li class="portfolio__filter__item">
-            <a class="filter portfolio__filter__cat" data-filter=".content" href="#0">CONTEÚDO</a>
-        </li>
-        <li class="portfolio__filter__item">
-            <a class="filter portfolio__filter__cat" data-filter=".screen" href="#0">TELAS</a>
-        </li>
-        <li class="portfolio__filter__item">
-            <a class="filter portfolio__filter__cat" data-filter=".event" href="#0">EVENTOS</a>
-        </li>
-        <li class="portfolio__filter__item">
-            <a class="filter portfolio__filter__cat" data-filter=".other" href="#0">OUTROS</a>
-        </li>
-    </ul>-->
 
     <div class="portfolio__grid">
-    {% for project in site.data.projects %}
-        <a class="portfolio__item mix {{project.category}}" href="#" target="_blank" title="Projeto {{ project.name }}" style="background-image:url('{{ project.image }}')">
-            <!--<span class="portfolio__name">{{ project.name }}</span>-->
+        {% for project in site.data.projects %}
+        <a class="portfolio__item mix {{project.category}}" href="#project-{{forloop.index}}" data-remodal-target="project-{{forloop.index}}"
+            title="Projeto {{ project.name }}" style="background-image:url('{{ project.image }}')">
         </a>
-    {% endfor %}
+        <div class="remodal portfolio__modal" data-remodal-id="project-{{forloop.index}}">
+            <div class="portfolio__modal__banner" style="background-image:url('{{ project.image }}')">
+                <ul class="portfolio__modal__badges">
+                    <li class="portfolio__modal__badges__item"></li>
+                </ul>
+            </div>
+            <div class="portfolio__modal__content">
+                <h2 class="portfolio__modal__title">{{project.name}}</h2>
+                <p class="portfolio__modal__description">{{project.description}}</p>
+                <h3 class="portfolio__modal__awards">Prêmios</h3>
+                <p>Melhor projeto de inovação AMBEV</p>
+                <p>Melhor projeto de inovação AMBEV</p>
+
+                <div class="portfolio__modal__links">
+                    <div class="portfolio__modal__links__col">
+                        <h4>Nas redes sociais</h4>
+                        <ul class="portfolio__modal__links__list">
+                            <li class="portfolio__modal_links__item">
+                                <a href="#0">Facebook</a>
+                            </li>
+                            <li class="portfolio__modal_links__item">
+                                <a href="#0">Twitter</a>
+                            </li>
+                            <li class="portfolio__modal_links__item">
+                                <a href="#0"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="portfolio__modal__links__col">
+                        <h4>Na mídia</h4>
+                        <ul class="portfolio__modal__links__list">
+                            <li class="portfolio__modal_links__item">
+                                <a href="#0"></a>
+                            </li>
+                            <li class="portfolio__modal_links__item">
+                                <a href="#0"></a>
+                            </li>
+                            <li class="portfolio__modal_links__item">
+                                <a href="#0"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        {% endfor %}
     </div>
 </section>
-
-
