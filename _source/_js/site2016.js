@@ -33,6 +33,27 @@ $(document).ready(function () {
   });
 
   var ptPage = $('html[lang=pt]');
+
+
+  // Hamburger mobile menu
+  //---------------------------------------------------------------
+  var $btnMenu = $('.js-toggle-menu');
+  var $navbar = $('.js-navbar');
+  var $menuItem = $('.header-navigation__item');
+
+  $btnMenu.on('click', function (e) {
+    e.preventDefault();
+    $(this).toggleClass('toggle--close');
+    $navbar.toggleClass('header-navigation--is-open');
+  });
+
+  $menuItem.on('click', function (e) {
+    e.preventDefault();
+    $btnMenu.toggleClass('toggle--close');
+    $navbar.removeClass('header-navigation--is-open');
+  });
+
+
   // Slider of testimonials
   //---------------------------------------------------------------
   // $('.bxslider').bxSlider({
@@ -166,22 +187,6 @@ $(document).ready(function () {
   //       required: "Por favor, descreva brevemente seu projeto.",
   //       minlength: jQuery.validator.format("Este campo deve conter, no mínimo, {0} caracteres"),
   //     }
-
-  // Hamburger mobile menu
-  //---------------------------------------------------------------
-  var $btnMenu = $('.js-toggle-menu');
-  var $navbar = $('.js-navbar');
-  var $menuItem = $('.header-navigation__item');
-
-  $btnMenu.on('click', function (e) {
-    e.preventDefault();
-    $btnMenu.toggleClass('toggle--close');
-    $navbar.toggleClass('header-navigation--is-open');
-  });
-  $menuItem.on('click', function (e) {
-    $navbar.removeClass('header-navigation--is-open');
-    $btnMenu.toggleClass('toggle--close');
-  });
 
 
   // Hash links

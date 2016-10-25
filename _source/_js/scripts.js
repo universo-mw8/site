@@ -49,7 +49,44 @@ $(document).ready(function () {
     }
   );
 
-  //   $("#testimonials .slider-container").jCarouselLite({
+ 
+
+  function colorHeader(){
+    if ($(window).scrollTop() > 300 ){
+      $('.header').css("background", "rgba(77,111,133,0.6)");
+    } else {
+      $('.header').css("background", "transparent");
+    }
+  }
+
+  colorHeader();
+
+  $(window).scroll(function () {
+    colorHeader();
+  });
+
+  $(function () {
+    $('.header-navigation__item a').click(function (event) {
+      event.preventDefault();
+      // if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        //target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          // return false;
+        }
+      // }
+    });
+  });
+  // $(function () {
+  //   $('a[href=\\#]').click(function (event) {
+  //     event.preventDefault();
+  //   });
+  // });
+
+   //   $("#testimonials .slider-container").jCarouselLite({
   //     btnNext: "#testimonial-next",
   //     btnPrev: "#testimonial-previous",
   //     visible: 1,
@@ -82,40 +119,5 @@ $(document).ready(function () {
   //       visible: 1,
   //       btnGo: ["#projects-slider-navigation .1", "#projects-slider-navigation .2", "#projects-slider-navigation .3"]
   //   });
-
-  function colorHeader(){
-    if ($(window).scrollTop() > 300 ){
-      $('.header').css("background", "rgba(77,111,133,0.6)");
-    } else {
-      $('.header').css("background", "transparent");
-    }
-  }
-
-  colorHeader();
-
-  $(window).scroll(function () {
-    colorHeader();
-  });
-
-  $(function () {
-    $('a[href*=\\#]:not([href=\\#])').click(function (event) {
-      event.preventDefault();
-      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        if (target.length) {
-          $('html,body').animate({
-            scrollTop: target.offset().top
-          }, 1000);
-          return false;
-        }
-      }
-    });
-  });
-  // $(function () {
-  //   $('a[href=\\#]').click(function (event) {
-  //     event.preventDefault();
-  //   });
-  // });
 
 });

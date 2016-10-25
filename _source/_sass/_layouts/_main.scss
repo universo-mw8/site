@@ -12,6 +12,7 @@ html {
 
 body {
   background: $white;
+  overflow-x:hidden;
 }
 
 @import "_main-banner";
