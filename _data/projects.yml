@@ -4,12 +4,28 @@
   image: /build/img/projects/one_to_one.png
   description: Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss deixa as pessoas mais interessantiss. Viva Forevis aptent taciti sociosqu ad litora torquent Quem num gosta di mé, boa gente num é. Quem manda na minha terra sou Euzis!
   category: content
+  awards:
+    - award: Melhor projeto de inovação AMBEV
+
+    - award: Melhor projeto de inovação AMBEV
+  links:
+    - link: https://jekyllrb.com/docs/datafiles/
+
+    - link: https://jekyllrb.com/docs/datafiles/
 -
   name: Rei do Mate
   url: "#"
   image: /build/img/projects/rei_do_mate.jpg
   description: Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss deixa as pessoas mais interessantiss. Viva Forevis aptent taciti sociosqu ad litora torquent Quem num gosta di mé, boa gente num é. Quem manda na minha terra sou Euzis!
   category: content
+  awards:
+    - award: Melhor projeto de inovação AMBEV
+
+    - award: Melhor projeto de inovação AMBEV
+  links:
+    - link: https://jekyllrb.com/docs/datafiles/
+    
+    - link: https://jekyllrb.com/docs/datafiles/
 -
   name: Riachuelo Conecta
   url: "#"
