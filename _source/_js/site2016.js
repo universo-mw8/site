@@ -3,7 +3,7 @@ $(document).ready(function () {
   var typewriter = $(".js-typewriter-element");
   typewriter.typed({
     strings: ["comunicação", "pizza", "tecnologia criativa",
-              "café", "música", "inovação", "hambúrguer", "desafios", "happy hour ;)"],
+              "café", "inovação", "consultoria criativa", "happy hour"],
     startDelay: 100,
     typeSpeed: 100,
     loop: true,
@@ -13,7 +13,8 @@ $(document).ready(function () {
     cursorChar: "_"
   });
 
-
+  //"dgdg", "pizza", "tecnologia criativa","café", "música", "inovação", "hambúrguer", "desafios", "happy hour ;)"]
+              
 
   var owl = $('#js-partners-carousel');
   owl.owlCarousel({

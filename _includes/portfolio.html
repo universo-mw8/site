@@ -5,7 +5,7 @@
     </div>
 
     <div class="portfolio__grid">
-        {% for project in site.data.projects %}
+        {% for project in site.data.portfolio %}
         <a class="portfolio__item mix {{project.category}}" href="#project-{{forloop.index}}" data-remodal-target="project-{{forloop.index}}"
             title="Projeto {{ project.name }}" style="background-image:url('{{ project.image }}')">
         </a>
@@ -23,20 +23,24 @@
                 <p>Melhor projeto de inovação AMBEV</p>
 
                 <div class="portfolio__modal__links">
+                    
+                    {% if project.links %}
                     <div class="portfolio__modal__links__col">
                         <h4>Nas redes sociais</h4>
                         <ul class="portfolio__modal__links__list">
-                            <li class="portfolio__modal_links__item">
-                                <a href="#0">Facebook</a>
-                            </li>
-                            <li class="portfolio__modal_links__item">
-                                <a href="#0">Twitter</a>
-                            </li>
-                            <li class="portfolio__modal_links__item">
-                                <a href="#0"></a>
-                            </li>
+                            {% for link in project.links %}                                
+                                <li class="portfolio__modal_links__item">
+                                    <a href="{{link.url}}">{{link.name}}</a>
+                                </li>
+                                
+                            {% endfor %}
                         </ul>
                     </div>
+
+                    {% endif %}
+
+                    {% if project.media %}
+
                     <div class="portfolio__modal__links__col">
                         <h4>Na mídia</h4>
                         <ul class="portfolio__modal__links__list">
@@ -51,6 +55,9 @@
                             </li>
                         </ul>
                     </div>
+
+                    {% endif %}
+
                 </div>
                 
             </div>

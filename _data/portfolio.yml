@@ -1,0 +1,65 @@
+-
+  name: AMBEV - TOTEM CRM - One to One
+  url: "#"
+  image: /build/img/projects/one_to_one.png
+  description: Nossa equipe de consultoria criativa entra em campo novamente! Dessa vez o pessoal da AMBEV, em parceria com o Grupo Pão de Açúcar, tentava imaginar uma forma mais efetiva de utilização dos cupons de desconto dos clientes fidelizados. Com o TOTEM CRM, você acessa os seus cupons de descontos de maneira prática, rápida e sem precisar lembrar de levar as antigas malas diretas dos programas de fidelidade. 
+  category: content
+  awards:
+    - award: Melhor projeto de inovação AMBEV
+
+    - award: Melhor projeto de inovação AMBEV
+  links:
+    - link: 
+      -
+        name: Facebook
+        url: https://jekyllrb.com/docs/datafiles/
+-
+  name: REI DO MATE INTERATIVO
+  url: "#"
+  image: /build/img/projects/rei_do_mate.png
+  description: Fomos procurados inicialmente para fornecer um Menu Digital. Como nosso time é formado por cabeças inquietas e ansiosas por inovação, resolvemos visitar as lojas do Rei do Mate e entender melhor a sua comunicação visual. Com isso, oferecemos além do Menu Digital, outras soluções que promoveram a diminuição dos custos com a comunicação analógica e logística de distribuição, além da agilidade na mudança de preços (inserções/retirada de promoções).  
+  category: content
+  awards:
+    - award: Melhor projeto de inovação AMBEV
+
+    - award: Melhor projeto de inovação AMBEV
+  links:
+    - link: https://jekyllrb.com/docs/datafiles/
+    
+    - link: https://jekyllrb.com/docs/datafiles/
+-
+  name: RIACHUELO CONECTA
+  url: "#"
+  image: /build/img/projects/riachuelo_conecta.png
+  description: Inserir um equipamento de autoatendimento no crediário das lojas pode parecer comum, mas para a nossa equipe de Design de Produtos é mais um desafio de inovação. Para a montagem do projeto Conecta consideramos um design personalizado e inovador, a facilidade no transporte e manutenção dos componentes internos, garantindo uma agradável utilização e mobilidade dos clientes.
+  category: content
+-
+  name: AMBEV - SHOW DE BAR
+  url: "#"
+  image: /build/img/projects/show_de_bar.png
+  description: O desafio era encontrar uma solução que integrasse divulgação dos produtos, promoções, entretenimento e compra de produtos online. Além disso precisávamos reduzir custos com impressões, logística de distribuição das propagandas, como também apoiar os vendedores na coleta dos pedidos. A partir de reuniões entre a nossa equipe de consultoria criativa e o time de inovação da AMBEV, surgiu o SHOW DE BAR. Conquistamos até prêmio internacional!!! A integração desses times realiza sonhos.
+  category: content
+-
+  name: SAMSUNG SMART POS
+  url: "#"
+  image: /build/img/projects/smart_pos.png
+  description: Mais um desafio foi lançado, revolucionar o varejo brasileiro! Criamos um projeto de muito sucesso em parceria com a equipe do Trade Marketing da Samsung e o nosso time de consultoria criativa. O objetivo era pulverizar a comunicação, preços e promoções em todas as lojas onde a Samsung está presente, reduzindo custos e aumentando os resultados.   
+  category: content
+-
+  name: PORTO TERRA À VISTA
+  url: "#"
+  image: /build/img/projects/terravista.png
+  description: Espaços vazios e sem utilização em pleno porto de Salvador? O desafio era propor um modelo de negócio inovador. Aguarde o lançamento do Porto Terra a Vista!
+  category: event
+-
+  name: TOTEM GE QUÍMICA
+  url: "#"
+  image: /build/img/projects/totem_ge_quimica.png
+  description: Um totem para uso em um ambiente de altas temperaturas pode sim ter um design arrojado e inovador! Deve ser fácil de abrir e transportar. Sendo assim, entra em campo nossa equipe de Design de Produtos que pensa no que você precisa e vai além.
+  category: screen
+-
+  name: TV UNIVERSIDADE AMBEV
+  url: "#"
+  image: /build/img/projects/tvua.png
+  description: Um canal de TV exclusivo para melhor comunicação e treinamentos para os funcionários da AMBEV espalhados por todos os Centros de Distribuição e Revendas do Brasil. E o melhor, sem o custo de um satélite e totalmente programável. 
+  category: other

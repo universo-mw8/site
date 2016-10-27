@@ -4,6 +4,15 @@
   background: $white;
   min-height: rem(500);
   
+  .saibamais-oquefazemos{ 
+    background:red; 
+    color:#4d6f85;
+    width:100px;
+    padding:0.5em; 
+    margin:0 auto;
+    position:relative;
+    top:2em;
+  }
 
   @include media($screen-small) {
     @include pad(rem(120) 0) ;
@@ -102,6 +111,7 @@
     }
 
     &--icon{
+      
       @include size(120px 120px);
       display: block;
       color: #20b5ac;
@@ -117,23 +127,64 @@
         @include size(120px 120px);
       }
     }
+    
+     &--icon__search {
+      animation-name: pesquisa;
+      animation-duration: 6s;
+      animation-iteration-count: infinite;
+      background-image: url('/build/img/2016/news-logos/damosvida_01.png');
 
-    &--icon__ok{
-      background-image: url('/build/img/2016/service-icon-ok.png');
+      @keyframes pesquisa {
+        0%   { background-image: url('/build/img/2016/news-logos/damosvida_01.png'); }
+        25%  { background-image: url('/build/img/2016/news-logos/damosvida_02.png'); }
+        50%  { background-image: url('/build/img/2016/news-logos/damosvida_03.png'); }
+        100% { background-image: url('/build/img/2016/news-logos/damosvida_01.png'); }
+      }
     }
 
-    &--icon__search{
-      background-image: url('/build/img/2016/service-icon-search.png');
+     &--icon__write{
+      animation-name: idealizamos;
+      animation-duration: 6s;
+      animation-iteration-count: infinite;
+      background-image: url('/build/img/2016/news-logos/idealizamos_01.png');
+
+      @keyframes idealizamos {
+        0%   { background-image: url('/build/img/2016/news-logos/idealizamos_01.png'); }
+        25%  { background-image: url('/build/img/2016/news-logos/idealizamos_02.png'); }
+        50%  { background-image: url('/build/img/2016/news-logos/idealizamos_03.png'); }
+        100% { background-image: url('/build/img/2016/news-logos/idealizamos_01.png'); }
+      }
+    }
+
+    &--icon__ok{
+      animation-name: nosconte;
+      animation-duration: 6s;
+      animation-iteration-count: infinite;
+      background-image: url('/build/img/2016/news-logos/nosconte_01.png');
+
+      @keyframes nosconte {
+        0%   { background-image: url('/build/img/2016/news-logos/nosconte_01.png'); }
+        25%  { background-image: url('/build/img/2016/news-logos/nosconte_02.png'); }
+        50%  { background-image: url('/build/img/2016/news-logos/nosconte_03.png'); }
+        100% { background-image: url('/build/img/2016/news-logos/nosconte_01.png'); }
+      }
     }
 
     &--icon__setting{
-      background-image: url('/build/img/2016/service-icon-setting.png');
+      animation-name: tornamosrealidade;
+      animation-duration: 6s;
+      animation-iteration-count: infinite;
+      background-image: url('/build/img/2016/news-logos/tornamosrealidade_01.png');
+
+      @keyframes tornamosrealidade {
+        0%   { background-image: url('/build/img/2016/news-logos/tornamosrealidade_01.png'); }
+        25%  { background-image: url('/build/img/2016/news-logos/tornamosrealidade_02.png'); }
+        50%  { background-image: url('/build/img/2016/news-logos/tornamosrealidade_03.png'); }
+        100% { background-image: url('/build/img/2016/news-logos/tornamosrealidade_01.png'); }
+      }
     }
     
-    &--icon__write{
-      background-image: url('/build/img/2016/service-icon-write.png');
-    }
-
+   
     &--text{
       color:#4d6f85;
       font-size: 16px;
