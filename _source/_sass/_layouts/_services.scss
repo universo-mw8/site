@@ -4,15 +4,27 @@
   background: $white;
   min-height: rem(500);
   
-  .saibamais-oquefazemos{ 
-    background:red; 
-    color:#4d6f85;
-    width:100px;
-    padding:0.5em; 
+  &__saibamais-oquefazemos{
+    width:105px;
     margin:0 auto;
     position:relative;
-    top:2em;
+    top:3em;
+      & a{
+        background:#fff;
+        border: 1px solid #4d6f85;  
+        color:#4d6f85;
+        padding:0.5em;
+        animation:6s;
+        border-radius:0.5em;
+          &:hover{
+            background:#20b5ac;
+            color:#fff;
+            animation:6s;
+            border: 1px solid #20b5ac; 
+          }
+      }
   }
+
 
   @include media($screen-small) {
     @include pad(rem(120) 0) ;
@@ -132,13 +144,13 @@
       animation-name: pesquisa;
       animation-duration: 6s;
       animation-iteration-count: infinite;
-      background-image: url('/build/img/2016/news-logos/damosvida_01.png');
+      background-image: url('/build/img/2016/news-logos/idealizamos_01.png');
 
       @keyframes pesquisa {
-        0%   { background-image: url('/build/img/2016/news-logos/damosvida_01.png'); }
-        25%  { background-image: url('/build/img/2016/news-logos/damosvida_02.png'); }
-        50%  { background-image: url('/build/img/2016/news-logos/damosvida_03.png'); }
-        100% { background-image: url('/build/img/2016/news-logos/damosvida_01.png'); }
+        0%   { background-image: url('/build/img/2016/news-logos/idealizamos_01.png'); }
+        25%  { background-image: url('/build/img/2016/news-logos/idealizamos_02.png'); }
+        50%  { background-image: url('/build/img/2016/news-logos/idealizamos_03.png'); }
+        100% { background-image: url('/build/img/2016/news-logos/idealizamos_01.png'); }
       }
     }
 
@@ -146,13 +158,13 @@
       animation-name: idealizamos;
       animation-duration: 6s;
       animation-iteration-count: infinite;
-      background-image: url('/build/img/2016/news-logos/idealizamos_01.png');
+      background-image: url('/build/img/2016/news-logos/damosvida_01.png');
 
       @keyframes idealizamos {
-        0%   { background-image: url('/build/img/2016/news-logos/idealizamos_01.png'); }
-        25%  { background-image: url('/build/img/2016/news-logos/idealizamos_02.png'); }
-        50%  { background-image: url('/build/img/2016/news-logos/idealizamos_03.png'); }
-        100% { background-image: url('/build/img/2016/news-logos/idealizamos_01.png'); }
+        0%   { background-image: url('/build/img/2016/news-logos/damosvida_01.png'); }
+        25%  { background-image: url('/build/img/2016/news-logos/damosvida_02.png'); }
+        50%  { background-image: url('/build/img/2016/news-logos/damosvida_03.png'); }
+        100% { background-image: url('/build/img/2016/news-logos/damosvida_01.png'); }
       }
     }
 
@@ -195,9 +207,47 @@
       @include media($screen-tiny) {
         margin-top: rem(12);
       }
-
     }
-
   }
-
 }
+.modal-oquefazemos{
+      width:100%;
+      article{
+        width:50%;
+        padding:1em;
+        float:left;
+      }
+      figure{
+        margin:0 auto;
+        width:86px;
+        height:85px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding:3em;
+      }
+      h1{
+        font-weight: bold;
+      }
+      &__pesquisa{
+        & figure{
+          background-image: url('/build/img/2016/news-logos/idealizamos_03.png');
+        }
+      }
+      &__damosvida{
+        & figure{
+          background-image: url('/build/img/2016/news-logos/damosvida_03.png');
+        }
+      }
+      &__nosconte{
+        clear: both;
+        & figure{
+          background-image: url('/build/img/2016/news-logos/nosconte_03.png');
+        }
+      }
+      &__tornamosrealidade{
+        & figure{
+          background-image: url('/build/img/2016/news-logos/tornamosrealidade_03.png');
+        }
+      }
+}
+
