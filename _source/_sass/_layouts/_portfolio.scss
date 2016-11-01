@@ -48,14 +48,12 @@
       font-weight: 400;
       text-transform: uppercase;
       color: $white;
-
-      a{
-        position: relative;
-        &:hover{
-          color: $white;
+        a{
+          position: relative;
+          &:hover{
+            color: $white;
+          }
         }
-      }
-
     }
 
 
@@ -122,6 +120,8 @@
     }
 
     @include media($screen-small) {
+      margin:0 20px 0 40px;
+      //background:red;
       // width: 50%;
     }
 
