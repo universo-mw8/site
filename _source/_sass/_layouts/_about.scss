@@ -112,7 +112,7 @@
 
   &__team {
     @include span-columns(12);
-    margin-top: rem(90);
+    margin-top: rem(30);
     width: 100%;
     ul {
       display: flex;

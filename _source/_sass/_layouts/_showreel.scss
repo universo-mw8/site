@@ -3,6 +3,10 @@
   background-color: $showreel;
   background-size: cover;
   height: rem(420px);
+  
+  @include media($screen-small) {
+    margin-top:40px;
+  }
 
   &__content {
     @include outer-container();

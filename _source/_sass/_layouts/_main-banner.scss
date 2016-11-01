@@ -149,11 +149,30 @@
     font-weight: 900;
     text-transform:uppercase;
     margin-top: rem(150);
-    margin-bottom: rem(10);
+    margin-bottom: rem(25);
 
     @include media($screen-small) {
       font-size: rem(40);
       margin-top: rem(140);
+      padding:0 rem(20);
+    }
+
+  }
+
+    &__h1_2 {
+    // color: $supernova;
+    color: #28ead7;
+    font-family: $panton-extrabold;
+    line-height: rem(90);
+    font-size: rem(88);
+    font-weight: 900;
+    text-transform:uppercase;
+    margin-top: rem(50);
+    margin-bottom: rem(0);
+
+    @include media($screen-small) {
+      font-size: rem(40);
+      margin-top: rem(20);
       padding:0 rem(20);
     }
 
