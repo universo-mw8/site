@@ -26,7 +26,6 @@
       }
   }
 
-
   @include media($screen-small) {
     @include pad(rem(120) 0) ;
   }

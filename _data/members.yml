@@ -1,47 +1,97 @@
-- name: Lipeta
-  image: build/img/members/lipeta.jpg
-  gif: build/img/members/uhum.gif
-
-- name: Mateus Mohamed
-  image: build/img/members/mohamed.jpg
-  gif: build/img/members/uhum.gif
-
-- name: Caio Lucas
-  image: build/img/members/caio.jpg
-  gif: build/img/members/uhum.gif
-
-- name: Julia Avena
-  image: build/img/members/julia.jpg
-  gif: build/img/members/uhum.gif
-
-- name: Julia Avena
-  image: build/img/members/julia.jpg
-  gif: build/img/members/uhum.gif
-
-- name: Caio Lucas
-  image: build/img/members/caio.jpg
-  gif: build/img/members/uhum.gif
+- name: Waldo
+  image: build/img/members/gifs-para-site-2/MW8_GIF_WALDO.gif
+  gif: build/img/members/gifs-para-site-2/MW8_GIF_WALDO.gif
 
 - name: Lipeta
-  image: build/img/members/lipeta.jpg
-  gif: build/img/members/uhum.gif
+  image: build/img/members/gifs-para-site-2/MW8_GIF_FILIPE.gif
+  gif: build/img/members/gifs-para-site-2/MW8_GIF_FILIPE.gif
 
 - name: Mateus Mohamed
-  image: build/img/members/mohamed.jpg
-  gif: build/img/members/uhum.gif
+  image: build/img/members/gifs-para-site-2/MW8_GIF_MOHAMED.gif
+  gif: build/img/members/gifs-para-site-2/MW8_GIF_MOHAMED.gif
 
 - name: Caio Lucas
-  image: build/img/members/caio.jpg
-  gif: build/img/members/uhum.gif
+  image: build/img/members/gifs-para-site-2/MW8_GIF_CAIO.gif
+  gif: build/img/members/gifs-para-site-2/MW8_GIF_CAIO.gif
 
 - name: Julia Avena
-  image: build/img/members/julia.jpg
-  gif: build/img/members/uhum.gif
+  image: build/img/members/gifs-para-site-2/MW8_GIF_JULIA.gif
+  gif: build/img/members/gifs-para-site-2/MW8_GIF_JULIA.gif
 
-- name: Julia Avena
-  image: build/img/members/julia.jpg
-  gif: build/img/members/uhum.gif
+- name: Afonso
+  image: build/img/members/gifs-para-site-2/MW8_GIF_AFONSO.gif
+  gif: build/img/members/gifs-para-site-2/MW8_GIF_AFONSO.gif
 
-- name: Caio Lucas
-  image: build/img/members/caio.jpg
-  gif: build/img/members/uhum.gif
+- name: Bruna
+  image: build/img/members/gifs-para-site-2/MW8_GIF_BRUNA.gif
+  gif: build/img/members/gifs-para-site-2/MW8_GIF_BRUNA.gif
+
+- name: Cleiton
+  image: build/img/members/gifs-para-site-2/MW8_GIF_CLEITON.gif
+  gif: build/img/members/gifs-para-site-2/MW8_GIF_CLEITON.gif
+
+- name: Denise
+  image: build/img/members/gifs-para-site-2/MW8_GIF_DENISE.gif
+  gif: build/img/members/gifs-para-site-2/MW8_GIF_DENISE.gif
+
+- name: Dethe
+  image: build/img/members/gifs-para-site-2/MW8_GIF_DETHE.gif
+  gif: build/img/members/gifs-para-site-2/MW8_GIF_DETHE.gif
+
+- name: Edvaldo
+  image: build/img/members/gifs-para-site-2/MW8_GIF_EDVALDO.gif
+  gif: build/img/members/gifs-para-site-2/MW8_GIF_EDVALDO.gif
+
+- name: Henrique
+  image: build/img/members/gifs-para-site-2/MW8_GIF_HENRIQUE.gif
+  gif: build/img/members/gifs-para-site-2/MW8_GIF_HENRIQUE.gif
+
+- name: Irvin
+  image: build/img/members/gifs-para-site-2/MW8_GIF_IRVIN.gif
+  gif: build/img/members/gifs-para-site-2/MW8_GIF_IRVIN.gif
+
+- name: Jaci
+  image: build/img/members/gifs-para-site-2/MW8_GIF_JACI.gif
+  gif: build/img/members/gifs-para-site-2/MW8_GIF_JACI.gif
+
+- name: Jailson
+  image: build/img/members/gifs-para-site-2/MW8_GIF_JAILSON.gif
+  gif: build/img/members/gifs-para-site-2/MW8_GIF_JAILSON.gif
+
+- name: Luan
+  image: build/img/members/gifs-para-site-2/MW8_GIF_LUAN.gif
+  gif: build/img/members/gifs-para-site-2/MW8_GIF_LUAN.gif
+
+- name: Lukas
+  image: build/img/members/gifs-para-site-2/MW8_GIF_LUKAS.gif
+  gif: build/img/members/gifs-para-site-2/MW8_GIF_LUKAS.gif
+
+- name: Marcel
+  image: build/img/members/gifs-para-site-2/MW8_GIF_MARCEL.gif
+  gif: build/img/members/gifs-para-site-2/MW8_GIF_MARCEL.gif
+
+- name: Marcus
+  image: build/img/members/gifs-para-site-2/MW8_GIF_MARCUS.gif
+  gif: build/img/members/gifs-para-site-2/MW8_GIF_MARCUS.gif
+
+- name: Micae
+  image: build/img/members/gifs-para-site-2/MW8_GIF_MICAE.gif
+  gif: build/img/members/gifs-para-site-2/MW8_GIF_MICAE.gif
+
+- name: Pablo
+  image: build/img/members/gifs-para-site-2/MW8_GIF_PABLO.gif
+  gif: build/img/members/gifs-para-site-2/MW8_GIF_PABLO.gif
+
+- name: Rita
+  image: build/img/members/gifs-para-site-2/MW8_GIF_RITA.gif
+  gif: build/img/members/gifs-para-site-2/MW8_GIF_RITA.gif
+
+- name: Tasila
+  image: build/img/members/gifs-para-site-2/MW8_GIF_TASILA.gif
+  gif: build/img/members/gifs-para-site-2/MW8_GIF_TASILA.gif
+
+- name: Valter
+  image: build/img/members/gifs-para-site-2/MW8_GIF_VALTER.gif
+  gif: build/img/members/gifs-para-site-2/MW8_GIF_VALTER.gif
+
+
