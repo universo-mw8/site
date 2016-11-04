@@ -80,11 +80,12 @@ $(document).ready(function () {
       // }
     });
   });
-  // $(function () {
-  //   $('a[href=\\#]').click(function (event) {
-  //     event.preventDefault();
-  //   });
-  // });
+
+  $(function () {
+    $('a').click(function (event) {
+      event.preventDefault();
+    });
+  });
 
    //   $("#testimonials .slider-container").jCarouselLite({
   //     btnNext: "#testimonial-next",

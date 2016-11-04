@@ -83,33 +83,15 @@
 
   &__grid {
     @include outer-container(960px);
-    min-height: rem(500)
+    min-height: rem(250)
   }
 
 
   &__item {
     position: relative;
-    @include span-columns(4);
-    height: rem(200);
-    margin: 5px;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    // &::after {
-    //   background: rgba($black, 0.3) none repeat scroll 0 0;
-    //   content: "";
-    //   display: block;
-    //   height: 100%;
-    //   left: 0;
-    //   top:0;
-    //   position: absolute;
-    //   width: 100%;
-    //   transition: all .2s;
-    // }
-    // &:hover:after {
-    //   background: rgba($black, 0.1) none repeat scroll 0 0;
-    // }
+    @include span-columns(3);
+    height: rem(120);
+    margin: 15px 0;
 
     &:nth-child(even){
       // background-color: $whisper;
@@ -125,18 +107,21 @@
       // width: 50%;
     }
 
-    img {
+    .img {
       @include filter(grayscale(100%));
-      @include size(100% auto);
+      @include size(100% 100%);
       float: left;
       transition: all .5s;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: 117%;
     }
 
     &:hover {
-      // img {
-      //   @include filter(grayscale(0));
-      //   opacity: 1;
-      // }
+      .img {
+        @include filter(grayscale(0));
+        opacity: 1;
+      }
 
       .portfolio__name{
         display: block;
@@ -162,7 +147,7 @@
 
   &__modal{
     max-width: rem(650);
-    min-height: rem(600);
+    min-height: rem(400);
     text-align: left;
     padding: 0;
 
@@ -230,9 +215,9 @@
       &__item{
 
         @include size(50px 50px);
-        border-radius: 50%;
-        background: red;
-        display: block;
+        //border-radius: 50%;
+        //background: red;
+        //display: block;
 
       }
 

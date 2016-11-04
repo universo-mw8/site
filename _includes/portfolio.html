@@ -6,9 +6,11 @@
 
     <div class="portfolio__grid">
         {% for project in site.data.portfolio %}
-        <a class="portfolio__item mix {{project.category}}" href="#project-{{forloop.index}}" data-remodal-target="project-{{forloop.index}}"
-            title="Projeto {{ project.name }}" style="background-image:url('{{ project.image }}')">
+
+        <a class="portfolio__item" href="#project-{{forloop.index}}" data-remodal-target="project-{{forloop.index}}" title="{{project.name}}">
+            <div class="img" style="background-image:url('{{project.image}}')"></div>
         </a>
+
         <div class="remodal portfolio__modal" data-remodal-id="project-{{forloop.index}}">
             <div class="portfolio__modal__banner" style="background-image:url('{{ project.image }}')">
                 <ul class="portfolio__modal__badges">
@@ -18,9 +20,15 @@
             <div class="portfolio__modal__content">
                 <h2 class="portfolio__modal__title">{{project.name}}</h2>
                 <p class="portfolio__modal__description">{{project.description}}</p>
-                <h3 class="portfolio__modal__awards">Prêmios</h3>
-                <p></p>
-                <p>Melhor projeto de inovação AMBEV</p>
+                
+                {% if project.awards %}
+                <div class="portfolio__modal__awards">
+
+                    <h3 class="portfolio__modal__awards">Prêmios</h3>
+                    <p>Melhor projeto de inovação AMBEV</p>
+
+                </div>
+                {% endif %}
 
                 <div class="portfolio__modal__links">
                     

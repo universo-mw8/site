@@ -64,8 +64,8 @@
       border-bottom: 1px solid $supernova;
       top: rem(-12px);
       max-width: rem(45px);
-      margin: 0 auto;
       @include media($screen-small){
+        margin: 0 auto;
       }
     }
   }
