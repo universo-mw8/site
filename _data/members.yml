@@ -118,14 +118,6 @@
   image: build/img/members/team/IuryTaillan.jpg
   gif: build/img/members/team/IuryTaillan.jpg
 
-- name: Thor
-  image: build/img/members/team/Thor.jpg
-  gif: build/img/members/team/Thor.jpg
-
-- name: Loki
-  image: build/img/members/team/Loki.jpg
-  gif: build/img/members/team/Loki.jpg
-
 - name: Elvis
   image: build/img/members/team/Elvis.jpg
   gif: build/img/members/team/Elvis.jpg
@@ -134,5 +126,10 @@
   image: build/img/members/team/Erica.jpg
   gif: build/img/members/team/Erica.jpg
 
+- name: Thor
+  image: build/img/members/team/Thor.jpg
+  gif: build/img/members/team/Thor.jpg
 
-
+- name: Loki
+  image: build/img/members/team/Loki.jpg
+  gif: build/img/members/team/Loki.jpg
