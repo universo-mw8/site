@@ -2,6 +2,7 @@
 .main-banner {
   min-height: 100vh;
   width: 100%;
+  margin-bottom: -15px;
 
   @include media($screen-small) {
   }
@@ -65,7 +66,7 @@
 
         overflow: hidden;
         @include size(100vw 100vh);
-        
+
          &:after{
           @include mask(0 0 50% 50%, 110px, 0, $supernova, $white);
           @include size(200vw 420vh);
@@ -115,7 +116,7 @@
 
           @include media($screen-medium) {
             display: none;
-          }          
+          }
         }
 
       }
