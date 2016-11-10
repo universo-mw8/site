@@ -2,14 +2,14 @@
   name: AMBEV - TOTEM CRM - One to One
   url: "#"
   image: /build/img/projects/one_to_one.png
-  description: Nossa equipe de consultoria criativa entra em campo novamente! Dessa vez o pessoal da AMBEV, em parceria com o Grupo Pão de Açúcar, tentava imaginar uma forma mais efetiva de utilização dos cupons de desconto dos clientes fidelizados. Com o TOTEM CRM, você acessa os seus cupons de descontos de maneira prática, rápida e sem precisar lembrar de levar as antigas malas diretas dos programas de fidelidade. 
+  description: Nossa equipe de consultoria criativa entra em campo novamente! Dessa vez o pessoal da AMBEV, em parceria com o Grupo Pão de Açúcar, tentava imaginar uma forma mais efetiva de utilização dos cupons de desconto dos clientes fidelizados. Com o TOTEM CRM, você acessa os seus cupons de descontos de maneira prática, rápida e sem precisar lembrar de levar as antigas malas diretas dos programas de fidelidade.
   category: content
   awards:
     - award: Melhor projeto de inovação AMBEV
 
     - award: Melhor projeto de inovação AMBEV
   links:
-    - link: 
+    - link:
       -
         name: Facebook
         url: https://jekyllrb.com/docs/datafiles/
@@ -17,16 +17,8 @@
   name: REI DO MATE INTERATIVO
   url: "#"
   image: /build/img/projects/rei_do_mate.png
-  description: Fomos procurados inicialmente para fornecer um Menu Digital. Como nosso time é formado por cabeças inquietas e ansiosas por inovação, resolvemos visitar as lojas do Rei do Mate e entender melhor a sua comunicação visual. Com isso, oferecemos além do Menu Digital, outras soluções que promoveram a diminuição dos custos com a comunicação analógica e logística de distribuição, além da agilidade na mudança de preços (inserções/retirada de promoções).  
+  description: Fomos procurados inicialmente para fornecer um Menu Digital. Como nosso time é formado por cabeças inquietas e ansiosas por inovação, resolvemos visitar as lojas do Rei do Mate e entender melhor a sua comunicação visual. Com isso, oferecemos além do Menu Digital, outras soluções que promoveram a diminuição dos custos com a comunicação analógica e logística de distribuição, além da agilidade na mudança de preços (inserções/retirada de promoções).
   category: content
-  awards:
-    - award: Melhor projeto de inovação AMBEV
-
-    - award: Melhor projeto de inovação AMBEV
-  links:
-    - link: https://jekyllrb.com/docs/datafiles/
-    
-    - link: https://jekyllrb.com/docs/datafiles/
 -
   name: RIACHUELO CONECTA
   url: "#"
@@ -43,7 +35,7 @@
   name: SAMSUNG SMART POS
   url: "#"
   image: /build/img/projects/smart_pos.png
-  description: Mais um desafio foi lançado, revolucionar o varejo brasileiro! Criamos um projeto de muito sucesso em parceria com a equipe do Trade Marketing da Samsung e o nosso time de consultoria criativa. O objetivo era pulverizar a comunicação, preços e promoções em todas as lojas onde a Samsung está presente, reduzindo custos e aumentando os resultados.   
+  description: Mais um desafio foi lançado, revolucionar o varejo brasileiro! Criamos um projeto de muito sucesso em parceria com a equipe do Trade Marketing da Samsung e o nosso time de consultoria criativa. O objetivo era pulverizar a comunicação, preços e promoções em todas as lojas onde a Samsung está presente, reduzindo custos e aumentando os resultados.
   category: content
 -
   name: PORTO TERRA À VISTA
@@ -61,5 +53,5 @@
   name: TV UNIVERSIDADE AMBEV
   url: "#"
   image: /build/img/projects/tvua.png
-  description: Um canal de TV exclusivo para melhor comunicação e treinamentos para os funcionários da AMBEV espalhados por todos os Centros de Distribuição e Revendas do Brasil. E o melhor, sem o custo de um satélite e totalmente programável. 
+  description: Um canal de TV exclusivo para melhor comunicação e treinamentos para os funcionários da AMBEV espalhados por todos os Centros de Distribuição e Revendas do Brasil. E o melhor, sem o custo de um satélite e totalmente programável.
   category: other
