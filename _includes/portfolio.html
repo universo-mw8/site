@@ -1,75 +1,60 @@
 <section class="portfolio" id="portfolio">
-    <div class="portfolio__content">
-        <h2 class="portfolio__title">Portfólio</h2>
-        <p class="portfolio__description">Se divertiram com a gente</p>
-    </div>
-
-    <div class="portfolio__grid">
-        {% for project in site.data.portfolio %}
-
-        <a class="portfolio__item" href="#project-{{forloop.index}}" data-remodal-target="project-{{forloop.index}}" title="{{project.name}}">
-            <div class="img" style="background-image:url('{{project.image}}')"></div>
-        </a>
-
-        <div class="remodal portfolio__modal" data-remodal-id="project-{{forloop.index}}">
-            <div class="portfolio__modal__banner" style="background-image:url('{{ project.image }}')">
-                <ul class="portfolio__modal__badges">
-                    <li class="portfolio__modal__badges__item"></li>
-                </ul>
-            </div>
-            <div class="portfolio__modal__content">
-                <h2 class="portfolio__modal__title">{{project.name}}</h2>
-                <p class="portfolio__modal__description">{{project.description}}</p>
-                
-                {% if project.awards %}
-                <div class="portfolio__modal__awards">
-
-                    <h3 class="portfolio__modal__awards">Prêmios</h3>
-                    <p>Melhor projeto de inovação AMBEV</p>
-
-                </div>
-                {% endif %}
-
-                <div class="portfolio__modal__links">
-                    
-                    {% if project.links %}
-                    <div class="portfolio__modal__links__col">
-                        <h4>Nas redes sociais</h4>
-                        <ul class="portfolio__modal__links__list">
-                            {% for link in project.links %}                                
-                                <li class="portfolio__modal_links__item">
-                                    <a href="{{link.url}}">{{link.name}}</a>
-                                </li>
-                                
-                            {% endfor %}
-                        </ul>
-                    </div>
-
-                    {% endif %}
-
-                    {% if project.media %}
-
-                    <div class="portfolio__modal__links__col">
-                        <h4>Na mídia</h4>
-                        <ul class="portfolio__modal__links__list">
-                            <li class="portfolio__modal_links__item">
-                                <a href="#0"></a>
-                            </li>
-                            <li class="portfolio__modal_links__item">
-                                <a href="#0"></a>
-                            </li>
-                            <li class="portfolio__modal_links__item">
-                                <a href="#0"></a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    {% endif %}
-
-                </div>
-                
-            </div>
+  <div class="portfolio__content">
+    <h2 class="portfolio__title">Portfólio</h2>
+    <p class="portfolio__description">Se divertiram com a gente</p>
+  </div>
+  <div class="portfolio__grid">
+    {% for project in site.data.portfolio %}
+      <a class="portfolio__item" href="#project-{{forloop.index}}" data-remodal-target="project-{{forloop.index}}" title="{{project.name}}">
+        <div class="img" style="background-image:url('{{project.image}}')"></div>
+      </a>
+      <div class="remodal portfolio__modal" data-remodal-id="project-{{forloop.index}}">
+        <div class="portfolio__modal__banner" style="background-image:url('{{ project.image }}')">
+          <ul class="portfolio__modal__badges">
+            <li class="portfolio__modal__badges__item"></li>
+          </ul>
         </div>
-        {% endfor %}
-    </div>
+        <div class="portfolio__modal__content">
+          <h2 class="portfolio__modal__title">{{project.name}}</h2>
+          <p class="portfolio__modal__description">{{project.description}}</p>
+          {% if project.awards %}
+            <div class="portfolio__modal__awards">
+              <h3 class="portfolio__modal__awards">Prêmios</h3>
+              <p>Melhor projeto de inovação AMBEV</p>
+            </div>
+          {% endif %}
+          <div class="portfolio__modal__links">
+            {% if project.links %}
+              <div class="portfolio__modal__links__col">
+                <h4>Nas redes sociais</h4>
+                <ul class="portfolio__modal__links__list">
+                  {% for link in project.links %}
+                    <li class="portfolio__modal_links__item">
+                      <a href="{{link.url}}">{{link.name}}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endif %}
+            {% if project.media %}
+              <div class="portfolio__modal__links__col">
+                <h4>Na mídia</h4>
+                <ul class="portfolio__modal__links__list">
+                  <li class="portfolio__modal_links__item">
+                    <a href="#0"></a>
+                  </li>
+                  <li class="portfolio__modal_links__item">
+                    <a href="#0"></a>
+                  </li>
+                  <li class="portfolio__modal_links__item">
+                    <a href="#0"></a>
+                  </li>
+                </ul>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 </section>
