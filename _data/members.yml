@@ -2,6 +2,14 @@
   image: build/img/members/team/waldo.jpg
   gif: build/img/members/gif/MW8_GIF_WALDO.gif
 
+- name: Andre Guerreiro
+  image: build/img/members/team/AndreGuerreiro.jpg
+  gif: build/img/members/team/AndreGuerreiro.jpg
+
+- name: Ronaldo Chiossi
+  image: build/img/members/team/RonaldoChiossi.jpg
+  gif: build/img/members/team/RonaldoChiossi.jpg
+
 - name: Lipeta
   image: build/img/members/team/Filipe.jpg
   gif: build/img/members/gif/MW8_GIF_FILIPE.gif
@@ -117,5 +125,14 @@
 - name: Loki
   image: build/img/members/team/Loki.jpg
   gif: build/img/members/team/Loki.jpg
+
+- name: Elvis
+  image: build/img/members/team/Elvis.jpg
+  gif: build/img/members/team/Elvis.jpg
+
+- name: Erica
+  image: build/img/members/team/Erica.jpg
+  gif: build/img/members/team/Erica.jpg
+
 
 
