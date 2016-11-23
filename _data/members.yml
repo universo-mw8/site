@@ -102,6 +102,14 @@
   image: build/img/members/team/Valter.jpg
   gif: build/img/members/gif/MW8_GIF_VALTER.gif
 
+- name: Elvis
+  image: build/img/members/team/Elvis.jpg
+  gif: build/img/members/gif/MW8_GIF_ELVIS.gif
+
+- name: Erica
+  image: build/img/members/team/Erica.jpg
+  gif: build/img/members/gif/MW8_GIF_ERICA.gif
+
 - name: Nayara
   image: build/img/members/team/Nayara.jpg
   gif: build/img/members/team/Nayara.jpg
@@ -118,14 +126,6 @@
   image: build/img/members/team/IuryTaillan.jpg
   gif: build/img/members/team/IuryTaillan.jpg
 
-- name: Elvis
-  image: build/img/members/team/Elvis.jpg
-  gif: build/img/members/team/Elvis.jpg
-
-- name: Erica
-  image: build/img/members/team/Erica.jpg
-  gif: build/img/members/team/Erica.jpg
-
 - name: Thor
   image: build/img/members/team/Thor.jpg
   gif: build/img/members/team/Thor.jpg
@@ -133,3 +133,4 @@
 - name: Loki
   image: build/img/members/team/Loki.jpg
   gif: build/img/members/team/Loki.jpg
+

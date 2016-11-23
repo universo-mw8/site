@@ -18,8 +18,8 @@
   name: Expresso 2222
   url: "#"
   image: /build/img/partners/1_expresso_2222.png
-- 
-  name: GE 
+-
+  name: GE
   url: "#"
   image: /build/img/partners/1_ge.png
 -
@@ -29,7 +29,7 @@
 -
   name: ProCorpo
   url: "#"
-  image: /build/img/partners/1_procorpo.png  
+  image: /build/img/partners/1_procorpo.png
 -
   name: Arena Fonte Nova
   url: "#"
@@ -45,7 +45,7 @@
 -
   name: Chilli Beans
   url: "#"
-  image: /build/img/partners/chilli_beans.png  
+  image: /build/img/partners/chilli_beans.png
 -
   name: CLAB
   url: "#"
@@ -61,7 +61,7 @@
 -
   name: Estadão
   url: "#"
-  image: /build/img/partners/estadao.png  
+  image: /build/img/partners/estadao.png
 -
   name: Instituto ACM
   url: "#"
@@ -117,8 +117,16 @@
 -
   name: Sesab
   url: "#"
-  image: /build/img/partners/sesab.png  
+  image: /build/img/partners/sesab.png
 -
   name: Subway
   url: "#"
   image: /build/img/partners/subway.png
+-
+  name: Gente
+  url: "#"
+  image: /build/img/partners/gente.png
+-
+  name: Wasa
+  url: "#"
+  image: /build/img/partners/wasa.png
