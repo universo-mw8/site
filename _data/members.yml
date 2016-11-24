@@ -1,136 +1,171 @@
 - name: Waldo
+  funcao: Presidente
   image: build/img/members/team/waldo.jpg
   gif: build/img/members/gif/MW8_GIF_WALDO.gif
 
 - name: Andre Guerreiro
+  funcao:
   image: build/img/members/team/AndreGuerreiro.jpg
   gif: build/img/members/team/AndreGuerreiro.jpg
 
 - name: Ronaldo Chiossi
+  funcao:
   image: build/img/members/team/RonaldoChiossi.jpg
   gif: build/img/members/team/RonaldoChiossi.jpg
 
 - name: Lipeta
+  funcao: Designer
   image: build/img/members/team/Filipe.jpg
   gif: build/img/members/gif/MW8_GIF_FILIPE.gif
 
 - name: Mateus Mohamed
+  funcao: Blogueirinho Developer
   image: build/img/members/team/Mohamed.jpg
   gif: build/img/members/gif/MW8_GIF_MOHAMED.gif
 
 - name: Caio Lucas
+  funcao: Jedi Developer
   image: build/img/members/team/Caio.jpg
   gif: build/img/members/gif/MW8_GIF_CAIO.gif
 
 - name: Julia Avena
+  funcao: Gerente de Projetos
   image: build/img/members/team/Julia.jpg
   gif: build/img/members/gif/MW8_GIF_JULIA.gif
 
 - name: Afonso
+ funcao: Suporte Técnico
   image: build/img/members/team/Afonso.jpg
   gif: build/img/members/gif/MW8_GIF_AFONSO.gif
 
 - name: Bruna
+  funcao: Líder de Conteúdo
   image: build/img/members/team/Bruna.jpg
   gif: build/img/members/gif/MW8_GIF_BRUNA.gif
 
 - name: Cleiton
+  funcao: Líder de Suporte
   image: build/img/members/team/Cleiton.jpg
   gif: build/img/members/gif/MW8_GIF_CLEITON.gif
 
 - name: Denise
+  funcao: Serviços Gerais
   image: build/img/members/team/Denise.jpg
   gif: build/img/members/gif/MW8_GIF_DENISE.gif
 
 - name: Dethe
+  funcao: Gerente Administrativo
   image: build/img/members/team/Dethe.jpg
   gif: build/img/members/gif/MW8_GIF_DETHE.gif
 
 - name: Edvaldo
+  funcao:
   image: build/img/members/team/Edvaldo.jpg
   gif: build/img/members/gif/MW8_GIF_EDVALDO.gif
 
 - name: Henrique
+  funcao: Suporte Técnico
   image: build/img/members/team/Henrique.jpg
   gif: build/img/members/gif/MW8_GIF_HENRIQUE.gif
 
 - name: Irvin
+  funcao:
   image: build/img/members/team/Irvin.jpg
   gif: build/img/members/gif/MW8_GIF_IRVIN.gif
 
 - name: Jaci
+  funcao: Líder de Operações
   image: build/img/members/team/Jaci.jpg
   gif: build/img/members/gif/MW8_GIF_JACI.gif
 
 - name: Jailson
+  funcao: Líder de Infraestrutura
   image: build/img/members/team/Jailson.jpg
   gif: build/img/members/gif/MW8_GIF_JAILSON.gif
 
 - name: Luan
+  funcao: Pro Developer
   image: build/img/members/team/Luan.jpg
   gif: build/img/members/gif/MW8_GIF_LUAN.gif
 
 - name: Lukas
+  funcao:
   image: build/img/members/team/Lukas.jpg
   gif: build/img/members/gif/MW8_GIF_LUKAS.gif
 
 - name: Marcel
+  funcao:
   image: build/img/members/team/Marcel.jpg
   gif: build/img/members/gif/MW8_GIF_MARCEL.gif
 
 - name: Marcus
+  funcao: Sith Developer
   image: build/img/members/team/Marcus.jpg
   gif: build/img/members/gif/MW8_GIF_MARCUS.gif
 
-- name: Micae
+- name: Micael
+  funcao: Suporte Técnico
   image: build/img/members/team/Micael.jpg
   gif: build/img/members/gif/MW8_GIF_MICAE.gif
 
 - name: Pablo
+  funcao: Head Honcho of Awesomeness
   image: build/img/members/team/Pablo.jpg
   gif: build/img/members/gif/MW8_GIF_PABLO.gif
 
 - name: Rita
+  funcao: Cozinheira
   image: build/img/members/team/Rita.jpg
   gif: build/img/members/gif/MW8_GIF_RITA.gif
 
 - name: Tassila
+  funcao: Secretária
   image: build/img/members/team/Tassila.jpg
   gif: build/img/members/gif/MW8_GIF_TASILA.gif
 
 - name: Valter
+  funcao: Gerente de Operações
   image: build/img/members/team/Valter.jpg
   gif: build/img/members/gif/MW8_GIF_VALTER.gif
 
 - name: Elvis
+  funcao: Técnico em Infraestrutura
   image: build/img/members/team/Elvis.jpg
   gif: build/img/members/gif/MW8_GIF_ELVIS.gif
 
 - name: Erica
+  funcao: Designer
   image: build/img/members/team/Erica.jpg
   gif: build/img/members/gif/MW8_GIF_ERICA.gif
 
 - name: Nayara
+  funcao: Gerente de Processos
   image: build/img/members/team/Nayara.jpg
   gif: build/img/members/team/Nayara.jpg
 
 - name: Ana
+  funcao: Suporte Técnico
   image: build/img/members/team/Ana.jpg
   gif: build/img/members/team/Ana.jpg
 
 - name: João Carlos
+funcao: Suporte Técnico
   image: build/img/members/team/JoaoCarlos.jpg
   gif: build/img/members/team/JoaoCarlos.jpg
 
 - name: Iury Taillan
+  funcao: Diretor de Arte
   image: build/img/members/team/IuryTaillan.jpg
   gif: build/img/members/team/IuryTaillan.jpg
 
 - name: Thor
+  funcao: deus supremo de Asgard
   image: build/img/members/team/Thor.jpg
   gif: build/img/members/team/Thor.jpg
 
 - name: Loki
+  funcao: deus nórdico
   image: build/img/members/team/Loki.jpg
   gif: build/img/members/team/Loki.jpg
+
 

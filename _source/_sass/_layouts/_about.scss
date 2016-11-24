@@ -7,7 +7,7 @@
 
     &__content {
       position:relative;
-      max-width: 700px;
+      max-width: 60%;
       min-height: 100vh;
       text-align: center;
       margin: 0 auto;
@@ -16,10 +16,9 @@
       @include display(flex);
       @include flex-direction(column);
       @include justify-content(space-around);
+      //background: rgba(#fff, 0.5);
+      @include media($screen-small) {}
 
-      @include media($screen-small) {
-
-      }
     }
 
     &__title {
@@ -111,33 +110,65 @@
   }
 
   &__team {
-    @include span-columns(12);
+    @include span-columns(7 of 12);
     margin-top: rem(30);
-    width: 100%;
-    ul {
+    width: 85%;
+    //background: red;
+
+    /* ul {
       display: flex;
       justify-content: center;
     }
+    */
 
     @include media($screen-small) {
-      width: rem(265px);
-    }
-  }
-}
-
-
-.image {
-  &__circle {
-    @include span-columns(4 of 12);
-    @include size(128px);
-    border-radius: 50%;
-    margin: rem(20px);
-    @include media($screen-small) {
-      @include size(92px);
+      //width: rem(265px);
     }
   }
 
-  &:hover {
-    transition: ease-out 1s;
+    /** @type {[type]} [description]
+    width: 170px;
+    height: 200px;
+    background: red;
+    float: left;
+    margin: 1em;
+    */
+
+  &__box{
+    width: 170px;
+    height: 200px;
+    background: rgba(#f9f9f9, 1);
+    border-top: 1px solid $supernova;
+    float: left;
+    margin: 0 2% 2% 0;
+      & h1{
+        color:#000;
+      }
+      & h2{
+        color:#000;
+      }
+       .image {
+        &__circle {
+          @include span-columns(6 of 12);
+          @include size(128px);
+          border: 3px solid $supernova;
+          border-radius: 50%;
+          margin: 10px 10px 5px 20px;
+
+          @include media($screen-small) {
+            @include size(92px);
+              margin: 10px 10px 5px 35px;
+          }
+        }
+
+        &:hover {
+          transition: ease-out 1s;
+        }
+
+    }
   }
+
 }
+
+
+
