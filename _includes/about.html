@@ -10,8 +10,8 @@
       {% for member in site.data.members %}
           <div class="about__box">
             <img class="image__circle" src="{{ member.image }}" data-gif="{{ member.gif }}" onmouseenter="this.src='{{ member.gif }}';" onmouseout="this.src='{{ member.image }}';" alt="{{ member.name }}">
-            <h1> {{ member.name }} </h1>
-            <h2> {{ member.funcao }} </h2>
+            <h1 class="about__name"> {{ member.name }} </h1>
+            <h2 class="about__funcao"> {{ member.funcao }} </h2>
           </div>
       {% endfor %}
     </div>
