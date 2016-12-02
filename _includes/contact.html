@@ -1,15 +1,18 @@
 <div class="remodal" data-remodal-id="contact-modal">
-	<form action="" method="post">
+  <button data-remodal-action="close" class="remodal-close"></button>
+	<form action="https://simple-form.com/contato@mw8solucoes.com.br" method="post">
 		<fieldset>
-			<label for="name">Nome</label>
-			<input type="text" name="name" id="name" required>
-			<label for="email">E-mail</label>
-			<input type="email" name="email" id="email" required>
-			<label for="assunto">Assunto<label>
-			<input type="text" name="assunto" id="assunto" required>
-			<label for="msg">Mensagem</label>
-			<textarea rows="6" cols="50" id="msg" name="msg" required></textarea>
-			<input type="submit" name="submit" value="Enviar" class="btn-contact">
+
+			<input type="text" name="name" id="name" required placeholder="Nome">
+
+			<input type="email" name="email" id="email" required placeholder="E-mail">
+
+			<input type="text" name="assunto" id="assunto" required placeholder="Assunto">
+
+			<textarea rows="6" cols="50" id="message" name="msg" required placeholder="Mensagem"></textarea>
+
+                    <input type="submit" name="submit" value="Enviar" class="btn-contact">
+
 		</fieldset>
 	</form>
 </div>

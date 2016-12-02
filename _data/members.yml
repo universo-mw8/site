@@ -13,6 +13,16 @@
   image: build/img/members/team/RonaldoChiossi.jpg
   gif: build/img/members/team/RonaldoChiossi.jpg
 
+- name: Dethe Gervasio
+  funcao: Gerente Administrativa
+  image: build/img/members/team/Dethe.jpg
+  gif: build/img/members/gif/MW8_GIF_DETHE.gif
+
+- name: Julia Avena
+  funcao: Gerente de Projetos
+  image: build/img/members/team/Julia.jpg
+  gif: build/img/members/gif/MW8_GIF_JULIA.gif
+
 - name: Rita Cássia
   funcao: Cozinheira
   image: build/img/members/team/Rita.jpg
@@ -23,20 +33,10 @@
   image: build/img/members/team/Denise.jpg
   gif: build/img/members/gif/MW8_GIF_DENISE.gif
 
-- name: Julia Avena
-  funcao: Gerente de Projetos
-  image: build/img/members/team/Julia.jpg
-  gif: build/img/members/gif/MW8_GIF_JULIA.gif
-
 - name: Bruna Leskowicz
   funcao: Líder de Conteúdo
   image: build/img/members/team/Bruna.jpg
   gif: build/img/members/gif/MW8_GIF_BRUNA.gif
-
-- name: Dethe Gervasio
-  funcao: Gerente Administrativa
-  image: build/img/members/team/Dethe.jpg
-  gif: build/img/members/gif/MW8_GIF_DETHE.gif
 
 - name: Jaci Lopes
   funcao: Líder de Operações
