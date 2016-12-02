@@ -58,11 +58,6 @@
   image: build/img/members/team/Ana.jpg
   gif: build/img/members/team/Ana.jpg
 
-- name: Érica Kolbe
-  funcao: Designer
-  image: build/img/members/team/Erica.jpg
-  gif: build/img/members/gif/MW8_GIF_ERICA.gif
-
 - name: Valter Souza
   funcao: Gerente de Operações
   image: build/img/members/team/Valter.jpg
