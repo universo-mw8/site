@@ -77,7 +77,7 @@
       }
 
     }
-    
+
   }
 
 
@@ -152,7 +152,7 @@
     padding: 0;
 
     &__content{
-      @include pad(rem(20)); 
+      @include pad(rem(20));
     }
 
     &__banner{
@@ -166,7 +166,7 @@
 
     &__title{
       font-family: $panton-extrabold;
-      font-size:rem(42);
+      font-size:rem(35);
       margin-bottom: rem(5);
     }
 
@@ -178,7 +178,13 @@
 
     &__description{
       font-size:rem(16);
-      
+
+    }
+
+    &__description__sub{
+        font-size:rem(14);
+        font-weight: none;
+        font-family: $base-font-family;
     }
 
     &__links{
@@ -205,7 +211,7 @@
         background: $whisper;
 
       }
-      
+
     }
 
     &__badges{

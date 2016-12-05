@@ -133,47 +133,67 @@
     float: left;
     margin: 1em;
     */
-   &__name {
-      color: #0d6158;
-      background: #28ead7;
-      display: inline-block;
-      padding: 0.1em .6em;
-      line-height: inherit;
-      border-radius: 3px;
+
+      &__info{
+        width: 150px;
+        height:50px;
+        background: white;
+        position: absolute;
+        bottom: 0;
+        top: 120px;
+        opacity: 0;
+        transition: .2s linear;
+          &:hover{
+            opacity: .7;
+            top: 100px;
+            transition: .2s linear;
+            //-webkit-transition: all 1s linear .5s;
+            //-moz-transition: all 1s linear .5s;
+            //-ms-transition: all 1s linear .5s;
+            //-o-transition: all 1s linear .5s;
+          }
+        &__name {
+          color: #333;
+          margin: 8px 0 0 0;
+          font-weight: bold;
+          //display: inline-block;
+          //padding: 0.1em .6em;
+         // line-height: inherit;
+        }
+        &__funcao{
+          //clear:both;
+          color: #333;
+          font-weight: bold;
+          //display: inline-block; #0d6158
+          //font-size: .8em;
+         // padding: 0.1em .6em;
+         // line-height: inherit;
+        }
       }
 
-    &__funcao{
-      clear:both;
-      color: #0d6158;
-      background: #28ead7;
-      display: inline-block;
-      //font-size: .8em;
-      padding: 0.1em .6em;
-      line-height: inherit;
-      border-radius: 3px;
-    }
-
   &__box{
-    width: 190px;
+    width: 150px;
     float: left;
     margin: 0 2% 2% 0;
+    background: white;
+    position: relative;
 
        .image {
         &__circle {
           @include span-columns(6 of 12);
-          @include size(128px);
+          @include size(150px);
           border: 3px solid $supernova;
-          border-radius: 50%;
-          margin: 0 10px 5px 30px;
+          //border-radius: 50%;
+          //margin: 0 10px 5px 30px;
 
           @include media($screen-small) {
-            @include size(92px);
-              margin: 0 10px 5px 30px;
+            @include size(150px);
+              //margin: 0 10px 5px 30px;
           }
         }
 
         &:hover {
-          transition: ease-out 1s;
+          //transition: ease-out 1s;
         }
 
     }
