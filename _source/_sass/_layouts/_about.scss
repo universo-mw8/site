@@ -7,7 +7,7 @@
 
     &__content {
       position:relative;
-      max-width: 60%;
+      max-width: 90%;
       min-height: 100vh;
       text-align: center;
       margin: 0 auto;
@@ -29,7 +29,7 @@
       font-size: rem(58);
       font-weight: 900;
       text-transform: uppercase;
-      margin-top: rem(150);
+      margin-top: rem(450);
       margin-bottom: rem(10);
 
       @include media($screen-small) {
@@ -110,92 +110,58 @@
   }
 
   &__team {
-    @include span-columns(7 of 12);
-    margin-top: rem(30);
-    width: 73%;
-    //background: red;
-
-    /* ul {
-      display: flex;
-      justify-content: center;
+    //@include span-columns(12 of 12);
+    margin-top: rem(90);
+    width: 90%;
+    //border:1px solid red;
+    margin-bottom:120px;
+    padding:1.1em 1.1em 0 4.5em;
+     @include media($screen-medium) {
+        }
     }
-    */
-
-    @include media($screen-small) {
-      //width: rem(265px);
-    }
-  }
-
-    /** @type {[type]} [description]
-    width: 170px;
-    height: 200px;
-    background: red;
-    float: left;
-    margin: 1em;
-    */
 
       &__info{
         width: 150px;
-        height:50px;
+        height:0;
         background: white;
         position: absolute;
         bottom: 0;
-        top: 120px;
-        opacity: 0;
         transition: .2s linear;
-          &:hover{
-            opacity: .8;
-            top: 100px;
-            transition: .2s linear;
-            //-webkit-transition: all 1s linear .5s;
-            //-moz-transition: all 1s linear .5s;
-            //-ms-transition: all 1s linear .5s;
-            //-o-transition: all 1s linear .5s;
+        opacity: 0;
+          &__name {
+            color: #333;
+            margin: 8px 0 0 0;
+            font-weight: bold;
           }
-        &__name {
-          color: #333;
-          margin: 8px 0 0 0;
-          font-weight: bold;
-          //display: inline-block;
-          //padding: 0.1em .6em;
-         // line-height: inherit;
-        }
-        &__funcao{
-          //clear:both;
-          color: #333;
-          font-weight: bold;
-          //display: inline-block; #0d6158
-          //font-size: .8em;
-         // padding: 0.1em .6em;
-         // line-height: inherit;
-        }
+          &__funcao{
+            color: #333;
+            font-weight: bold;
+            font-size:0.700rem;
+          }
       }
 
   &__box{
     width: 150px;
     float: left;
-    margin: 0 2% 2% 0;
-    background: white;
     position: relative;
-
+    &:hover{
+      cursor: pointer;
+    }
+    &:hover .about__info{
+      height: auto;
+      opacity: .8;
+      transition: .2s linear;
+    }
        .image {
         &__circle {
-          @include span-columns(6 of 12);
-          @include size(150px);
-          border: 3px solid $supernova;
-          //border-radius: 50%;
-          //margin: 0 10px 5px 30px;
+          @include span-columns(12 of 12);
+          @include size(150px);;
 
           @include media($screen-small) {
             @include size(150px);
-              //margin: 0 10px 5px 30px;
+            //margin: 0 10px 5px 30px;
           }
         }
-
-        &:hover {
-          //transition: ease-out 1s;
-        }
-
     }
   }
 
