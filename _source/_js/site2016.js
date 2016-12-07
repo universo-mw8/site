@@ -1,3 +1,44 @@
+var imgs = [
+  " build/img/members/gif/MW8_GIF_WALDO.gif ",
+  " build/img/members/team/AndreGuerreiro.jpg ",
+  " build/img/members/team/RonaldoChiossi.jpg ",
+  " build/img/members/gif/MW8_GIF_DETHE.gif ",
+  " build/img/members/gif/MW8_GIF_JULIA.gif",
+  " build/img/members/gif/MW8_GIF_RITA.gif",
+  " build/img/members/gif/MW8_GIF_DENISE.gif",
+  " build/img/members/gif/MW8_GIF_BRUNA.gif",
+  " build/img/members/gif/MW8_GIF_JACI.gif",
+  " build/img/members/gif/MW8_GIF_TASILA.gif",
+  " build/img/members/team/Nayara.jpg",
+  " build/img/members/team/Ana.jpg",
+  " build/img/members/gif/MW8_GIF_VALTER.gif",
+  " build/img/members/gif/MW8_GIF_IRVIN.gif",
+  " build/img/members/gif/MW8_GIF_EDVALDO.gif",
+  " build/img/members/team/IuryTaillan.jpg",
+  " build/img/members/gif/MW8_GIF_FILIPE.gif",
+  " build/img/members/gif/MW8_GIF_MARCEL.gif",
+  " build/img/members/gif/MW8_GIF_PABLO.gif",
+  " build/img/members/gif/MW8_GIF_CAIO.gif",
+  " build/img/members/gif/MW8_GIF_MARCUS.gif",
+  " build/img/members/gif/MW8_GIF_MOHAMED.gif",
+  " build/img/members/gif/MW8_GIF_LUAN.gif",
+  " build/img/members/gif/MW8_GIF_JAILSON.gif",
+  " build/img/members/gif/MW8_GIF_ELVIS.gif",
+  " build/img/members/gif/MW8_GIF_CLEITON.gif",
+  " build/img/members/gif/MW8_GIF_AFONSO.gif",
+  " build/img/members/gif/MW8_GIF_HENRIQUE.gif",
+  " build/img/members/gif/MW8_GIF_LUKAS.gif",
+  " build/img/members/gif/MW8_GIF_MICAE.gif",
+  " build/img/members/team/JoaoCarlos.jpg",
+  " build/img/members/team/Thor.jpg",
+  " build/img/members/team/Loki.jpg"
+];
+//preload
+for (img in imgs){
+  var image  = new Image();
+  image.src = imgs[img];
+}
+
 $(document).ready(function () {
 
   var typewriter = $(".js-typewriter-element");
@@ -14,7 +55,7 @@ $(document).ready(function () {
   });
 
   //"dgdg", "pizza", "tecnologia criativa","café", "música", "inovação", "hambúrguer", "desafios", "happy hour ;)"]
-              
+
 
   var owl = $('#js-partners-carousel');
   owl.owlCarousel({
@@ -232,7 +273,7 @@ $(document).ready(function () {
   //       // var $items = $('.portfolio__item');
   //       //var active = $filters.find('.filter-visible').data('filter');
   //       // $items.hide();
-        
+
   //       $('.portfolio__item').find('[data-category="'+cat+'"]').show();
   //     });
 

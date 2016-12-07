@@ -9,7 +9,7 @@
     <div class="about__team">
       {% for member in site.data.members %}
           <div class="about__box">
-            <img class="image__circle" src="{{ member.image }}" data-gif="{{ member.gif }}" onmouseenter="this.src='{{ member.gif }}';" onmouseout="this.src='{{ member.image }}';" alt="{{ member.name }}">
+            <img id="imgs" class="image__circle" src="{{ member.image }}" data-gif="{{ member.gif }}" onmouseenter="this.src='{{ member.gif }}';" onmouseout="this.src='{{ member.image }}';" alt="{{ member.name }}">
                 <div class="about__info">
                     <h1 class="about__info__name"> {{ member.name }} </h1>
                     <h2 class="about__info__funcao"> {{ member.funcao }} </h2>
