@@ -4,7 +4,6 @@
 //
 // *************************************
 
-
 .footer {
   @include span-columns(12);
   background: $nightrider;
@@ -71,7 +70,6 @@
   }
 
 }
-
 
 .footer-universo {
   position: relative;
@@ -157,7 +155,7 @@
   &__icon {
     display: inline-block;
     padding-right: rem(10px);
-    width: rem(32px);
+    width: rem(35px);
     color: $supernova;
     &:last-child {
       padding: 0;
