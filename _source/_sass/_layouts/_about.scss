@@ -118,6 +118,9 @@
     padding:1.1em 1.1em 0 4.5em;
      @include media($screen-medium) {
         }
+      @include media($screen-tiny){
+        padding:0 0 0 2em;
+      }
     }
 
       &__info{
@@ -128,10 +131,16 @@
         bottom: 0;
         transition: .2s linear;
         opacity: 0;
+         @include media($screen-small) {
+            width: 100px;
+          }
           &__name {
             color: #333;
             margin: 8px 0 0 0;
             font-weight: bold;
+            @include media($screen-small) {
+                font-size:0.650rem;
+              }
           }
           &__funcao{
             color: #333;
@@ -144,6 +153,10 @@
     width: 150px;
     float: left;
     position: relative;
+     @include media($screen-small) {
+      width: 100px;
+      float: left;
+    }
     &:hover{
       cursor: pointer;
     }
@@ -158,8 +171,7 @@
           @include size(150px);;
 
           @include media($screen-small) {
-            @include size(150px);
-            //margin: 0 10px 5px 30px;
+            @include size(100px);
           }
         }
     }
