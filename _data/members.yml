@@ -42,14 +42,6 @@
   image: build/img/members/gifs-para-site-2/MW8_GIF_EDVALDO.gif
   gif: build/img/members/gifs-para-site-2/MW8_GIF_EDVALDO.gif
 
-- name: Henrique
-  image: build/img/members/gifs-para-site-2/MW8_GIF_HENRIQUE.gif
-  gif: build/img/members/gifs-para-site-2/MW8_GIF_HENRIQUE.gif
-
-- name: Irvin
-  image: build/img/members/gifs-para-site-2/MW8_GIF_IRVIN.gif
-  gif: build/img/members/gifs-para-site-2/MW8_GIF_IRVIN.gif
-
 - name: Jaci
   image: build/img/members/gifs-para-site-2/MW8_GIF_JACI.gif
   gif: build/img/members/gifs-para-site-2/MW8_GIF_JACI.gif
@@ -57,10 +49,6 @@
 - name: Jailson
   image: build/img/members/gifs-para-site-2/MW8_GIF_JAILSON.gif
   gif: build/img/members/gifs-para-site-2/MW8_GIF_JAILSON.gif
-
-- name: Luan
-  image: build/img/members/gifs-para-site-2/MW8_GIF_LUAN.gif
-  gif: build/img/members/gifs-para-site-2/MW8_GIF_LUAN.gif
 
 - name: Lukas
   image: build/img/members/gifs-para-site-2/MW8_GIF_LUKAS.gif
