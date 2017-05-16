@@ -94,5 +94,4 @@ $(document).ready(function () {
     $btnMenu.toggleClass('toggle--close');
     $navbar.removeClass('header-navigation--is-open');
   });
-
 });
