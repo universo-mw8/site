@@ -3,13 +3,20 @@
     <div class="about-banner__mask--banner" style="background-image: url('/build/img/layer_about.png')"></div>
   </div>
   <div class="about__content">
+
     <h1 class="about__title">Nosso time</h1>
     <span class="about__subtitle">Joga pra cá, que a gente resolve! </span>
     <div class="about__team">
       {% for member in site.data.members %}
-        <!-- <img class="image__circle" src="{{ member.image }}" alt="{{ member.name }}"> -->
-        <img class="image__circle" src="{{ member.image }}" data-gif="{{ member.gif }}" onmouseenter="this.src='{{ member.gif }}';" onmouseout="this.src='{{ member.image }}';" alt="{{ member.name }}">
+          <div class="about__box">
+            <img id="imgs" class="image__circle" src="{{ member.image }}" data-gif="{{ member.gif }}" onmouseenter="this.src='{{ member.gif }}';" onmouseout="this.src='{{ member.image }}';" alt="{{ member.name }}">
+                <div class="about__info">
+                    <h1 class="about__info__name"> {{ member.name }} </h1>
+                    <h2 class="about__info__funcao"> {{ member.funcao }} </h2>
+                </div>
+            </div>
       {% endfor %}
     </div>
+
   </div>
 </section>

@@ -1,4 +1,50 @@
 <meta charset='utf-8'>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta content='desenvolvimento, programação, webapp, aplicativo web, aplicativo, startup' name='keywords'>
-<meta content='Desenvolvimento de sistemas web para startups com preço fixo e em apenas uma semana.' name='description'>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+<meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+<!-- author -->
+<link rel="author" href="https://www.facebook.com/universomw8/">
+<meta name="autor" content="UNIVERSO MW8 TEAM">
+
+<!-- Social: Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@universomw8">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta property="twitter:image:src" content="{{ "/build/img/universomw8.png" | prepend: site.baseurl | prepend: site.url }}">
+
+<!-- Social: Facebook / Open Graph -->
+<meta property="fb:admins" content="1875087252719830">
+<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}blog{% endif %}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:image" content="{{ "/build/img/universomw8.png" | prepend: site.baseurl | prepend: site.url }}">
+<meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:site_name" content="{{ site.title }}">
+
+<!-- Social: Google+ / Schema.org  -->
+<meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
+<meta itemprop="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta itemprop="image" content="{{ "/build/img/universomw8.png" | prepend: site.baseurl | prepend: site.url }}"/>
+
+<!-- -->
+<link rel="apple-touch-icon" sizes="57x57" href="{{ "/build/img/favicon/apple-icon-57x57.png" | prepend: site.baseurl | prepend: site.url }}">
+<link rel="apple-touch-icon" sizes="60x60" href="{{ "/build/img/favicon/apple-icon-60x60.png" | prepend: site.baseurl | prepend: site.url }}">
+<link rel="apple-touch-icon" sizes="72x72" href="{{ "/build/img/favicon/apple-icon-72x72.png" | prepend: site.baseurl | prepend: site.url }}">
+<link rel="apple-touch-icon" sizes="76x76" href="{{ "/build/img/favicon/apple-icon-76x76.png" | prepend: site.baseurl | prepend: site.url }}">
+<link rel="apple-touch-icon" sizes="114x114" href="{{ "/build/img/favicon/apple-icon-114x114.png" | prepend: site.baseurl | prepend: site.url }}">
+<link rel="apple-touch-icon" sizes="120x120" href="{{ "/build/img/favicon/apple-icon-120x120.png" | prepend: site.baseurl | prepend: site.url }}">
+<link rel="apple-touch-icon" sizes="144x144" href="{{ "/build/img/favicon/apple-icon-144x144.png" | prepend: site.baseurl | prepend: site.url }}">
+<link rel="apple-touch-icon" sizes="152x152" href="{{ "/build/img/favicon/apple-icon-152x152.png" | prepend: site.baseurl | prepend: site.url }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "/build/img/favicon/apple-icon-180x180.png" | prepend: site.baseurl | prepend: site.url }}">
+<link rel="icon" type="image/png" sizes="192x192"  href="{{ "/build/img/favicon/android-icon-192x192.png" | prepend: site.baseurl | prepend: site.url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "/build/img/favicon/favicon-32x32.png" | prepend: site.baseurl | prepend: site.url }}">
+<link rel="icon" type="image/png" sizes="96x96" href="{{ "/build/img/favicon/favicon-96x96.png" | prepend: site.baseurl | prepend: site.url }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ "/build/img/favicon/favicon-16x16.png" | prepend: site.baseurl | prepend: site.url }}">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#20b5ac">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#20b5ac">

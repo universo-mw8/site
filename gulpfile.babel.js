@@ -8,7 +8,7 @@ const plumber = require('gulp-plumber');
 const rename = require('gulp-rename');
 const imagemin = require('gulp-imagemin');
 const uglify = require('gulp-uglify');
-// const rollup = require('gulp-rollup');
+const htmlmin = require('gulp-htmlmin');
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync');
 const cp = require('child_process');
@@ -97,6 +97,12 @@ gulp.task('images', () => {
     .pipe(gulp.dest(buildPaths.img));
 });
 
+gulp.task('html', () => {
+  return gulp.src('_site/*.html')
+  .pipe(htmlmin({ collapseWhitespace: true }))
+  .pipe(gulp.dest('_site/'));
+});
+
 gulp.task('assets', () => {
   gulp.src(srcPaths.assets)
     .pipe(gulp.dest(buildPaths.assets));
@@ -115,7 +121,7 @@ gulp.task('fonts', () => {
 gulp.task('watch', () => {
   gulp.watch(srcPaths.css, ['css']);
   gulp.watch(srcPaths.js, ['js']);
-  // gulp.watch(srcPaths.img, ['images']);
+  gulp.watch(srcPaths.img, ['images']);
   gulp.watch(['*.html', '_includes/*.html', '_layouts/*.html', '_source/_js/**/*.js', '**/*.html'], ['jekyll-rebuild']);
 });
 
@@ -124,7 +130,7 @@ gulp.task('deploy', () => {
     .pipe(ghPages());
 });
 
-gulp.task('build', ['js', 'css', 'assets', 'videos', 'fonts']);
+gulp.task('build', ['html', 'js', 'css', 'assets', 'videos', 'fonts']);
 
 gulp.task('default', ['css', 'js', 'images', 'assets', 'videos', 'fonts', 'watch', 'browser-sync']);
 gulp.task('deploy', ['css', 'js', 'images', 'assets', 'videos', 'fonts', 'pages']);

@@ -7,7 +7,7 @@
 
     &__content {
       position:relative;
-      max-width: 700px;
+      max-width: 90%;
       min-height: 100vh;
       text-align: center;
       margin: 0 auto;
@@ -16,10 +16,9 @@
       @include display(flex);
       @include flex-direction(column);
       @include justify-content(space-around);
+      //background: rgba(#fff, 0.5);
+      @include media($screen-small) {}
 
-      @include media($screen-small) {
-
-      }
     }
 
     &__title {
@@ -30,7 +29,7 @@
       font-size: rem(58);
       font-weight: 900;
       text-transform: uppercase;
-      margin-top: rem(150);
+      margin-top: rem(450);
       margin-bottom: rem(10);
 
       @include media($screen-small) {
@@ -111,33 +110,74 @@
   }
 
   &__team {
-    @include span-columns(12);
-    margin-top: rem(30);
-    width: 100%;
-    ul {
-      display: flex;
-      justify-content: center;
+    //@include span-columns(12 of 12);
+    margin-top: rem(90);
+    width: 90%;
+    //border:1px solid red;
+    margin-bottom:120px;
+    padding:1.1em 1.1em 0 4.5em;
+     @include media($screen-medium) {
+        }
+      @include media($screen-tiny){
+        padding:0 0 0 2em;
+      }
     }
 
-    @include media($screen-small) {
-      width: rem(265px);
+      &__info{
+        width: 150px;
+        height:0;
+        background: white;
+        position: absolute;
+        bottom: 0;
+        transition: .2s linear;
+        opacity: 0;
+         @include media($screen-small) {
+            width: 100px;
+          }
+          &__name {
+            color: #333;
+            margin: 8px 0 0 0;
+            font-weight: bold;
+            @include media($screen-small) {
+                font-size:0.650rem;
+              }
+          }
+          &__funcao{
+            color: #333;
+            font-weight: bold;
+            font-size:0.700rem;
+          }
+      }
+
+  &__box{
+    width: 150px;
+    float: left;
+    position: relative;
+     @include media($screen-small) {
+      width: 100px;
+      float: left;
+    }
+    &:hover{
+      cursor: pointer;
+    }
+    &:hover .about__info{
+      height: auto;
+      opacity: .8;
+      transition: .2s linear;
+    }
+       .image {
+        &__circle {
+          @include span-columns(12 of 12);
+          @include size(150px);;
+
+          @include media($screen-small) {
+            @include size(100px);
+          }
+        }
     }
   }
+
 }
 
 
-.image {
-  &__circle {
-    @include span-columns(4 of 12);
-    @include size(128px);
-    border-radius: 50%;
-    margin: rem(20px);
-    @include media($screen-small) {
-      @include size(92px);
-    }
-  }
 
-  &:hover {
-    transition: ease-out 1s;
-  }
-}

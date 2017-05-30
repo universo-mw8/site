@@ -1,31 +1,29 @@
 <section class="partners" id="partners">
-    <div class="partners__content">
-        <h2 class="partners__title">Parceiros</h2>
-        <p class="partners__description"></p>
-    </div>
-
-    <div id="js-partners-carousel" class="owl-carousel partners__grid">
-        {% assign counter = 0 %}
-        {% for i in (1..7) %}
-            <div class="item">
-                <a class="partners__item" href="#" target="_blank" title="{{site.data.partners[counter].name}}">
-                    <div class="img" style="background-image:url('{{site.data.partners[counter].image}}')"></div>
-                </a>
-                 {% assign counter = counter | plus:1 %} 
-                <a class="partners__item" href="#" target="_blank" title="{{site.data.partners[counter].name}}">
-                    <div class="img" style="background-image:url('{{site.data.partners[counter].image}}')"></div>
-                </a>
-                 {% assign counter = counter | plus:1 %} 
-                <a class="partners__item" href="#" target="_blank" title="{{site.data.partners[counter].name}}">
-                    <div class="img" style="background-image:url('{{site.data.partners[counter].image}}')"></div>
-                </a>
-                 {% assign counter = counter | plus:1 %} 
-                <a class="partners__item" href="#" target="_blank" title="{{site.data.partners[counter].name}}">
-                    <div class="img" style="background-image:url('{{site.data.partners[counter].image}}')"></div>
-                </a>
-                 {% assign counter = counter | plus:1 %} 
-            </div>
-        {% endfor %}
-
- </div>
+  <div class="partners__content">
+    <h2 class="partners__title">Quem confiou em nós</h2>
+    <p class="partners__description"></p>
+  </div>
+  <div id="js-partners-carousel" class="owl-carousel partners__grid">
+    {% assign counter = 0 %}
+    {% for i in (1..9) %}
+      <div class="item">
+        <a class="partners__item" href="#" target="_blank" title="{{site.data.partners[counter].name}}">
+          <div class="img" style="background-image:url('{{site.data.partners[counter].image}}')"></div>
+        </a>
+        {% assign counter = counter | plus:1 %}
+        <a class="partners__item" href="#" target="_blank" title="{{site.data.partners[counter].name}}">
+          <div class="img" style="background-image:url('{{site.data.partners[counter].image}}')"></div>
+        </a>
+        {% assign counter = counter | plus:1 %}
+        <a class="partners__item" href="#" target="_blank" title="{{site.data.partners[counter].name}}">
+          <div class="img" style="background-image:url('{{site.data.partners[counter].image}}')"></div>
+        </a>
+        {% assign counter = counter | plus:1 %}
+        <a class="partners__item" href="#" target="_blank" title="{{site.data.partners[counter].name}}">
+          <div class="img" style="background-image:url('{{site.data.partners[counter].image}}')"></div>
+        </a>
+        {% assign counter = counter | plus:1 %}
+      </div>
+    {% endfor %}
+  </div>
 </section>

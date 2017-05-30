@@ -5,8 +5,9 @@
 Execute no terminal
 
 ```
-  $bundle install
-  $npm install
+  $ bundle install
+  $ npm install
+  $ npm install --save-dev gulp-htmlmin
 ```
 
 ## Rodando

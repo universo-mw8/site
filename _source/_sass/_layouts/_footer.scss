@@ -4,7 +4,6 @@
 //
 // *************************************
 
-
 .footer {
   @include span-columns(12);
   background: $nightrider;
@@ -29,7 +28,7 @@
       text-align: center;
     }
   }
-  
+
     &__image {
     width: rem(96px);
     margin-left: rem(80px);
@@ -37,7 +36,7 @@
       margin: 0 auto;
     }
   }
-  
+
   &__copyright {
     @include span-columns(8 of 12);
     text-align: left;
@@ -64,14 +63,13 @@
       border-bottom: 1px solid $supernova;
       top: rem(-12px);
       max-width: rem(45px);
-      margin: 0 auto;
       @include media($screen-small){
+        margin: 0 auto;
       }
     }
   }
 
 }
-
 
 .footer-universo {
   position: relative;
@@ -157,7 +155,7 @@
   &__icon {
     display: inline-block;
     padding-right: rem(10px);
-    width: rem(32px);
+    width: rem(35px);
     color: $supernova;
     &:last-child {
       padding: 0;
