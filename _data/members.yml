@@ -63,16 +63,6 @@
   image: build/img/members/team/Valter.jpg
   gif: build/img/members/gif/MW8_GIF_VALTER.gif
 
-- name: Irvin Moura
-  funcao: Motion Designer
-  image: build/img/members/team/Irvin.jpg
-  gif: build/img/members/gif/MW8_GIF_IRVIN.gif
-
-- name: Edvaldo Júnior
-  funcao: Vídeomaker
-  image: build/img/members/team/Edvaldo.jpg
-  gif: build/img/members/gif/MW8_GIF_EDVALDO.gif
-
 - name: Iury Taillan
   funcao: Diretor de Arte
   image: build/img/members/team/IuryTaillan.jpg
@@ -83,45 +73,15 @@
   image: build/img/members/team/Filipe.jpg
   gif: build/img/members/gif/MW8_GIF_FILIPE.gif
 
-- name: Marcel Aguiar
-  funcao: Designer
-  image: build/img/members/team/Marcel.jpg
-  gif: build/img/members/gif/MW8_GIF_MARCEL.gif
-
 - name: Pablo Soares
   funcao: Master Tinkerer
   image: build/img/members/team/Pablo.jpg
   gif: build/img/members/gif/MW8_GIF_PABLO.gif
 
-- name: Caio Lucas
-  funcao: Jedi Developer
-  image: build/img/members/team/Caio.jpg
-  gif: build/img/members/gif/MW8_GIF_CAIO.gif
-
-- name: Marcus Silva
-  funcao: Sith Developer
-  image: build/img/members/team/Marcus.jpg
-  gif: build/img/members/gif/MW8_GIF_MARCUS.gif
-
-- name: Mateus Mohamed
-  funcao: Blogueirinho Developer
-  image: build/img/members/team/Mohamed.jpg
-  gif: build/img/members/gif/MW8_GIF_MOHAMED.gif
-
-- name: Luan Ribeiro
-  funcao: Pro Developer
-  image: build/img/members/team/Luan.jpg
-  gif: build/img/members/gif/MW8_GIF_LUAN.gif
-
 - name: Jailson Silva
   funcao: Líder de Infraestrutura
   image: build/img/members/team/Jailson.jpg
   gif: build/img/members/gif/MW8_GIF_JAILSON.gif
-
-- name: Elvis Serrão
-  funcao: Téc. em Infraestrutura
-  image: build/img/members/team/Elvis.jpg
-  gif: build/img/members/gif/MW8_GIF_ELVIS.gif
 
 - name: Cleiton Barreto
   funcao: Líder de Suporte
@@ -132,11 +92,6 @@
   funcao: Suporte Técnico
   image: build/img/members/team/Afonso.jpg
   gif: build/img/members/gif/MW8_GIF_AFONSO.gif
-
-- name: Henrique Brito
-  funcao: Suporte Técnico
-  image: build/img/members/team/Henrique.jpg
-  gif: build/img/members/gif/MW8_GIF_HENRIQUE.gif
 
 - name: Lukas Walter
   funcao: Suporte Técnico
