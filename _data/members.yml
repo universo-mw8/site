@@ -53,11 +53,6 @@
   image: build/img/members/team/Nayara.jpg
   gif: build/img/members/team/Nayara.jpg
 
-- name: Ana Siqueira
-  funcao: Suporte Técnico
-  image: build/img/members/team/Ana.jpg
-  gif: build/img/members/team/Ana.jpg
-
 - name: Valter Souza
   funcao: Gerente de Operações
   image: build/img/members/team/Valter.jpg
@@ -78,6 +73,11 @@
   image: build/img/members/team/Pablo.jpg
   gif: build/img/members/gif/MW8_GIF_PABLO.gif
 
+- name: Afonso Oliveira
+  funcao: Software Padawan
+  image: build/img/members/team/Afonso.jpg
+  gif: build/img/members/gif/MW8_GIF_AFONSO.gif
+
 - name: Jailson Silva
   funcao: Líder de Infraestrutura
   image: build/img/members/team/Jailson.jpg
@@ -87,21 +87,6 @@
   funcao: Líder de Suporte
   image: build/img/members/team/Cleiton.jpg
   gif: build/img/members/gif/MW8_GIF_CLEITON.gif
-
-- name: Afonso Oliveira
-  funcao: Suporte Técnico
-  image: build/img/members/team/Afonso.jpg
-  gif: build/img/members/gif/MW8_GIF_AFONSO.gif
-
-- name: Lukas Walter
-  funcao: Suporte Técnico
-  image: build/img/members/team/Lukas.jpg
-  gif: build/img/members/gif/MW8_GIF_LUKAS.gif
-
-- name: Micael Vander
-  funcao: Suporte Técnico
-  image: build/img/members/team/Micael.jpg
-  gif: build/img/members/gif/MW8_GIF_MICAE.gif
 
 - name: João Carlos
   funcao: Suporte Técnico
