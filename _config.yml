@@ -1,7 +1,7 @@
 title: Universo MW8
 email: universomw8@contato.com.br
 description: > # this means to ignore newlines until "baseurl:"
-  Em parceria com o Governo do Estado da Bahia, somos uma empresa apaixonada por comunicação e tecnologia criativa, propondo soluções singulares, empáticas e inovadoras que agregam experiências 
+  Em parceria com o Governo do Estado da Bahia, somos uma empresa apaixonada por comunicação e tecnologia criativa, propondo soluções singulares, empáticas e inovadoras que agregam experiências
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.universomw8.com.br" # the base hostname & protocol for your site
 twitter_username: universomw8
@@ -32,8 +32,6 @@ links:
     url: /
   - title: Empresa
     url: /empresa
-
-gems: [jekyll-admin]
 
 exclude: [
   'package.json',

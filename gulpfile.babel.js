@@ -133,4 +133,3 @@ gulp.task('deploy', () => {
 gulp.task('build', ['html', 'js', 'css', 'assets', 'videos', 'fonts']);
 
 gulp.task('default', ['css', 'js', 'images', 'assets', 'videos', 'fonts', 'watch', 'browser-sync']);
-gulp.task('deploy', ['css', 'js', 'images', 'assets', 'videos', 'fonts', 'pages']);
