@@ -40,6 +40,10 @@
     "gulp-uglify": "^1.5.4"
   },
   "dependencies": {
-    "babel-register": "^6.16.3"
+    "babel-register": "^6.16.3",
+    "lodash": ">=4.17.11"
+  },
+  "dependenciesComments": {
+    "lodash": "Forcing upgrade because of CVE-2018-16487"
   }
 }
